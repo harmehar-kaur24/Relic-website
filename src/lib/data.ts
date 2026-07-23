@@ -139,7 +139,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
     description:
-      "A sacred vessel carrying the personal touch of the sixth Guru. Between 1610 and 1644 CE at Sri Amritsar Sahib, the Guru used this vessel to serve water to the sangat — a historic token of humility and seva.",
+      "This sacred vessel bears the touch of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. From 1610–1644 CE, at Sri Amritsar Sahib, Guru Sahib used this vessel to serve water to the sangat. It stands as a historic relic meant to give the sangat a message of humility and the spirit of seva.",
     image: "/relics/hargobind/ganga-sagar.jpg",
   },
   {
@@ -147,7 +147,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
     description:
-      "A sacred bowl used by the sixth Guru, standing as a symbol of his renunciation, valour, and seva.",
+      "This sacred bowl was used by the sixth Sovereign, Sri Guru Hargobind Sahib Ji, and stands as a symbol of his renunciation, heroic valour (bir-ras), and seva.",
     image: "/relics/hargobind/bata.jpg",
   },
   {
@@ -169,7 +169,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
     description:
-      "A historic water-pot of the sixth Guru, regarded by the family as an item of religious significance.",
+      "The historic baltohi (water-pot) of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. This baltohi is accorded religious significance.",
     image: "/relics/hargobind/baltohi.jpg",
   },
 ];
