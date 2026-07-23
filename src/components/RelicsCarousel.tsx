@@ -91,9 +91,11 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
                   <p className="mt-1 text-base font-medium text-navy-600">
                     {localized.associatedWith}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-navy-600">
-                    {relic.description}
-                  </p>
+                  {relic.description && (
+                    <p className="mt-2 text-sm leading-relaxed text-navy-600">
+                      {relic.description}
+                    </p>
+                  )}
                 </div>
               </div>
             );

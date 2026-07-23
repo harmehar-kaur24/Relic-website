@@ -64,6 +64,7 @@ export const relicCategories = [
   "Scriptures",
   "Royal Edicts",
   "Artwork",
+  "Personal Articles",
 ] as const;
 
 export type RelicCategory = (typeof relicCategories)[number];
@@ -132,5 +133,43 @@ export const relics: Relic[] = [
     description:
       "An early painting depicting the sixth Guru, held by the family as a rare artistic record alongside its collection of shastars and documents.",
     image: "/relics/puratan-painting.jpg",
+  },
+  {
+    title: "Ganga Sagar",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Personal Articles",
+    description:
+      "A sacred vessel carrying the personal touch of the sixth Guru. Between 1610 and 1644 CE at Sri Amritsar Sahib, the Guru used this vessel to serve water to the sangat — a historic token of humility and seva.",
+    image: "/relics/hargobind/ganga-sagar.jpg",
+  },
+  {
+    title: "Bata",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Personal Articles",
+    description:
+      "A sacred bowl used by the sixth Guru, standing as a symbol of his renunciation, valour, and seva.",
+    image: "/relics/hargobind/bata.jpg",
+  },
+  {
+    title: "Sheesha",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Personal Articles",
+    description: "",
+    image: "/relics/hargobind/sheesha.jpg",
+  },
+  {
+    title: "Dhal",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/hargobind/dhal.jpg",
+  },
+  {
+    title: "Baltohi",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Personal Articles",
+    description:
+      "A historic water-pot of the sixth Guru, regarded by the family as an item of religious significance.",
+    image: "/relics/hargobind/baltohi.jpg",
   },
 ];

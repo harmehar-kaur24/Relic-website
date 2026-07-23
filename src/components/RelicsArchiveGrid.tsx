@@ -16,6 +16,7 @@ const FILTER_KEYS: Record<RelicCategory | "All", TranslationKey> = {
   Scriptures: "categoryScriptures",
   "Royal Edicts": "categoryRoyalEdicts",
   Artwork: "categoryArtwork",
+  "Personal Articles": "categoryPersonalArticles",
 };
 
 export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
@@ -90,9 +91,11 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
                     <p className="mt-1 text-base font-medium text-cream-100/80">
                       {localized.associatedWith}
                     </p>
-                    <p className="mt-2 text-sm leading-relaxed text-cream-100/75">
-                      {relic.description}
-                    </p>
+                    {relic.description && (
+                      <p className="mt-2 text-sm leading-relaxed text-cream-100/75">
+                        {relic.description}
+                      </p>
+                    )}
                   </div>
                 </motion.div>
               );

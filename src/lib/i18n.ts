@@ -68,6 +68,7 @@ export const translations = {
     categoryScriptures: "Scriptures",
     categoryRoyalEdicts: "Royal Edicts",
     categoryArtwork: "Artwork",
+    categoryPersonalArticles: "Personal Articles",
   },
   pa: {
     nextTourStop: "ਅਗਲਾ ਟੂਰ ਸਟਾਪ:",
@@ -136,6 +137,7 @@ export const translations = {
     categoryScriptures: "ਗ੍ਰੰਥ",
     categoryRoyalEdicts: "ਸ਼ਾਹੀ ਫ਼ਰਮਾਨ",
     categoryArtwork: "ਕਲਾਕਾਰੀ",
+    categoryPersonalArticles: "ਨਿੱਜੀ ਵਸਤਾਂ",
   },
 } as const;
 
@@ -150,6 +152,11 @@ export const relicTranslations: Record<string, { title: string; associatedWith: 
   // Wording drawn directly from the family's own signage card for this item.
   Farman: { title: "ਫੁਰਮਾਨ", associatedWith: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ਫੁਰਮਾਨ" },
   "Puratan Painting": { title: "ਪੁਰਾਤਨ ਪੇਂਟਿੰਗ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  "Ganga Sagar": { title: "ਗੰਗਾ ਸਾਗਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  Bata: { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  Sheesha: { title: "ਸ਼ੀਸ਼ਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  Dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  Baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
 };
 
 const categoryKeys: Record<string, TranslationKey> = {
@@ -157,6 +164,7 @@ const categoryKeys: Record<string, TranslationKey> = {
   Scriptures: "categoryScriptures",
   "Royal Edicts": "categoryRoyalEdicts",
   Artwork: "categoryArtwork",
+  "Personal Articles": "categoryPersonalArticles",
 };
 
 export function localizeRelic(
