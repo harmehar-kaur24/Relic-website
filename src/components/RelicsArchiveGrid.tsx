@@ -72,13 +72,13 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
                     type="button"
                     onClick={() => setExpanded(relic)}
                     aria-label={`Expand ${relic.title}`}
-                    className="relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden bg-navy-800"
+                    className="flex w-full items-center justify-center overflow-hidden bg-navy-800 cursor-zoom-in"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={relic.image}
                       alt={relic.title}
-                      className="absolute inset-0 h-full w-full object-cover transition duration-300 hover:scale-105"
+                      className="max-h-[560px] w-full object-contain transition duration-300 hover:scale-105"
                     />
                   </button>
                   <div className="flex flex-1 flex-col p-5">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/Breadcrumb";
 import PlaceholderBox from "@/components/PlaceholderBox";
 import Reveal from "@/components/Reveal";
 import { tourStops } from "@/lib/data";
@@ -13,8 +12,7 @@ export const metadata: Metadata = {
 export default function SchedulePage() {
   return (
     <>
-      <Header />
-      <Breadcrumb current="Tour Dates & Visitor Guide" />
+      <Header breadcrumb="Tour Dates & Visitor Guide" />
       <main className="flex-1">
         <Reveal className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">

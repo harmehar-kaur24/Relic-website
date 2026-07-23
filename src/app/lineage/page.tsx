@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/Breadcrumb";
 import PlaceholderBox from "@/components/PlaceholderBox";
 import AnimatedTimeline from "@/components/AnimatedTimeline";
 import Reveal from "@/components/Reveal";
@@ -13,8 +12,7 @@ export const metadata: Metadata = {
 export default function LineagePage() {
   return (
     <>
-      <Header />
-      <Breadcrumb current="Lineage & History" />
+      <Header breadcrumb="Lineage & History" />
       <main className="flex-1">
         <Reveal className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">

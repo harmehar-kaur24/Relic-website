@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import { custodian } from "@/lib/data";
 
@@ -12,8 +11,7 @@ export const metadata: Metadata = {
 export default function CustodianPage() {
   return (
     <>
-      <Header />
-      <Breadcrumb current="The Custodian" />
+      <Header breadcrumb="The Custodian" />
       <main className="flex-1">
         <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,320px)_1fr] lg:items-start">

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
 export default function HostPage() {
@@ -11,8 +10,7 @@ export default function HostPage() {
 
   return (
     <>
-      <Header />
-      <Breadcrumb current="Host a Visit" />
+      <Header breadcrumb="Host a Visit" />
       <main className="flex-1">
         <Reveal className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">
