@@ -159,6 +159,12 @@ export const relicTranslations: Record<string, { title: string; associatedWith: 
   dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
 
+  // Sri Guru Angad Dev Ji
+  "akhari-35": {
+    title: "ਪਾਵਨ ੩੫ ਅੱਖਰੀ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+  },
+
   // Sri Guru Arjan Dev Ji — wording from the item's own museum plaque.
   "simran-arjan": {
     title: "ਹੱਥ ਦਾ ਸਿਮਰਨ (ਮਾਲਾ)",

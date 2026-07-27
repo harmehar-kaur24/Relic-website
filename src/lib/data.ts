@@ -95,7 +95,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Shastars",
     description:
-      "A ceremonial sword bestowed by the sixth Guru, carried in processions and regarded as one of the most sacred items in the family's care.",
+      "This Sri Sahib was Sri Guru Hargobind Sahib Ji Maharaj's personal shastar, which they adorned daily. Following the Battle of Mehraaj, Guru Sahib blessed Bhai Roop Chand Ji with their sacred relic.",
     image: "/relics/shri-sahib.jpg",
   },
   {
@@ -185,6 +185,17 @@ export const relics: Relic[] = [
     description:
       "The historic baltohi (water-pot) of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. This baltohi is accorded religious significance.",
     image: "/relics/hargobind/baltohi.jpg",
+  },
+
+  // --- Sri Guru Angad Dev Ji ---
+  {
+    id: "akhari-35",
+    title: "35 Akhari (Gurmukhi Alphabet)",
+    associatedWith: "Sri Guru Angad Dev Ji",
+    category: "Scriptures",
+    description:
+      "The sacred 35 Akhari — the Gurmukhi alphabet — written in the very hand of Sri Guru Angad Dev Ji, who gave the Gurmukhi script its birth.",
+    image: "/relics/angad/akhari-35.jpg",
   },
 
   // --- Sri Guru Arjan Dev Ji ---
