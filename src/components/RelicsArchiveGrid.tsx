@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { relicCategories, type Relic, type RelicCategory } from "@/lib/data";
-import Lightbox from "./Lightbox";
 import { useLanguage } from "./LanguageProvider";
 import { localizeRelic } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/i18n";
@@ -23,7 +22,6 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
   const [activeFilter, setActiveFilter] = useState<RelicCategory | "All">(
     "All"
   );
-  const [expanded, setExpanded] = useState<Relic | null>(null);
   const { language, t } = useLanguage();
 
   const filtered = useMemo(
@@ -68,11 +66,12 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
                   transition={{ duration: 0.35, delay: index * 0.04, ease: "easeOut" }}
                   className="flex flex-col overflow-hidden rounded-xl bg-navy-950/40 ring-1 ring-gold-400/20"
                 >
-                  <button
-                    type="button"
-                    onClick={() => setExpanded(relic)}
-                    aria-label={`Expand ${relic.title}`}
-                    className="flex w-full items-center justify-center overflow-hidden bg-navy-800 cursor-zoom-in"
+                  <div
+                    data-zoom
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Enlarge ${relic.title}`}
+                    className="flex w-full cursor-zoom-in items-center justify-center overflow-hidden bg-navy-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -80,7 +79,7 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
                       alt={relic.title}
                       className="max-h-[560px] w-full object-contain transition duration-300 hover:scale-105"
                     />
-                  </button>
+                  </div>
                   <div className="flex flex-1 flex-col p-5">
                     <span className="text-xs font-semibold uppercase tracking-wide text-gold-400">
                       {localized.category}
@@ -109,12 +108,6 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
           )}
         </div>
       </div>
-
-      <Lightbox
-        src={expanded?.image ?? null}
-        alt={expanded?.title ?? ""}
-        onClose={() => setExpanded(null)}
-      />
     </section>
   );
 }

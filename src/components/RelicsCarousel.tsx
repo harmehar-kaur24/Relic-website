@@ -2,14 +2,12 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Relic } from "@/lib/data";
-import Lightbox from "./Lightbox";
 import { useLanguage } from "./LanguageProvider";
 import { localizeRelic } from "@/lib/i18n";
 
 export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [expanded, setExpanded] = useState<Relic | null>(null);
   const { language } = useLanguage();
 
   const scrollToIndex = useCallback((index: number) => {
@@ -68,11 +66,12 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
                 key={relic.id}
                 className="flex w-[82%] flex-shrink-0 snap-start flex-col overflow-hidden rounded-xl border border-navy-100 bg-white shadow-sm sm:w-[46%] lg:w-[31%]"
               >
-                <button
-                  type="button"
-                  onClick={() => setExpanded(relic)}
-                  aria-label={`Expand ${relic.title}`}
-                  className="flex w-full items-center justify-center overflow-hidden bg-slate-100 cursor-zoom-in"
+                <div
+                  data-zoom
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`Enlarge ${relic.title}`}
+                  className="flex w-full cursor-zoom-in items-center justify-center overflow-hidden bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -80,7 +79,7 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
                     alt={relic.title}
                     className="max-h-[420px] w-full object-contain transition duration-300 hover:scale-105"
                   />
-                </button>
+                </div>
                 <div className="flex flex-1 flex-col p-5">
                   <span className="text-xs font-semibold uppercase tracking-wide text-gold-600">
                     {localized.category}
@@ -139,12 +138,6 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
           />
         ))}
       </div>
-
-      <Lightbox
-        src={expanded?.image ?? null}
-        alt={expanded?.title ?? ""}
-        onClose={() => setExpanded(null)}
-      />
     </div>
   );
 }

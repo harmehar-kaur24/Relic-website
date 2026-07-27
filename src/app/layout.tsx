@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import BackToTop from "@/components/BackToTop";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <BackToTop />
+          <ImageLightbox />
         </LanguageProvider>
       </body>
     </html>
