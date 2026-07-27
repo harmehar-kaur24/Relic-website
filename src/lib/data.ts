@@ -162,6 +162,18 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/bata.jpg",
   },
   {
+    // NOTE: a second Bata attributed to the sixth Guru. Wording from the red
+    // caption on the source photo; the phone number printed alongside it is
+    // deliberately not published here.
+    id: "bata-2",
+    title: "Bata",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Personal Articles",
+    description:
+      "Bata of the Sixth Sovereign (Patshahi Chhevin), in the keeping of the heir of Bhai Roop Chand Ji.",
+    image: "/relics/hargobind/bata-2.jpg",
+  },
+  {
     id: "sheesha",
     title: "Sheesha",
     associatedWith: "Sri Guru Hargobind Sahib Ji",

@@ -155,6 +155,7 @@ export const relicTranslations: Record<string, { title: string; associatedWith: 
   "puratan-painting": { title: "ਪੁਰਾਤਨ ਪੇਂਟਿੰਗ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   "ganga-sagar": { title: "ਗੰਗਾ ਸਾਗਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   bata: { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  "bata-2": { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   sheesha: { title: "ਸ਼ੀਸ਼ਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
