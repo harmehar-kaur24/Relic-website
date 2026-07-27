@@ -143,20 +143,35 @@ export const translations = {
 
 export type TranslationKey = keyof typeof translations.en;
 
+/** Keyed by relic id, not title — several Gurus share relic names. */
 export const relicTranslations: Record<string, { title: string; associatedWith: string }> = {
-  "Kattar Sahib": { title: "ਕੱਟਾਰ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "Shri Sahib": { title: "ਸ੍ਰੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "Puratan Teer": { title: "ਪੁਰਾਤਨ ਤੀਰ", associatedWith: "ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਦੇ ਤੀਰ" },
-  "Pothi Sahib": { title: "ਪੋਥੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
-  "Hukamnama Sahib": { title: "ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ", associatedWith: "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ" },
+  "kattar-sahib": { title: "ਕੱਟਾਰ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  "shri-sahib": { title: "ਸ੍ਰੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  "puratan-teer": { title: "ਪੁਰਾਤਨ ਤੀਰ", associatedWith: "ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਦੇ ਤੀਰ" },
+  "pothi-sahib": { title: "ਪੋਥੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
+  "hukamnama-sahib": { title: "ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ", associatedWith: "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ" },
   // Wording drawn directly from the family's own signage card for this item.
-  Farman: { title: "ਫੁਰਮਾਨ", associatedWith: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ਫੁਰਮਾਨ" },
-  "Puratan Painting": { title: "ਪੁਰਾਤਨ ਪੇਂਟਿੰਗ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "Ganga Sagar": { title: "ਗੰਗਾ ਸਾਗਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  Bata: { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  Sheesha: { title: "ਸ਼ੀਸ਼ਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  Dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  Baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  farman: { title: "ਫੁਰਮਾਨ", associatedWith: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ਫੁਰਮਾਨ" },
+  "puratan-painting": { title: "ਪੁਰਾਤਨ ਪੇਂਟਿੰਗ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  "ganga-sagar": { title: "ਗੰਗਾ ਸਾਗਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  bata: { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  sheesha: { title: "ਸ਼ੀਸ਼ਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+
+  // Sri Guru Gobind Singh Ji
+  "pothi-sahib-gold": {
+    title: "ਪੋਥੀ ਸਾਹਿਬ (ਸੋਨੇ ਨਾਲ ਲਿਖੀ)",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+  },
+  "hukamnama-sahib-gobind": {
+    title: "ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+  },
+  "dhal-gobind": { title: "ਜੰਗੀ ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
+  "shri-sahib-gobind": { title: "ਸ੍ਰੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
+  "jangi-chakkar": { title: "ਜੰਗੀ ਚੱਕਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
+  "chhota-khanda": { title: "ਛੋਟਾ ਖੰਡਾ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
 };
 
 const categoryKeys: Record<string, TranslationKey> = {
@@ -168,10 +183,10 @@ const categoryKeys: Record<string, TranslationKey> = {
 };
 
 export function localizeRelic(
-  relic: { title: string; associatedWith: string; category: string },
+  relic: { id: string; title: string; associatedWith: string; category: string },
   language: Language
 ) {
-  const override = language === "pa" ? relicTranslations[relic.title] : undefined;
+  const override = language === "pa" ? relicTranslations[relic.id] : undefined;
   const categoryKey = categoryKeys[relic.category];
   return {
     title: override?.title ?? relic.title,

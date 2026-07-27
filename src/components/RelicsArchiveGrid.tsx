@@ -60,7 +60,7 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
               const localized = localizeRelic(relic, language);
               return (
                 <motion.div
-                  key={relic.title}
+                  key={relic.id}
                   layout
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}

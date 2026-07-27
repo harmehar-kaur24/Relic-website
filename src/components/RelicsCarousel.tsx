@@ -65,7 +65,7 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
             const localized = localizeRelic(relic, language);
             return (
               <div
-                key={relic.title}
+                key={relic.id}
                 className="flex w-[82%] flex-shrink-0 snap-start flex-col overflow-hidden rounded-xl border border-navy-100 bg-white shadow-sm sm:w-[46%] lg:w-[31%]"
               >
                 <button
@@ -129,7 +129,7 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
       <div className="mt-6 flex justify-center gap-2">
         {relics.map((relic, index) => (
           <button
-            key={relic.title}
+            key={relic.id}
             type="button"
             onClick={() => scrollToIndex(index)}
             aria-label={`Go to ${relic.title}`}

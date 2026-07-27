@@ -70,6 +70,8 @@ export const relicCategories = [
 export type RelicCategory = (typeof relicCategories)[number];
 
 export type Relic = {
+  /** Stable unique key — titles alone collide (several Gurus share relic names). */
+  id: string;
   title: string;
   associatedWith: string;
   category: RelicCategory;
@@ -79,6 +81,7 @@ export type Relic = {
 
 export const relics: Relic[] = [
   {
+    id: "kattar-sahib",
     title: "Kattar Sahib",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Shastars",
@@ -87,6 +90,7 @@ export const relics: Relic[] = [
     image: "/relics/kattar-sahib.jpg",
   },
   {
+    id: "shri-sahib",
     title: "Shri Sahib",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Shastars",
@@ -95,6 +99,7 @@ export const relics: Relic[] = [
     image: "/relics/shri-sahib.jpg",
   },
   {
+    id: "puratan-teer",
     title: "Puratan Teer",
     associatedWith: "Arrows from Battle of Mehraj",
     category: "Shastars",
@@ -103,6 +108,7 @@ export const relics: Relic[] = [
     image: "/relics/puratan-teer.jpg",
   },
   {
+    id: "pothi-sahib",
     title: "Pothi Sahib",
     associatedWith: "Sri Guru Gobind Singh Ji",
     category: "Scriptures",
@@ -111,6 +117,7 @@ export const relics: Relic[] = [
     image: "/relics/pothi-sahib.jpg",
   },
   {
+    id: "hukamnama-sahib",
     title: "Hukamnama Sahib",
     associatedWith: "Banda Singh Bahadur",
     category: "Royal Edicts",
@@ -119,6 +126,7 @@ export const relics: Relic[] = [
     image: "/relics/hukamnama-sahib.jpg",
   },
   {
+    id: "farman",
     title: "Farman",
     associatedWith: "Maharaja Ranjit Singh Ji",
     category: "Royal Edicts",
@@ -127,6 +135,7 @@ export const relics: Relic[] = [
     image: "/relics/farman.jpg",
   },
   {
+    id: "puratan-painting",
     title: "Puratan Painting",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Artwork",
@@ -135,6 +144,7 @@ export const relics: Relic[] = [
     image: "/relics/puratan-painting.jpg",
   },
   {
+    id: "ganga-sagar",
     title: "Ganga Sagar",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
@@ -143,6 +153,7 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/ganga-sagar.jpg",
   },
   {
+    id: "bata",
     title: "Bata",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
@@ -151,6 +162,7 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/bata.jpg",
   },
   {
+    id: "sheesha",
     title: "Sheesha",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
@@ -158,6 +170,7 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/sheesha.jpg",
   },
   {
+    id: "dhal",
     title: "Dhal",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Shastars",
@@ -165,11 +178,70 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/dhal.jpg",
   },
   {
+    id: "baltohi",
     title: "Baltohi",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
     description:
       "The historic baltohi (water-pot) of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. This baltohi is accorded religious significance.",
     image: "/relics/hargobind/baltohi.jpg",
+  },
+
+  // --- Sri Guru Gobind Singh Ji ---
+  // Descriptions below are literal renderings of the family's own poster text.
+  // Where a poster carried no legible explanatory note, description is left empty
+  // rather than filled in from other sources.
+  {
+    id: "pothi-sahib-gold",
+    title: "Pothi Sahib (Written in Gold)",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Scriptures",
+    description:
+      "This sacred Pothi Sahib belongs to Sri Guru Gobind Singh Ji, written in noble gold ink. Being highly pleased with the dedicated seva of Baba Bhai Rup Chand Ji, Guru Sahib Ji graciously blessed him with this sacred Pothi. It is more than 350 years old, believed to date to approximately 1675–1680 CE, and features intricate floral motifs and gold-leaf illumination.",
+    image: "/relics/gobind/pothi-sahib-gold.jpg",
+  },
+  {
+    id: "hukamnama-sahib-gobind",
+    title: "Hukamnama Sahib",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Royal Edicts",
+    description:
+      "This historic Hukamnama Sahib is of Sri Guru Gobind Singh Ji. It carries special commands (adesh) for the sangat.",
+    image: "/relics/gobind/hukamnama-sahib.jpg",
+  },
+  {
+    id: "dhal-gobind",
+    title: "Jangi Dhal (War Shield)",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description:
+      "This historical war shield is believed to be meticulously crafted from the incredibly tough hide of a seal. Its unique construction provides exceptional durability and protection. Once used by Sri Guru Gobind Singh Ji, it embodies a fusion of natural strength and spiritual warrior craft.",
+    image: "/relics/gobind/dhal.jpg",
+  },
+  {
+    id: "shri-sahib-gobind",
+    title: "Shri Sahib (Small Kirpan)",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description:
+      "A profound heirloom and symbol of the Warrior-Saint tradition, this kirpan is attributed to the tenth Guru, exemplifying bravery, commitment to justice, and the Sikh spirit.",
+    image: "/relics/gobind/shri-sahib.jpg",
+  },
+  {
+    id: "jangi-chakkar",
+    title: "Jangi Chakkar",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description:
+      "A glimpse of a historic chakar (war quoit) used in the Battle of Sri Chamkaur Sahib.",
+    image: "/relics/gobind/jangi-chakkar.jpg",
+  },
+  {
+    id: "chhota-khanda",
+    title: "Chhota Khanda Sahib",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/gobind/chhota-khanda.jpg",
   },
 ];
