@@ -30,16 +30,16 @@ export default function Header({ breadcrumb }: { breadcrumb?: string } = {}) {
       )}
       <div className="border-b border-navy-800 bg-navy-950/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="font-serif text-lg font-semibold text-gold-300 sm:text-xl">
-              The Sacred Relics Tour
+          <Link href="/" className="flex min-w-0 items-center gap-2">
+            <span className="font-serif text-sm font-semibold leading-tight text-gold-300 sm:text-base lg:text-lg">
+              Baba Bhai Roop Chand Ji Collection Museum
             </span>
           </Link>
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex flex-shrink-0 items-center gap-2 sm:gap-4">
             <LanguageToggle />
             <Link
               href="/#schedule"
-              className="rounded-md border border-gold-400 px-3 py-1.5 text-xs font-semibold text-gold-300 transition hover:bg-gold-400 hover:text-navy-950 sm:text-sm"
+              className="hidden rounded-md border border-gold-400 px-3 py-1.5 text-xs font-semibold text-gold-300 transition hover:bg-gold-400 hover:text-navy-950 sm:inline-block sm:text-sm"
             >
               {t("viewTourSchedule")}
             </Link>

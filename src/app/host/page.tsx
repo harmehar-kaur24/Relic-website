@@ -21,7 +21,7 @@ export default function HostPage() {
           </h1>
           <p className="mt-5 text-base leading-relaxed text-navy-700">
             Gurdwaras, educational institutions, and heritage organizations
-            are warmly invited to bring the Sacred Relics Tour to their
+            are warmly invited to bring these sacred relics to their
             community. Please share a few details below and the touring
             custodian&apos;s team will follow up to discuss dates, space
             requirements, and logistics.

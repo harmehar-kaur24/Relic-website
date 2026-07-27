@@ -19,7 +19,7 @@ export const translations = {
     menuCustodian: "The Custodian",
 
     heroEyebrow: "In the Custodianship of Bhai Roop Chand Ji's Descendants",
-    heroTitle: "The Living Legacy of Sri Guru Hargobind Sahib Ji: The Sacred Relics Tour",
+    heroTitle: "The Living Legacy of Sri Guru Hargobind Sahib Ji",
     heroBody:
       "For over 300 years, the descendants of Bhai Roop Chand Ji have carried the sacred shastars and artifacts bestowed by the sixth Guru. This tour brings those relics — and the story of their unbroken custodianship — to sangats across the country.",
     heroCtaSchedule: "View Tour Schedule",
@@ -88,7 +88,7 @@ export const translations = {
     menuCustodian: "ਸੇਵਾਦਾਰ",
 
     heroEyebrow: "ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜਾਂ ਦੀ ਸੇਵਾਦਾਰੀ ਵਿੱਚ",
-    heroTitle: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਜੀਵਤ ਵਿਰਾਸਤ: ਪਵਿੱਤਰ ਨਿਸ਼ਾਨੀਆਂ ਦਾ ਟੂਰ",
+    heroTitle: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਜੀਵਤ ਵਿਰਾਸਤ",
     heroBody:
       "300 ਸਾਲਾਂ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ, ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜਾਂ ਨੇ ਛੇਵੇਂ ਗੁਰੂ ਦੁਆਰਾ ਬਖਸ਼ੇ ਪਵਿੱਤਰ ਸ਼ਸਤਰ ਅਤੇ ਨਿਸ਼ਾਨੀਆਂ ਸੰਭਾਲੀਆਂ ਹਨ। ਇਹ ਟੂਰ ਉਹ ਨਿਸ਼ਾਨੀਆਂ — ਅਤੇ ਉਹਨਾਂ ਦੀ ਨਿਰੰਤਰ ਸੇਵਾਦਾਰੀ ਦੀ ਕਹਾਣੀ — ਦੇਸ਼ ਭਰ ਦੀ ਸੰਗਤ ਤੱਕ ਲੈ ਕੇ ਆਉਂਦਾ ਹੈ।",
     heroCtaSchedule: "ਟੂਰ ਸ਼ਡਿਊਲ ਵੇਖੋ",

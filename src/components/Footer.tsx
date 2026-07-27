@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center">
           <span className="font-serif text-lg text-gold-300">
-            The Sacred Relics Tour
+            Baba Bhai Roop Chand Ji Collection Museum
           </span>
           <p className="max-w-xl text-sm text-cream-100/70">
             {t("footerTagline")}
@@ -56,7 +56,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-xs text-cream-100/40">
-            &copy; 2026 The Sacred Relics Tour &middot; In Service of the Sangat
+            &copy; 2026 Baba Bhai Roop Chand Ji Collection Museum &middot; In Service of the Sangat
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import { tourStops } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Tour Dates & Visitor Guide | The Sacred Relics Tour",
+  title: "Tour Dates & Visitor Guide | Baba Bhai Roop Chand Ji Collection Museum",
 };
 
 export default function SchedulePage() {

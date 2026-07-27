@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { custodian } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "The Custodian | The Sacred Relics Tour",
+  title: "The Custodian | Baba Bhai Roop Chand Ji Collection Museum",
 };
 
 export default function CustodianPage() {

@@ -6,7 +6,7 @@ import AnimatedTimeline from "@/components/AnimatedTimeline";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Lineage & History | The Sacred Relics Tour",
+  title: "Lineage & History | Baba Bhai Roop Chand Ji Collection Museum",
 };
 
 export default function LineagePage() {

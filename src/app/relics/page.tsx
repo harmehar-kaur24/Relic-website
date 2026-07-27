@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 import { relics } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Relic Archive | The Sacred Relics Tour",
+  title: "Relic Archive | Baba Bhai Roop Chand Ji Collection Museum",
 };
 
 export default function RelicsPage() {

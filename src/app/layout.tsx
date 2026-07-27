@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "The Sacred Relics Tour | Legacy of Bhai Roop Chand Ji",
+  title: "Baba Bhai Roop Chand Ji Collection Museum",
   description:
     "A touring exhibition of the sacred shastars and relics bestowed by Sri Guru Hargobind Sahib Ji, in the continuing custodianship of the descendants of Bhai Roop Chand Ji.",
 };
