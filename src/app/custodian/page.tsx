@@ -19,9 +19,9 @@ export default function CustodianPage() {
               <div className="mx-auto w-full max-w-sm overflow-hidden rounded-xl border border-navy-700/20 shadow-sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/custodian.png"
+                  src="/custodian.jpg"
                   alt={custodian.name}
-                  className="aspect-[4/5] w-full object-cover object-top"
+                  className="block h-auto w-full"
                 />
               </div>
             </Reveal>

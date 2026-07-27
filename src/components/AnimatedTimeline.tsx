@@ -242,7 +242,7 @@ export const defaultMilestones: TimelineMilestone[] = [
     era: "Present Day",
     title: "The Relics Today, and the Villages of the Lineage",
     imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
-    image: "/custodian.png",
+    image: "/custodian.jpg",
     description: `The historic relics bestowed by the Guru Sahibaan and their households, in their pleasure at Bhai Roop Chand Ji's seva, are present today at village Bhai Rupe, district Bathinda, with his heirs, who have carried out their safekeeping generation after generation. ${custodian.name} now carries out the preservation of the relics and travels to countries abroad so that the sangat may take their darshan, while at Bagarian Bhai Ke, Bhai Jujhar Singh is carrying out the safekeeping. The descendants of Bibi Surti Ji and Bhai Roop Chand Ji are settled today in the villages of Bhai Rupa, Bhai Ki Samadh, Nehianwala Chhatti, Bhai Ki Bagarian and Bhai Ka Dialpura.`,
   },
 ];
