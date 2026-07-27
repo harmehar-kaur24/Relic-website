@@ -187,6 +187,37 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/baltohi.jpg",
   },
 
+  // --- Mata Sahiban (the Gurus' consorts) ---
+  {
+    id: "peerha-damodari",
+    title: "Peerha Sahib",
+    associatedWith: "Mata Damodari Ji",
+    category: "Personal Articles",
+    description:
+      "The Peerha Sahib (low seat) of Mata Damodari Ji, consort of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. It is preserved with the family of Bhai Roop Chand Ji at village Bhai Rupa, district Bathinda.",
+    image: "/relics/more/peerha-damodari.jpg",
+  },
+  {
+    id: "rath-ganga",
+    title: "Rath Sahib",
+    associatedWith: "Mata Ganga Ji",
+    category: "Personal Articles",
+    // The poster's heading is partly garbled; it reliably conveys only that this
+    // is from Mata Ganga Ji's rath, not which part of it. Left at that.
+    description:
+      "From the rath (chariot) of Mata Ganga Ji, kept in the collection with respect and devotion.",
+    image: "/relics/more/rath-ganga.jpg",
+  },
+  {
+    id: "katar-sahib-deva",
+    title: "Katar",
+    associatedWith: "Mata Sahib Deva Ji",
+    category: "Shastars",
+    description:
+      "The katar of Mata Sahib Deva Ji — a symbol of reverence and shakti.",
+    image: "/relics/more/katar-sahib-deva.jpg",
+  },
+
   // --- Sri Guru Angad Dev Ji ---
   {
     id: "akhari-35",

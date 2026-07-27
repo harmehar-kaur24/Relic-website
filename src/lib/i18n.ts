@@ -159,6 +159,11 @@ export const relicTranslations: Record<string, { title: string; associatedWith: 
   dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
   baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
 
+  // Mata Sahiban
+  "peerha-damodari": { title: "ਪੀੜ੍ਹਾ ਸਾਹਿਬ", associatedWith: "ਮਾਤਾ ਦਮੋਦਰੀ ਜੀ" },
+  "rath-ganga": { title: "ਰੱਥ ਸਾਹਿਬ", associatedWith: "ਮਾਤਾ ਗੰਗਾ ਜੀ" },
+  "katar-sahib-deva": { title: "ਕਟਾਰ", associatedWith: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾ ਜੀ" },
+
   // Sri Guru Angad Dev Ji
   "akhari-35": {
     title: "ਪਾਵਨ ੩੫ ਅੱਖਰੀ",
