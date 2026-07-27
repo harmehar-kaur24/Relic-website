@@ -113,7 +113,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Gobind Singh Ji",
     category: "Scriptures",
     description:
-      "A handwritten devotional volume associated with the tenth Guru, passed down within the lineage as a cherished scripture.",
+      "This Pothi Sahib belonged to Sri Guru Gobind Singh Ji Maharaj and was given to Bhai Roop Chand Ji's sons, Bhai Dharam Singh Ji and Bhai Param Singh Ji, at Takht Sri Hazur Sahib when they attained Guru Sahib's happiness.",
     image: "/relics/pothi-sahib.jpg",
   },
   {
@@ -185,6 +185,17 @@ export const relics: Relic[] = [
     description:
       "The historic baltohi (water-pot) of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. This baltohi is accorded religious significance.",
     image: "/relics/hargobind/baltohi.jpg",
+  },
+
+  // --- Sri Guru Arjan Dev Ji ---
+  {
+    id: "simran-arjan",
+    title: "Simran (Mala)",
+    associatedWith: "Sri Guru Arjan Dev Ji",
+    category: "Personal Articles",
+    description:
+      "The holy simran — the mala held in the hand of Sri Guru Arjan Dev Ji — kept in a gilded case within the collection. The sangat is invited to take its darshan and receive his gracious glance.",
+    image: "/relics/arjan/simran.jpg",
   },
 
   // --- Sri Guru Gobind Singh Ji ---
