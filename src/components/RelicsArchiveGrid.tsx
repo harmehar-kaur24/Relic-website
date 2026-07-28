@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { relicCategories, type Relic, type RelicCategory } from "@/lib/data";
 import { useLanguage } from "./LanguageProvider";
 import { localizeRelic } from "@/lib/i18n";
@@ -20,7 +19,7 @@ const FILTER_KEYS: Record<RelicCategory | "All", TranslationKey> = {
 
 export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
   const [activeFilter, setActiveFilter] = useState<RelicCategory | "All">(
-    "All"
+    "All",
   );
   const { language, t } = useLanguage();
 
@@ -29,7 +28,7 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
       activeFilter === "All"
         ? relics
         : relics.filter((relic) => relic.category === activeFilter),
-    [relics, activeFilter]
+    [relics, activeFilter],
   );
 
   return (
@@ -53,53 +52,52 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
         </div>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <AnimatePresence mode="popLayout">
-            {filtered.map((relic, index) => {
-              const localized = localizeRelic(relic, language);
-              return (
-                <motion.div
-                  key={relic.id}
-                  layout
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.35, delay: index * 0.04, ease: "easeOut" }}
-                  className="flex flex-col overflow-hidden rounded-xl bg-navy-950/40 ring-1 ring-gold-400/20"
+          {filtered.map((relic, index) => {
+            const localized = localizeRelic(relic, language);
+            return (
+              <div
+                // Keyed by filter too, so switching categories replays the fade.
+                key={`${activeFilter}-${relic.id}`}
+                className="relic-card-in flex flex-col overflow-hidden rounded-xl bg-navy-950/40 ring-1 ring-gold-400/20"
+                style={{
+                  // Cap the stagger so a large archive never leaves the last
+                  // cards waiting seconds before they appear.
+                  animationDelay: `${Math.min(index, 8) * 0.05}s`,
+                }}
+              >
+                <div
+                  data-zoom
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`Enlarge ${relic.title}`}
+                  className="flex w-full cursor-zoom-in items-center justify-center overflow-hidden bg-navy-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400"
                 >
-                  <div
-                    data-zoom
-                    role="button"
-                    tabIndex={0}
-                    aria-label={`Enlarge ${relic.title}`}
-                    className="flex w-full cursor-zoom-in items-center justify-center overflow-hidden bg-navy-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={relic.image}
-                      alt={relic.title}
-                      className="max-h-[560px] w-full object-contain transition duration-300 hover:scale-105"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col p-5">
-                    <span className="text-xs font-semibold uppercase tracking-wide text-gold-400">
-                      {localized.category}
-                    </span>
-                    <h2 className="mt-1 font-serif text-lg font-semibold text-cream-100">
-                      {localized.title}
-                    </h2>
-                    <p className="mt-1 text-base font-medium text-cream-100/80">
-                      {localized.associatedWith}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={relic.image}
+                    alt={relic.title}
+                    className="max-h-[560px] w-full object-contain transition duration-300 hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-gold-400">
+                    {localized.category}
+                  </span>
+                  <h2 className="mt-1 font-serif text-lg font-semibold text-cream-100">
+                    {localized.title}
+                  </h2>
+                  <p className="mt-1 text-base font-medium text-cream-100/80">
+                    {localized.associatedWith}
+                  </p>
+                  {relic.description && (
+                    <p className="mt-2 text-sm leading-relaxed text-cream-100/75">
+                      {relic.description}
                     </p>
-                    {relic.description && (
-                      <p className="mt-2 text-sm leading-relaxed text-cream-100/75">
-                        {relic.description}
-                      </p>
-                    )}
-                  </div>
-                </motion.div>
-              );
-            })}
-          </AnimatePresence>
+                  )}
+                </div>
+              </div>
+            );
+          })}
 
           {filtered.length === 0 && (
             <p className="col-span-full py-10 text-center text-sm text-cream-100/60">
