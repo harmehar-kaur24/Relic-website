@@ -17,11 +17,25 @@ export default function ScheduleSection() {
             {t("scheduleEyebrow")}
           </p>
           <h2 className="mt-3 font-serif text-3xl font-semibold text-navy-950 sm:text-4xl">
-            {t("scheduleHeading")}
+            {upcoming.length === 0
+              ? t("scheduleNoDatesHeading")
+              : t("scheduleHeading")}
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+        {upcoming.length === 0 && (
+          <Reveal delay={0.1} className="mx-auto mt-6 max-w-2xl text-center">
+            <p className="text-base leading-relaxed text-navy-700">
+              {t("scheduleNoDatesBody")}
+            </p>
+          </Reveal>
+        )}
+
+        <div
+          className={
+            upcoming.length === 0 ? "hidden" : "mt-12 grid gap-6 sm:grid-cols-3"
+          }
+        >
           {upcoming.map((stop, index) => (
             <Reveal key={stop.city} delay={index * 0.1}>
               <div className="rounded-xl border border-navy-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">

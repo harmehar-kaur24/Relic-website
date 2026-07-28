@@ -22,20 +22,28 @@ export default function SchedulePage() {
             All Tour Dates &amp; Visitor Guide
           </h1>
           <p className="mt-5 text-base leading-relaxed text-navy-700">
-            Below is the full, current schedule of the tour. Stops are added
-            regularly as new sangats and institutions come forward to host —
-            check back for updates or reach out to request a visit.
+            {tourStops.length === 0
+              ? "There are no confirmed tour dates at the moment. New stops are announced as sangats and institutions come forward to host — please check back for updates, or reach out to request a visit."
+              : "Below is the full, current schedule of the tour. Stops are added regularly as new sangats and institutions come forward to host — check back for updates or reach out to request a visit."}
           </p>
         </Reveal>
 
-        <Reveal className="mx-auto max-w-4xl px-4 sm:px-6">
-          <PlaceholderBox
-            label="[Map Placeholder: Interactive Tour Route Map]"
-            aspect="aspect-[16/7]"
-          />
-        </Reveal>
+        {tourStops.length > 0 && (
+          <Reveal className="mx-auto max-w-4xl px-4 sm:px-6">
+            <PlaceholderBox
+              label="[Map Placeholder: Interactive Tour Route Map]"
+              aspect="aspect-[16/7]"
+            />
+          </Reveal>
+        )}
 
-        <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+        <section
+          className={
+            tourStops.length === 0
+              ? "hidden"
+              : "mx-auto max-w-4xl px-4 py-12 sm:px-6"
+          }
+        >
           <h2 className="font-serif text-2xl font-semibold text-navy-950">
             Full Schedule
           </h2>

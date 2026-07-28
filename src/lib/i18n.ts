@@ -42,6 +42,9 @@ export const translations = {
 
     scheduleEyebrow: "Tour Dates, Map & Maryada",
     scheduleHeading: "Upcoming Stops on the Tour",
+    scheduleNoDatesHeading: "Dates To Be Announced",
+    scheduleNoDatesBody:
+      "There are no confirmed tour dates at the moment. New stops are announced as sangats and institutions come forward to host — please check back, or get in touch to request a visit.",
     nextStopBadge: "Next Stop",
     maryadaHeading: "Visitor Etiquette (Maryada)",
     maryadaHead: "Please cover your head before entering.",
@@ -111,6 +114,9 @@ export const translations = {
 
     scheduleEyebrow: "ਟੂਰ ਮਿਤੀਆਂ, ਨਕਸ਼ਾ ਅਤੇ ਮਰਯਾਦਾ",
     scheduleHeading: "ਟੂਰ ਦੇ ਆਉਣ ਵਾਲੇ ਸਟਾਪ",
+    scheduleNoDatesHeading: "ਮਿਤੀਆਂ ਦਾ ਐਲਾਨ ਹੋਣਾ ਬਾਕੀ ਹੈ",
+    scheduleNoDatesBody:
+      "ਇਸ ਵੇਲੇ ਕੋਈ ਪੱਕੀ ਟੂਰ ਮਿਤੀ ਨਹੀਂ ਹੈ। ਜਿਵੇਂ-ਜਿਵੇਂ ਸੰਗਤਾਂ ਅਤੇ ਸੰਸਥਾਵਾਂ ਮੇਜ਼ਬਾਨੀ ਲਈ ਅੱਗੇ ਆਉਂਦੀਆਂ ਹਨ, ਨਵੇਂ ਸਟਾਪਾਂ ਦਾ ਐਲਾਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ — ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਵੇਖੋ, ਜਾਂ ਦਰਸ਼ਨ ਦੀ ਬੇਨਤੀ ਲਈ ਸੰਪਰਕ ਕਰੋ।",
     nextStopBadge: "ਅਗਲਾ ਸਟਾਪ",
     maryadaHeading: "ਦਰਸ਼ਕ ਮਰਯਾਦਾ",
     maryadaHead: "ਅੰਦਰ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਸਿਰ ਢਕੋ।",

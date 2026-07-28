@@ -16,48 +16,13 @@ export type TourStop = {
   status: "next" | "upcoming";
 };
 
-export const tourStops: TourStop[] = [
-  {
-    city: "Fresno, CA",
-    region: "Central Valley",
-    venue: "Gurdwara Sahib Fresno",
-    date: "July 12, 2026",
-    timings: "10:00 AM – 6:00 PM",
-    status: "next",
-  },
-  {
-    city: "Yuba City, CA",
-    region: "Sacramento Valley",
-    venue: "Tierra Buena Gurdwara",
-    date: "July 26, 2026",
-    timings: "9:00 AM – 5:00 PM",
-    status: "upcoming",
-  },
-  {
-    city: "Bakersfield, CA",
-    region: "Kern County",
-    venue: "Guru Nanak Foundation Gurdwara",
-    date: "August 9, 2026",
-    timings: "10:00 AM – 6:00 PM",
-    status: "upcoming",
-  },
-  {
-    city: "Phoenix, AZ",
-    region: "Maricopa County",
-    venue: "Guru Nanak Dwara Ashram",
-    date: "August 23, 2026",
-    timings: "10:00 AM – 5:00 PM",
-    status: "upcoming",
-  },
-  {
-    city: "El Paso, TX",
-    region: "West Texas",
-    venue: "Sikh Center of El Paso",
-    date: "September 6, 2026",
-    timings: "9:00 AM – 4:00 PM",
-    status: "upcoming",
-  },
-];
+/**
+ * No tour dates are currently announced. Leave this empty rather than
+ * filling it with examples — the header banner, the homepage schedule
+ * section and /schedule all show an 'awaiting announcement' state when
+ * it is empty, and never advertise a date that does not exist.
+ */
+export const tourStops: TourStop[] = [];
 
 export const relicCategories = [
   "Shastars",
