@@ -52,18 +52,18 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
         </div>
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((relic, index) => {
+          {filtered.map((relic) => {
             const localized = localizeRelic(relic, language);
             return (
               <div
-                // Keyed by filter too, so switching categories replays the fade.
-                key={`${activeFilter}-${relic.id}`}
-                className="relic-card-in flex flex-col overflow-hidden rounded-xl bg-navy-950/40 ring-1 ring-gold-400/20"
-                style={{
-                  // Cap the stagger so a large archive never leaves the last
-                  // cards waiting seconds before they appear.
-                  animationDelay: `${Math.min(index, 8) * 0.05}s`,
-                }}
+                key={relic.id}
+                // No entrance animation here on purpose. Both a framer-motion
+                // variant and a CSS keyframe with `animation-fill-mode: both`
+                // left cards stranded at opacity:0 when the animation did not
+                // run to completion, hiding the relics entirely. A gallery of
+                // sacred artifacts must never depend on an animation finishing
+                // in order to be visible.
+                className="flex flex-col overflow-hidden rounded-xl bg-navy-950/40 ring-1 ring-gold-400/20"
               >
                 <div
                   data-zoom

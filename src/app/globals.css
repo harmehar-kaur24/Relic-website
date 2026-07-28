@@ -64,36 +64,3 @@ section[id] {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-
-/*
- * Entrance fade for relic cards.
- *
- * Deliberately CSS rather than framer-motion: the grid previously used
- * <AnimatePresence mode="popLayout"> with a `layout` prop on every card, and
- * with 25 cards the layout scheduler stalled — cards stayed pinned at the
- * initial opacity:0 and the relics were invisible.
- *
- * The important property here is that it fails VISIBLE. The element's resting
- * state is opacity:1; the animation only fades *in* from 0. If animations are
- * disabled, interrupted, or unsupported, the card still shows.
- */
-@keyframes relic-card-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.relic-card-in {
-  animation: relic-card-in 0.45s ease-out both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .relic-card-in {
-    animation: none;
-  }
-}
