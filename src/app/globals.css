@@ -23,8 +23,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter), var(--font-gurmukhi);
+  --font-serif: var(--font-playfair), var(--font-gurmukhi);
 
   --color-navy-950: var(--color-navy-950);
   --color-navy-900: var(--color-navy-900);
@@ -48,7 +48,12 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-inter),
+    var(--font-gurmukhi),
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
 /* Offset anchored sections so content clears the sticky header */
@@ -63,4 +68,14 @@ section[id] {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/*
+ * Latin fonts are listed first so English keeps Inter/Playfair; the browser
+ * falls through to Noto Sans Gurmukhi per-character for Gurmukhi codepoints,
+ * which it cannot render otherwise. Explicit rule for anything tagged as
+ * Punjabi so headings in the serif face resolve too.
+ */
+[lang="pa"] {
+  font-family: var(--font-gurmukhi), var(--font-inter), sans-serif;
 }
