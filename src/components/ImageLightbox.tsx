@@ -50,39 +50,64 @@ function ZoomPane({ src, alt }: { src: string; alt: string }) {
   const frameRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
   const [zoomed, setZoomed] = useState(false);
-  const [origin, setOrigin] = useState({ x: 50, y: 50 });
+  const pending = useRef<{ x: number; y: number } | null>(null);
+  const frame = useRef<number | null>(null);
 
   /**
-   * Cursor position as a percentage of the image's *layout* box, used as the
-   * transform-origin so the point under the cursor stays put.
+   * Write the transform-origin straight to the DOM, at most once per frame.
    *
-   * Measured from the frame — which is never transformed — plus the image's
-   * offsetWidth/offsetHeight. Deliberately NOT getBoundingClientRect() on the
-   * image: once scaled, that reports the magnified box, which fed numbers
-   * ZOOM_SCALE times too large back into the next pan and made it lurch.
-   * offsetWidth/Height are layout values and ignore the transform.
+   * Panning deliberately does NOT go through React state: a setState per
+   * mousemove re-rendered the whole pane on every pixel of cursor movement,
+   * which is what made the zoom feel laggy. transform-origin is also kept out
+   * of the CSS transition — animating it meant each move restarted a
+   * 0.14s tween, so the image trailed the cursor instead of tracking it.
+   *
+   * Measured from the frame (never transformed) plus offsetWidth/offsetHeight
+   * (layout values, unaffected by the scale we apply). Using
+   * getBoundingClientRect on the image would report the magnified box and feed
+   * back numbers ZOOM_SCALE times too large.
    */
-  const originFromCursor = (clientX: number, clientY: number) => {
-    const frame = frameRef.current;
+  const flushOrigin = useCallback(() => {
+    frame.current = null;
+    const pt = pending.current;
     const img = imgRef.current;
-    if (!frame || !img) return;
-    const f = frame.getBoundingClientRect();
+    const box = frameRef.current;
+    if (!pt || !img || !box) return;
+    const f = box.getBoundingClientRect();
     const w = img.offsetWidth;
     const h = img.offsetHeight;
     if (!w || !h) return;
-    // The image is centred in the frame, so derive its untransformed corner.
     const left = f.left + (f.width - w) / 2;
     const top = f.top + (f.height - h) / 2;
-    const pct = (v: number) => Math.min(100, Math.max(0, v * 100));
-    setOrigin({ x: pct((clientX - left) / w), y: pct((clientY - top) / h) });
-  };
+    const pct = (v: number) => Math.min(100, Math.max(0, v * 100)).toFixed(2);
+    img.style.transformOrigin = `${pct((pt.x - left) / w)}% ${pct(
+      (pt.y - top) / h
+    )}%`;
+  }, []);
+
+  const queueOrigin = useCallback(
+    (x: number, y: number) => {
+      pending.current = { x, y };
+      if (frame.current === null) {
+        frame.current = requestAnimationFrame(flushOrigin);
+      }
+    },
+    [flushOrigin]
+  );
+
+  useEffect(
+    () => () => {
+      if (frame.current !== null) cancelAnimationFrame(frame.current);
+    },
+    []
+  );
 
   return (
     <div
       ref={frameRef}
       className="flex h-full w-full items-center justify-center"
       onMouseMove={(e) => {
-        if (zoomed) originFromCursor(e.clientX, e.clientY);
+        if (zoomed) queueOrigin(e.clientX, e.clientY);
       }}
     >
       <span className="pointer-events-none absolute bottom-6 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-navy-950/80 px-3 py-1.5 text-xs font-medium text-cream-100/80">
@@ -99,19 +124,19 @@ function ZoomPane({ src, alt }: { src: string; alt: string }) {
           e.stopPropagation();
           if (zoomed) {
             setZoomed(false);
-            setOrigin({ x: 50, y: 50 });
+            // Back to centre; the default origin is 50% 50%.
+            if (imgRef.current) imgRef.current.style.transformOrigin = "";
           } else {
-            originFromCursor(e.clientX, e.clientY);
+            pending.current = { x: e.clientX, y: e.clientY };
+            flushOrigin();
             setZoomed(true);
           }
         }}
         style={{
-          transformOrigin: `${origin.x}% ${origin.y}%`,
           transform: `scale(${zoomed ? ZOOM_SCALE : 1})`,
-          // Short and eased: long enough to feel smooth, short enough that
-          // panning still tracks the cursor closely.
-          transition:
-            "transform 0.14s ease-out, transform-origin 0.14s ease-out",
+          // Only the scale eases, so entering and leaving zoom look smooth
+          // while panning stays pinned to the cursor with no tween.
+          transition: "transform 0.2s ease-out",
           willChange: "transform",
         }}
         className={`max-h-full max-w-full select-none rounded-lg object-contain shadow-2xl ${

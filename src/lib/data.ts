@@ -5,6 +5,10 @@ export const custodian = {
     "Of the family of Bhai Balvir Singh Ji, the 14th-generation descendants of Bhai Roop Chand Ji from village Bhai Roopa",
   instagram: "https://www.instagram.com/bhai_jaskaran_singh_g_official",
   youtube: "https://www.youtube.com/@BhaiJaskaransingh",
+  /** Digits only, international format — used to build the wa.me link. */
+  whatsapp: "917696670981",
+  whatsappDisplay: "+91 76966 70981",
+  email: "karan10cj@gmail.com",
 };
 
 export type TourStop = {

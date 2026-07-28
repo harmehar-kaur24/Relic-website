@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import { custodian } from "@/lib/data";
+import { useLanguage } from "./LanguageProvider";
 
 export type TimelineMilestone = {
   era: string;
@@ -219,7 +220,7 @@ export const defaultMilestones: TimelineMilestone[] = [
     title: "'Gaddian da Dhani' — Master of the Carts",
     imageLabel: "[Photo Placeholder: Bullock carts / the Beas crossing]",
     description:
-      "By local tradition it is commonly held that Bhai Roop Chand Ji would go twice a year to the Guru's darbar, carrying the offering of dasvandh from the Malwa. The road was one of extreme difficulty: several streams ran across the way, the Sutlej river also came in the path, and on the road to Sri Amritsar the Beas had to be crossed as well. Once, several carts were loaded with the offering and travelling to Sri Amritsar, and crossing the Beas on the way proved hard. Everyone made a request before Bhai Roop Chand Ji to remove this difficulty. Bhai Sahib Ji made ardas, set his own cart at the front, and told them all to come behind. All of them reached the Guru's darbar safe and sound with the offering. When someone recounted this to the Guru, he gave Bhai Roop Chand Ji, in the form of a blessing, the words \"Gaddian de Dhani\" — master of the carts. To this day the tradition holds in the area around village Bhai Rupa that before setting a cart, tractor or trolley in motion, it is first said: \"Mann utte beliya, Bhai Roop Chand Gaddian de Dhani nu\" — and only then is the vehicle started.",
+      'By local tradition it is commonly held that Bhai Roop Chand Ji would go twice a year to the Guru\'s darbar, carrying the offering of dasvandh from the Malwa. The road was one of extreme difficulty: several streams ran across the way, the Sutlej river also came in the path, and on the road to Sri Amritsar the Beas had to be crossed as well. Once, several carts were loaded with the offering and travelling to Sri Amritsar, and crossing the Beas on the way proved hard. Everyone made a request before Bhai Roop Chand Ji to remove this difficulty. Bhai Sahib Ji made ardas, set his own cart at the front, and told them all to come behind. All of them reached the Guru\'s darbar safe and sound with the offering. When someone recounted this to the Guru, he gave Bhai Roop Chand Ji, in the form of a blessing, the words "Gaddian de Dhani" — master of the carts. To this day the tradition holds in the area around village Bhai Rupa that before setting a cart, tractor or trolley in motion, it is first said: "Mann utte beliya, Bhai Roop Chand Gaddian de Dhani nu" — and only then is the vehicle started.',
     source: "Gi. Gurdit Singh",
   },
   {
@@ -233,7 +234,8 @@ export const defaultMilestones: TimelineMilestone[] = [
   {
     era: "Early 1800s",
     title: "Royal Decree from Maharaja Ranjit Singh Ji",
-    imageLabel: "[Photo Placeholder: Original Farman of Maharaja Ranjit Singh Ji]",
+    imageLabel:
+      "[Photo Placeholder: Original Farman of Maharaja Ranjit Singh Ji]",
     image: "/relics/farman.jpg",
     description:
       "During the height of the Sikh Empire, Maharaja Ranjit Singh Ji issued an official royal decree — a Farman — acknowledging the historical reverence and custodianship of Bhai Roop Chand Ji's descendants.",
@@ -244,6 +246,200 @@ export const defaultMilestones: TimelineMilestone[] = [
     imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
     image: "/custodian.jpg",
     description: `The historic relics bestowed by the Guru Sahibaan and their households, in their pleasure at Bhai Roop Chand Ji's seva, are present today at village Bhai Rupe, district Bathinda, with his heirs, who have carried out their safekeeping generation after generation. ${custodian.name} now carries out the preservation of the relics and travels to countries abroad so that the sangat may take their darshan, while at Bagarian Bhai Ke, Bhai Jujhar Singh is carrying out the safekeeping. The descendants of Bibi Surti Ji and Bhai Roop Chand Ji are settled today in the villages of Bhai Rupa, Bhai Ki Samadh, Nehianwala Chhatti, Bhai Ki Bagarian and Bhai Ka Dialpura.`,
+  },
+];
+/** Punjabi timeline. Wording follows the family's own Punjabi account
+ *  rather than being translated back from the English above. */
+export const milestonesPa: TimelineMilestone[] = [
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਵੱਡਾ ਘਰ ਦੇ ਬਾਬਾ ਆਕਲ ਜੀ ਨੂੰ ਸਿੱਖੀ ਦੀ ਦਾਤ",
+    imageLabel: "[Photo Placeholder: Village Wadda Ghar, Moga]",
+    description:
+      "ਵੱਡਾ ਘਰ ਪੰਜਾਬ ਦੇ ਜ਼ਿਲ੍ਹਾ ਅਤੇ ਤਹਿਸੀਲ ਮੋਗਾ ਦਾ ਪ੍ਰਸਿੱਧ ਪਿੰਡ ਹੈ, ਮੋਗਾ ਨਗਰ ਤੋਂ ਲੱਗਭਗ ੨੦ ਕਿਲੋਮੀਟਰ ਦੱਖਣ-ਪੱਛਮ ਵੱਲ ਅਤੇ ਰੇਲਵੇ ਸਟੇਸ਼ਨ ਡਗਰੂ ਤੋਂ ਸੱਤ ਮੀਲ ਦੱਖਣ-ਪੱਛਮ ਵੱਲ। ਗੁਰੂ-ਘਰ ਦੇ ਪ੍ਰੇਮੀ ਬਾਬਾ ਆਕਲ ਜੀ ਇਸ ਪਿੰਡ ਦੇ ਵਸਨੀਕ ਸਨ। ਗਿਆਨੀ ਕਰਤਾਰ ਸਿੰਘ ਕਲਾਸਵਾਲੀਆ ਦੱਸਦੇ ਹਨ ਕਿ ਬਾਬਾ ਆਕਲ ਜੀ ਨੇ ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਤੋਂ ਸਿੱਖੀ ਦੀ ਦਾਤ ਪ੍ਰਾਪਤ ਕੀਤੀ ਸੀ ਅਤੇ ਆਪਣੇ ਘਰ ਨੂੰ ਸਿੱਖੀ ਦਾ ਕੇਂਦਰ ਬਣਾਇਆ ਹੋਇਆ ਸੀ।",
+  },
+  {
+    era: "ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦੇ ਜਨਮ ਤੋਂ ਪਹਿਲਾਂ",
+    title: "ਆਕਲ-ਵਾੜੀ ਅਤੇ ਵੱਡਾ ਘਰ ਦਾ ਨਾਮ",
+    imageLabel: "[Photo Placeholder: Aakal-Waari site]",
+    description:
+      "ਬਾਬਾ ਆਕਲ ਜੀ ਨੇ ਪਿੰਡ ਦੇ ਬਾਹਰ ਇੱਕ ਬਹੁਤ ਵੱਡਾ ਵਾੜਾ ਵਲਿਆ ਹੋਇਆ ਸੀ, ਜਿਸ ਵਿੱਚ ਉਨ੍ਹਾਂ ਨੇ ਬਹੁਤ ਸਾਰੀਆਂ ਗਊਆਂ ਰੱਖੀਆਂ ਹੋਈਆਂ ਸਨ। ਉਹ ਇਨ੍ਹਾਂ ਦਾ ਦੁੱਧ ਇਕੱਠਾ ਕਰ ਕੇ ਲੋੜਵੰਦਾਂ ਨੂੰ ਛਕਾ ਕੇ ਖ਼ੁਸ਼ੀ ਪ੍ਰਾਪਤ ਕਰਦੇ ਸਨ। ਲੋਕ ਇਸ ਵਾੜੇ ਨੂੰ ‘ਆਕਲ-ਵਾੜੀ’ ਕਹਿੰਦੇ ਸਨ। ਵਿਦਵਾਨਾਂ ਦਾ ਵਿਚਾਰ ਹੈ ਕਿ ਇਸੇ ਆਕਲ-ਵਾੜੀ ਦਾ ਨਾਂ ਬਦਲ ਕੇ ਵੱਡਾ ਘਰ ਮਸ਼ਹੂਰ ਹੋਇਆ। ਕੁਝ ਵਿਦਵਾਨ ਮੰਨਦੇ ਹਨ ਕਿ ਬਾਹਰੋਂ ਆਏ ਸਾਧੂ-ਫਕੀਰਾਂ ਨੇ ਭਾਈ ਆਕਲ ਜੀ ਦੀ ਸੇਵਾ-ਭਾਵਨਾ ਤੋਂ ਪ੍ਰਭਾਵਿਤ ਹੋ ਕੇ ਇਸ ਨੂੰ ‘ਵੱਡਾ ਘਰ’ ਕਹਿਣਾ ਸ਼ੁਰੂ ਕੀਤਾ।",
+  },
+  {
+    era: "ਬਿਕ੍ਰਮੀ ੧੬੫੧–੫੯ (ਲੱਗਭਗ ੧੫੯੪–੧੬੦੨ ਈ:)",
+    title: "ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦਾ ਜਨਮ",
+    imageLabel: "[Photo Placeholder: Wadda Ghar]",
+    description:
+      "ਬਾਬਾ ਆਕਲ ਜੀ ਦੇ ਘਰ ਸੁੰਦਰ ਪੁੱਤਰੀ ਦਾ ਜਨਮ ਹੋਇਆ, ਤਾਂ ਬਾਬਾ ਜੀ ਨੇ ਉਸ ਦਾ ਨਾਂ ‘ਸੁਰਤੀ’ ਰੱਖਿਆ। ਭਾਈ ਸੰਤੋਖ ਸਿੰਘ ‘ਸ੍ਰੀ ਗੁਰ ਪ੍ਰਤਾਪ ਸੂਰਜ ਗ੍ਰੰਥ’ ਵਿੱਚ ਇਸ ਜਨਮ ਦਾ ਜ਼ਿਕਰ ਕਰਦੇ ਹਨ, ਅਤੇ ਦੱਸਦੇ ਹਨ ਕਿ ਬਾਬਾ ਜੀ ਦੇ ਮਨ ਨੂੰ ਗੁਰਮਤਿ ਵਿੱਚ ਬਿਸਰਾਮ ਸੀ।",
+  },
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ ਦੀ ਸੇਵਾ ਵਿੱਚ",
+    imageLabel: "[Photo Placeholder: Sri Harmandir Sahib]",
+    description:
+      "ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਤੋਂ ਬਾਅਦ ਬਾਬਾ ਆਕਲ ਜੀ ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ ਦੀ ਸੇਵਾ ਵਿੱਚ ਹਾਜ਼ਰ ਰਹੇ। ਬਾਬਾ ਜੀ ਦਸਾਂ ਨਹੁੰਆਂ ਦੀ ਕਿਰਤ ਕਮਾਈ ਵਿੱਚੋਂ ਗੁਰੂ ਜੀ ਪਾਸ ਸ਼ਰਧਾ ਨਾਲ ਭੇਟਾ ਲੈ ਕੇ ਜਾਂਦੇ ਅਤੇ ਗੁਰੂ-ਘਰ ਦੀਆਂ ਖ਼ੁਸ਼ੀਆਂ ਪ੍ਰਾਪਤ ਕਰਦੇ ਸਨ।",
+  },
+  {
+    era: "ਉਨ੍ਹਾਂ ਦੇ ਮੁਢਲੇ ਸਾਲ",
+    title: "ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਪੂਰਨ ਨਿੱਤਨੇਮੀ ਬਣੇ",
+    imageLabel: "[Photo Placeholder: Gurbani manuscript]",
+    description:
+      "ਘਰੇਲੂ ਮਾਹੌਲ ਦਾ ਬੱਚੀ ਦੇ ਜੀਵਨ ‘ਤੇ ਪ੍ਰਭਾਵ ਪੈਣਾ ਸੁਭਾਵਿਕ ਹੀ ਸੀ। ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਪੂਰਨ ਨਿੱਤਨੇਮੀ ਬਣ ਗਏ ਅਤੇ ਗੁਰਮਤਿ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਧਾਰਨ ਕਰ ਲਿਆ। ਉਹ ਹਰ ਸਮੇਂ ਗੁਰਬਾਣੀ ਦਾ ਅਭਿਆਸ ਕਰਦੇ ਅਤੇ ਗੁਰੂ ਸਾਹਿਬਾਨ ਦੀਆਂ ਸਿੱਖਿਆਵਾਂ ਨਾਲ ਜੁੜਨ ਦਾ ਜਤਨ ਕਰਦੇ ਰਹਿੰਦੇ। ਇਸ ਅਭਿਆਸ ਨਾਲ ਗੁਰਮਤਿ ਦੇ ਸੰਸਕਾਰ ਉਨ੍ਹਾਂ ਦੇ ਜੀਵਨ ਵਿੱਚ ਪ੍ਰਪੱਕ ਹੋ ਗਏ ਅਤੇ ਉਹ ਪਰਿਵਾਰ ਨਾਲ ਗੁਰਮਤਿ ਅਨੁਸਾਰ ਸੇਵਾ ਵਿੱਚ ਰੁੱਝੇ ਰਹਿੰਦੇ ਸਨ।",
+  },
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਵੱਡਾ ਘਰ ਆਮਦ",
+    imageLabel: "[Photo Placeholder: Gurdwara Manji Sahib Patshahi Chhevin]",
+    description:
+      "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਡਰੌਲੀ ਪਿੰਡ ਤੋਂ ਚੱਲ ਕੇ ਸੈਨਾ ਸਮੇਤ ਘੋੜੇ ‘ਤੇ ਸਵਾਰ ਹੋ ਕੇ ‘ਵੱਡਾ ਘਰ’ ਪਿੰਡ ਦੀ ਧਰਤੀ ਨੂੰ ਭਾਗ ਲਾਏ। ਗੁਰੂ ਜੀ ਨੇ ਇਸ ਪਿੰਡ ਵਿੱਚ ਪੰਜ ਦਿਨ ਨਿਵਾਸ ਕੀਤਾ ਅਤੇ ਫਿਰ ਮਾਲਵਾ ਖੇਤਰ ਵਿੱਚ ਸਿੱਖੀ ਦੇ ਪ੍ਰਚਾਰ ਲਈ ਗਏ। ਪਿੰਡ ਦੇ ਚੌਧਰੀ ਰਾਇ ਭਾਗਮੱਲ ਅਤੇ ਬਾਬਾ ਆਕਲ ਜੀ ਨੇ ਸੰਗਤ ਨਾਲ ਮਿਲ ਕੇ ਗੁਰੂ ਜੀ ਦੀ ਬਹੁਤ ਸੇਵਾ ਕੀਤੀ। ਗੁਰੂ ਜੀ ਦੀ ਆਮਦ ਦੀ ਯਾਦ ਵਿੱਚ ਗੁਰਦੁਆਰਾ ਮੰਜੀ ਸਾਹਿਬ ਪਾਤਸ਼ਾਹੀ ਛੇਵੀਂ ਸੁਸ਼ੋਭਿਤ ਹੈ; ਵਰਤਮਾਨ ਸੁੰਦਰ ਇਮਾਰਤ ਸੰਨ ੧੯੨੭ ਈ: ਵਿੱਚ ਉਸਾਰੀ ਗਈ।",
+  },
+  {
+    era: "ਵਿਆਹ ਤੋਂ ਪਹਿਲਾਂ",
+    title: "ਸਖ਼ੀ ਸਰਵਰੀਏ ਪਰਿਵਾਰ ਵਿੱਚ ਰਿਸ਼ਤਾ",
+    imageLabel: "[Photo Placeholder: Village Tuklani]",
+    description:
+      "ਬਾਬਾ ਆਕਲ ਜੀ ਨੇ ਆਪਣੀ ਪੁੱਤਰੀ ਨੂੰ ਵਰ ਯੋਗ ਸਮਝ ਕੇ ਵਰ ਦੀ ਭਾਲ ਲਈ ਪ੍ਰੋਹਿਤ ਨੂੰ ਕਿਹਾ। ਪ੍ਰੋਹਿਤ ਨੇ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਲਈ ਤੁਕਲਾਨੀ ਦੇ ਵਸਨੀਕ ਬਾਬੇ ਸਾਦੇ ਦੇ ਪੋਤਰੇ ਭਾਈ ਸਾਧੂ ਜੀ ਨਾਲ ਰਿਸ਼ਤਾ ਪੱਕਾ ਕਰ ਦਿੱਤਾ। ਬਾਬੇ ਸਾਦੇ ਦਾ ਪਰਿਵਾਰ ਸੁਲਤਾਨ ਸਖ਼ੀ ਸਰਵਰ ਨੂੰ ਮੰਨਦਾ ਸੀ — ਇੱਕ ਮੁਸਲਮਾਨ ਪੀਰ, ਜਿਸ ਦਾ ਹਿੰਦੂ ਅਤੇ ਮੁਸਲਮਾਨ ਦੋਵੇਂ ਸਤਿਕਾਰ ਕਰਦੇ ਸਨ ਅਤੇ ਜਿਸ ਨੂੰ ਸੇਵਕ ਅਨੇਕਾਂ ਨਾਂਵਾਂ ਨਾਲ ਯਾਦ ਕਰਦੇ ਸਨ।",
+  },
+  {
+    era: "ਵਿਆਹ ਤੋਂ ਪਹਿਲਾਂ",
+    title: "ਪਿਤਾ ਦੀ ਚਿੰਤਾ ਅਤੇ ਸਿੱਖਿਆ",
+    imageLabel: "[Photo Placeholder: Sri Gur Pratap Suraj Granth]",
+    description:
+      "ਜਦੋਂ ਬਾਬਾ ਆਕਲ ਜੀ ਨੂੰ ਪਤਾ ਲੱਗਾ ਕਿ ਬੀਬੀ ਸੁਰਤੀ ਦਾ ਹੋਣ ਵਾਲਾ ਸਹੁਰਾ ਪਰਿਵਾਰ ਸਖ਼ੀ ਸਰਵਰੀਆ ਹੈ, ਤਾਂ ਉਨ੍ਹਾਂ ਦੇ ਮਨ ਵਿੱਚ ਬਹੁਤ ਚਿੰਤਾ ਹੋਈ। ਉਹ ਆਪਣੀ ਬੱਚੀ ਦੇ ਸਿੱਖੀ ਸਿਦਕ ਦੀ ਦ੍ਰਿੜ੍ਹਤਾ ਲਈ ਅਕਾਲ ਪੁਰਖ ਅੱਗੇ ਅਰਦਾਸਾਂ ਕਰਨ ਲੱਗੇ। ਭਾਈ ਸੰਤੋਖ ਸਿੰਘ ਲਿਖਦੇ ਹਨ ਕਿ ਉਨ੍ਹਾਂ ਨੇ ਧੀ ਨੂੰ ਸਮਝਾਇਆ — ਤੇਰਾ ਸਹੁਰਾ ਘਰ ਸੁਲਤਾਨੀ ਹੈ, ਤੂੰ ਉਸ ਨੂੰ ਕਦੇ ਨਾ ਮਾਨਣਾ, ਸਤਿਗੁਰੂ ਨੂੰ ਮਨ ਲਾ ਕੇ ਮਾਨਣਾ। ਗਿਆਨੀ ਕਰਤਾਰ ਸਿੰਘ ਕਲਾਸਵਾਲੀਆ ਵੀ ਇਹੀ ਸਿੱਖਿਆ ਲਿਖਦੇ ਹਨ — ਸਭ ਕੁਝ ਉਨ੍ਹਾਂ ਨਾਲ ਮਿਲ ਕੇ ਕਰੀਂ, ਪਰ ਸਰਵਰੀ ਵਿੱਚ ਸਿੱਖੀ ਨਾ ਭੁਲਾਈਂ; ਸਤਿਗੁਰੂ ਦੀ ਯਾਦ ਚਿੱਤ ਅੰਦਰ ਰੱਖੀਂ, ਗੁਰਬਾਣੀ ਮਨੋਂ ਨਾ ਭੁਲਾਈਂ।",
+  },
+  {
+    era: "ਨਿਸਚਿਤ ਮਿਤੀ ‘ਤੇ",
+    title: "ਵਿਆਹ ਅਤੇ ਡੋਲੀ ਦੀ ਰਵਾਨਗੀ",
+    imageLabel: "[Photo Placeholder: Wadda Ghar to Tuklani route]",
+    description:
+      "ਨਿਸਚਿਤ ਮਿਤੀ ‘ਤੇ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦਾ ਵਿਆਹ ਤੁਕਲਾਨੀ ਦੇ ਵਸਨੀਕ ਭਾਈ ਸਾਧੂ ਜੀ ਨਾਲ ਹੋ ਗਿਆ। ਵਿਆਹ ਤੋਂ ਉਪਰੰਤ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਨੂੰ ਡੋਲੀ ਵਿੱਚ ਬਿਠਾ ਕੇ ਵੱਡਾ ਘਰ ਤੋਂ ਤੁਕਲਾਨੀ ਲਈ ਰਵਾਨਾ ਕੀਤਾ ਗਿਆ।",
+  },
+  {
+    era: "ਤੁਕਲਾਨੀ ਦੇ ਰਾਹ ਵਿੱਚ",
+    title: "ਡਰੌਲੀ ਵਿਖੇ ਕੀਰਤਨ ਦੀ ਅਵਾਜ਼",
+    imageLabel: "[Photo Placeholder: Darauli Bhai Ki]",
+    description:
+      "ਜਾਂਦੇ ਸਮੇਂ ਜਦੋਂ ਡੋਲੀ ਡਰੌਲੀ ਪਿੰਡ ਪਾਸ ਪਹੁੰਚੀ ਤਾਂ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦੇ ਕੰਨਾਂ ਵਿੱਚ ਕੀਰਤਨ ਦੀ ਮਿੱਠੀ ਅਵਾਜ਼ ਪਈ। ਬੀਬੀ ਜੀ ਨੇ ਕਹਾਰਾਂ ਨੂੰ ਇਸ ਬਾਰੇ ਪਤਾ ਕਰਨ ਲਈ ਕਿਹਾ ਤਾਂ ਪਤਾ ਲੱਗਾ ਕਿ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਡਰੌਲੀ ਆਪਣੇ ਸਾਂਢੂ ਭਾਈ ਸਾਂਈ ਦਾਸ ਜੀ ਪਾਸ ਆਏ ਹੋਏ ਹਨ ਅਤੇ ਉੱਥੇ ਦੀਵਾਨ ਲਗਾਇਆ ਹੋਇਆ ਹੈ। ਕੀਰਤਨ ਦੀ ਅਵਾਜ਼ ਸੁਣ ਕੇ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦਾ ਮਨ ਗੁਰੂ-ਚਰਨਾਂ ਵਿੱਚ ਜੁੜ ਗਿਆ।",
+  },
+  {
+    era: "ਤੁਕਲਾਨੀ ਦੇ ਰਾਹ ਵਿੱਚ",
+    title: "ਦਰਸ਼ਨਾਂ ਲਈ ਕੰਗਣ ਦੇ ਦਿੱਤੇ",
+    imageLabel: "[Photo Placeholder: Kangan]",
+    description:
+      "ਬਰਾਤ ਅੱਗੇ ਜਾ ਚੁੱਕੀ ਸੀ ਅਤੇ ਕਹਾਰ ਡੋਲੀ ਨੂੰ ਹੌਲੀ-ਹੌਲੀ ਅੱਗੇ ਲੈ ਜਾ ਰਹੇ ਸਨ। ਅਚਾਨਕ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦੇ ਮਨ ਵਿੱਚ ਖਿਆਲ ਆਇਆ ਕਿ ਸਹੁਰੇ ਘਰ ਜਾ ਕੇ ਤਾਂ ਸਾਰਾ ਜੀਵਨ ਸਖ਼ੀ ਸਰਵਰੀਆਂ ਵਿੱਚ ਹੀ ਗੁਜ਼ਰਨਾ ਹੈ, ਕਿਉਂ ਨਾ ਜਾਂਦੀ ਵਾਰੀ ਗੁਰੂ ਜੀ ਦੇ ਦਰਸ਼ਨ ਕਰਦੀ ਜਾਵਾਂ। ਉਨ੍ਹਾਂ ਨੇ ਕਹਾਰਾਂ ਨੂੰ ਡੋਲੀ ਰੋਕਣ ਅਤੇ ਦਰਸ਼ਨਾਂ ਨੂੰ ਲੈ ਜਾਣ ਦੀ ਬੇਨਤੀ ਕੀਤੀ, ਪਰ ਕਹਾਰਾਂ ਨੇ ਗੱਲ ਨਾ ਮੰਨੀ। ਜਦੋਂ ਉਨ੍ਹਾਂ ਨੇ ਦੇਖਿਆ ਕਿ ਕਹਾਰ ਨਹੀਂ ਮੰਨਣਗੇ, ਤਾਂ ਆਪਣੇ ਕੰਗਣ ਉਤਾਰ ਕੇ ਕਹਾਰਾਂ ਨੂੰ ਦੇ ਦਿੱਤੇ, ਅਤੇ ਕਹਾਰ ਲਾਲਚ ਵਿੱਚ ਆ ਕੇ ਗੁਰੂ ਜੀ ਦੇ ਦਰਬਾਰ ਵਿੱਚ ਲੈ ਜਾਣ ਲਈ ਮੰਨ ਗਏ।",
+  },
+  {
+    era: "ਡਰੌਲੀ ਵਿਖੇ",
+    title: "ਗੁਰੂ ਜੀ ਦੇ ਦੀਵਾਨ ਵਿੱਚ ਦਰਸ਼ਨ",
+    imageLabel: "[Photo Placeholder: Gur Bilas Patshahi 6]",
+    description:
+      "ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਡੋਲੀ ਵਿੱਚੋਂ ਉਤਰ ਕੇ ਉਸ ਸਥਾਨ ‘ਤੇ ਪਹੁੰਚੇ ਜਿੱਥੇ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦਾ ਦੀਵਾਨ ਲੱਗਾ ਹੋਇਆ ਸੀ। ਦੀਵਾਨ ਵਿੱਚ ਜਾ ਕੇ ਗੁਰੂ ਜੀ ਨੂੰ ਨਮਸਕਾਰ ਕਰ ਕੇ ਨੇੜੇ ਹੀ ਬੈਠ ਗਏ। ਆਸਾ ਕੀ ਵਾਰ ਦੇ ਭੋਗ ਤੋਂ ਬਾਅਦ ਗੁਰੂ ਜੀ ਨੇ ਭਾਈ ਬਿਪੀ ਚੰਦ ਜੀ ਨੂੰ ਦੀਵਾਨ ਵਿੱਚ ਬੈਠੀ ਨਵ-ਵਿਆਹੀ ਕੰਨਿਆ ਬਾਰੇ ਪੁੱਛਿਆ। ਭਾਈ ਬਿਪੀ ਚੰਦ ਜੀ ਨੇ ਦੱਸਿਆ ਕਿ ਇਹ ਗੁਰੂ-ਘਰ ਦੇ ਅਨਿੰਨ ਸੇਵਕ ਭਾਈ ਆਕਲ ਜੀ ਦੀ ਪੁੱਤਰੀ, ਗੁਰੂ-ਘਰ ਦੀ ਸ਼ਰਧਾਲੂ ਅਤੇ ਗੁਰਮਤਿ ਦੀ ਪੱਕੀ ਧਾਰਨੀ ਹੈ। ਬੀਬੀ ਜੀ ਨੇ ਨਵ-ਵਿਆਹੀ ਬਹੁਟੀ ਵਾਲੇ ਕੱਪੜਿਆਂ ਵਿੱਚ ਹੀ ਪੇਕਿਓਂ ਲਿਆਈ ਮਠਿਆਈ ਗੁਰੂ ਜੀ ਨੂੰ ਅਰਪਨ ਕਰ ਕੇ ਮੱਥਾ ਟੇਕਿਆ, ਅਤੇ ਪੁੱਛਣ ‘ਤੇ ਸਾਰੀ ਗੱਲ ਦੱਸ ਦਿੱਤੀ ਕਿ ਉਹ ਗੁਰਮਤਿ ਦੀ ਪੱਕੀ ਧਾਰਨੀ ਹੈ, ਪਰ ਸਹੁਰਾ ਪਰਿਵਾਰ ਸਖ਼ੀ ਸਰਵਰ ਦਾ ਭਗਤ ਹੈ।",
+  },
+  {
+    era: "ਡਰੌਲੀ ਵਿਖੇ",
+    title: "ਗੁਰੂ ਜੀ ਦੀ ਬਖ਼ਸ਼ਿਸ਼",
+    imageLabel: "[Photo Placeholder: Sri Gur Pratap Suraj Granth]",
+    description:
+      "ਗੁਰੂ ਜੀ ਨੇ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਨੂੰ ਅਸ਼ੀਰਵਾਦ ਦਿੰਦਿਆਂ ਉਨ੍ਹਾਂ ਦੇ ਗੁਰਮਤਿ ਵਿੱਚ ਪੱਕਾ ਹੋਣ ਦੀ ਪ੍ਰਸ਼ੰਸਾ ਕੀਤੀ। ਭਾਈ ਸੰਤੋਖ ਸਿੰਘ ‘ਸ੍ਰੀ ਗੁਰ ਪ੍ਰਤਾਪ ਸੂਰਜ ਗ੍ਰੰਥ’ ਵਿੱਚ ਗੁਰੂ ਜੀ ਦੇ ਬਚਨ ਲਿਖਦੇ ਹਨ — ਹੁਣ ਤੇਰੇ ਨਾਂ ਨਵੇਂ ਲੇਖ ਲਿਖੇ ਜਾਣਗੇ; ਤੇਰਾ ਪਿਤਾ ਸਿੱਖ ਹੈ, ਉਸੇ ਸਦਕਾ ਤੂੰ ਵੀ ਤਰ ਜਾਏਂਗੀ; ਸਹੁਰੇ ਘਰ ਆਪਣੇ ਕਰਤੱਵ ਨਿਭਾਈਂ; ਸਿੱਖੀ ਦਾ ਦਾਨ ਅਸੀਂ ਤੈਨੂੰ ਦਿੱਤਾ; ਤੇਰੇ ਅਨੇਕਾਂ ਸਿੱਖ ਪੁੱਤਰ ਹੋਣਗੇ; ਅਤੇ ਤੇਰਾ ਪਤੀ ਵੀ ਭਲਾ ਸਿੱਖ ਹੋ ਕੇ ਗੁਰਸਿੱਖੀ ਦੇ ਮਾਰਗ ‘ਤੇ ਚੱਲੇਗਾ।",
+  },
+  {
+    era: "ਡਰੌਲੀ ਵਿਖੇ",
+    title: "ਤਲਵਾਰ ਮਿਆਨੋਂ ਨਿਕਲੀ, ਅਤੇ ਜੀਵਨ ਬਦਲ ਗਿਆ",
+    imageLabel: "[Photo Placeholder: Darauli darbar site]",
+    description:
+      "ਜਦੋਂ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦੀ ਡੋਲੀ ਕਾਫ਼ੀ ਦੇਰ ਬਰਾਤ ਨਾਲ ਨਾ ਰਲੀ, ਤਾਂ ਸਹੁਰਾ ਸਾਦਾ ਜੀ ਅਤੇ ਪਤੀ ਭਾਈ ਸਾਧੂ ਜੀ ਭਾਲ ਕਰਦੇ ਗੁਰੂ-ਦਰਬਾਰ ਪਾਸ ਆ ਗਏ। ਦੋਵੇਂ ਪਿਉ-ਪੁੱਤਰ ਬਹੁਤ ਪ੍ਰੇਸ਼ਾਨ ਸਨ ਕਿ ਇਸ ਅਵੱਗਿਆ ਕਾਰਨ ਉਨ੍ਹਾਂ ‘ਤੇ ਸਖ਼ੀ ਸਰਵਰ ਦਾ ਕ੍ਰੋਧ ਹੋ ਜਾਵੇਗਾ, ਅਤੇ ਸਾਦਾ ਜੀ ਨੇ ਪੁੱਤਰ ਨੂੰ ਪਤਨੀ ਨੂੰ ਲਿਆ ਕੇ ਸਮਝਾਉਣ ਲਈ ਕਿਹਾ। ਭਾਈ ਸਾਧੂ ਜੀ ਨੇ ਦਰਬਾਰ ਪਹੁੰਚ ਕੇ ਦੇਖਿਆ ਕਿ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਗੁਰੂ ਜੀ ਦੇ ਚਰਨਾਂ ਵਿੱਚ ਬੈਠੀ ਬਖ਼ਸ਼ਿਸ਼ ਪ੍ਰਾਪਤ ਕਰ ਰਹੀ ਹੈ। ਉਹ ਗੁੱਸੇ ਵਿੱਚ ਆ ਗਏ ਅਤੇ ਮਾਰਨ ਲਈ ਤਲਵਾਰ ਮਿਆਨ ਵਿੱਚੋਂ ਕੱਢ ਲਈ। ਪਰ ਜਦੋਂ ਭਾਈ ਸਾਧੂ ਜੀ ਦੀ ਨਜ਼ਰ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਨਾਲ ਮਿਲੀ ਤਾਂ ਉਹ ਇੱਕਦਮ ਸ਼ਾਂਤ ਹੋ ਗਏ। ਮਿਆਨ ਛੱਡ ਕੇ ਗੁਰੂ ਜੀ ਦੇ ਚਰਨਾਂ ਵਿੱਚ ਢਹਿ ਪਏ, ਆਪਣੀ ਭੁੱਲ ਦਾ ਪਛਤਾਵਾ ਕਰਨ ਲੱਗੇ ਅਤੇ ਸਿੱਖੀ ਦੀ ਦਾਤ ਲਈ ਅਰਜੋਈ ਕੀਤੀ। ਗੁਰੂ ਜੀ ਨੇ ਭਾਈ ਸਾਧੂ ਜੀ ਨੂੰ ਸਿੱਖੀ ਦੀ ਦਾਤ ਬਖ਼ਸ਼ਿਸ਼ ਕਰ ਕੇ ਸਿੱਖ ਬਣਾ ਲਿਆ।",
+  },
+  {
+    era: "ਉਸੇ ਰਾਤ, ਤੁਕਲਾਨੀ ਵਿਖੇ",
+    title: "ਤੁਕਲਾਨੀ ਦੀ ਕਬਰ ਢਾਹ ਦਿੱਤੀ",
+    imageLabel: "[Photo Placeholder: Village Tuklani]",
+    description:
+      "ਭਾਈ ਸਾਧੂ ਜੀ ਜਦੋਂ ਆਪਣੀ ਪਤਨੀ ਨਾਲ ਪਿੰਡ ਤੁਕਲਾਨੀ ਪਹੁੰਚੇ ਤਾਂ ਉਸੇ ਰਾਤ ਸਖ਼ੀ ਸਰਵਰ ਦੀ ਕਬਰ ਢਾਹ ਦਿੱਤੀ। ਗਿਆਨੀ ਕਰਤਾਰ ਸਿੰਘ ਕਲਾਸਵਾਲੀਆ ‘ਸ੍ਰੀ ਖੜਗੋਸ਼ ਪ੍ਰਕਾਸ਼’ ਵਿੱਚ ਲਿਖਦੇ ਹਨ ਕਿ ਭਿੱਜੀ ਰਾਤ, ਜਦੋਂ ਸਾਰੇ ਚੁੱਪ-ਚਾਪ ਹੋ ਗਏ, ਉਹ ਵੇਲਾ ਤਕਾ ਕੇ ਉੱਠੇ ਅਤੇ ਚੁੱਪ-ਚਾਪ ਕਹੀ ਮੋਢੇ ‘ਤੇ ਰੱਖ ਕੇ ਘਰੋਂ ਨਿਕਲ ਗਏ।",
+  },
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦਾ ਜਨਮ ਅਤੇ ਨਾਮਕਰਨ",
+    imageLabel: "[Photo Placeholder: Sri Amritsar Sahib]",
+    description:
+      "ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਅਤੇ ਭਾਈ ਸਾਧੂ ਜੀ ਸਾਲ ਵਿੱਚ ਦੋ ਵਾਰ ਗੁਰੂ ਜੀ ਦੇ ਦਰਬਾਰ ਵਿੱਚ ਜਾਂਦੇ ਅਤੇ ਸੰਗਤ ਦੀ ਸੇਵਾ ਕਰ ਕੇ ਆਤਮਿਕ ਅਨੰਦ ਪ੍ਰਾਪਤ ਕਰਦੇ। ਇਨ੍ਹਾਂ ਦੇ ਘਰ ਇੱਕ ਸੁੰਦਰ ਬਾਲਕ ਨੇ ਜਨਮ ਲਿਆ। ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਆਪਣੇ ਪਤੀ ਨਾਲ ਬੱਚੇ ਨੂੰ ਲੈ ਕੇ ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਵਿਖੇ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੇ ਦਰਬਾਰ ਪਹੁੰਚੇ ਅਤੇ ਪੁੱਤਰ ਦੀ ਦਾਤ ਪ੍ਰਾਪਤ ਹੋਣ ‘ਤੇ ਖ਼ੁਸ਼ੀ ਦਾ ਇਜ਼ਹਾਰ ਕੀਤਾ। ਗੁਰੂ ਜੀ ਨੇ ਬੱਚੇ ਦੀ ਸੁੰਦਰਤਾ ਵੇਖਦੇ ਹੋਏ ਉਸ ਦਾ ਨਾਂ ਰੂਪ ਚੰਦ ਰੱਖਿਆ। ਇਹੀ ਰੂਪ ਚੰਦ ਵੱਡੇ ਹੋ ਕੇ ਗੁਰਮਤਿ ਦੇ ਬਹੁਤ ਵੱਡੇ ਪ੍ਰਚਾਰਕ ਬਣੇ ਅਤੇ ਗੁਰੂ ਜੀ ਤੋਂ ‘ਭਾਈ’ ਦੀ ਉਪਾਧੀ ਨਾਲ ਅਨੇਕਾਂ ਬਖ਼ਸ਼ਿਸ਼ਾਂ ਪ੍ਰਾਪਤ ਕੀਤੀਆਂ।",
+  },
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦੀ ਸਥਾਪਨਾ ਅਤੇ ਕੜਛੇ ਦੀ ਬਖ਼ਸ਼ਿਸ਼",
+    imageLabel: "[Photo Placeholder: Village Bhai Rupa]",
+    description:
+      "ਗੁਰੂ ਜੀ ਨੇ ਇਨ੍ਹਾਂ ਦੇ ਨਾਂ ‘ਤੇ ਹੀ ਭਾਈ ਰੂਪਾ ਪਿੰਡ ਆਬਾਦ ਕਰਵਾਇਆ। ਗੁਰੂ ਜੀ ਨੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਨੂੰ ਲੰਗਰ ਵਰਤਾਉਣ ਲਈ ਇੱਕ ਕੜਛਾ ਬਖ਼ਸ਼ਿਸ਼ ਕੀਤਾ। ਇਹ ਨਿਸ਼ਾਨੀਆਂ ਅੱਜ ਵੀ ਇਨ੍ਹਾਂ ਦੇ ਵੰਸ਼ਜਾਂ ਪਾਸ ਪਿੰਡ ਬਾਗੜੀਆਂ ਵਿਖੇ ਮੌਜੂਦ ਹਨ।",
+  },
+  {
+    era: "੧੬੩੧",
+    title: "ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਦੇ ਤੀਰ",
+    imageLabel: "[Photo Placeholder: Puratan Teer - Battle of Mehraj Arrows]",
+    description:
+      "ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਵੱਲੋਂ ਮੁਗ਼ਲ ਫ਼ੌਜਾਂ ਵਿਰੁੱਧ ਲੜੀ ਗਈ ਮਹਿਰਾਜ ਦੀ ਨਿਰਣਾਇਕ ਜੰਗ ਦੌਰਾਨ ਪਵਿੱਤਰ ਸ਼ਸਤਰ ਅਤੇ ਪੁਰਾਤਨ ਤੀਰ ਵਰਤੇ ਗਏ, ਜਿਨ੍ਹਾਂ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਪਰਿਵਾਰ ਨੇ ਮੀਰੀ-ਪੀਰੀ ਦੇ ਪ੍ਰਤੀਕ ਵਜੋਂ ਸੰਭਾਲਿਆ।",
+  },
+  {
+    era: "ਅੱਜ ਤੱਕ ਸੰਭਾਲੀਆਂ",
+    title: "ਨਗਰ ਭਾਈ ਰੂਪੇ ਵਿਖੇ ਸੰਭਾਲੀਆਂ ਨਿਸ਼ਾਨੀਆਂ",
+    imageLabel: "[Photo Placeholder: Shastars at Nagar Bhai Rupe]",
+    description:
+      "ਬਾਕੀ ਸਾਰੇ ਬਖ਼ਸ਼ਿਸ਼ ਕੀਤੇ ਸ਼ਸਤਰ-ਵਸਤਰ ਅੱਜ ਵੀ ਨਗਰ ਭਾਈ ਰੂਪੇ ਵਿਖੇ ਸੰਭਾਲ ਕੇ ਰੱਖੇ ਹੋਏ ਹਨ — ਜਿਵੇਂ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਛੋਟੀ ਸ੍ਰੀ ਸਾਹਿਬ, ਉਨ੍ਹਾਂ ਦੀ ਵੱਡੀ ਸ੍ਰੀ ਸਾਹਿਬ ਜਿਸ ਉੱਪਰ ‘ਅੱਲਾ’ ਲਿਖਿਆ ਹੋਇਆ ਹੈ, ਗੁਰੂ ਸਾਹਿਬ ਜੀ ਦੀਆਂ ਢਾਲਾਂ, ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਵਰਤਣ ਵਾਲੇ ਬਰਤਨ। ਇਹ ਸਭ ਅੱਜ ਵੀ ਪਰਿਵਾਰ ਕੋਲ ਬੜੇ ਸਤਿਕਾਰ ਨਾਲ ਸੰਭਾਲੀਆਂ ਹੋਈਆਂ ਹਨ।",
+  },
+  {
+    era: "ਅਗਲੀਆਂ ਪੀੜ੍ਹੀਆਂ",
+    title: "‘ਭਾਈ ਕਿਆਂ’ ਦੇ ਨਾਂ ਨਾਲ ਪ੍ਰਸਿੱਧ ਪਰਿਵਾਰ",
+    imageLabel: "[Photo Placeholder: Family lineage]",
+    description:
+      "ਅੱਗੇ ਚੱਲ ਕੇ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਦੇ ਵੰਸ਼ਜਾਂ ਨੇ ਸਿੱਖੀ ਵਿੱਚ ਮਹਾਨ ਕਾਰਜ ਕੀਤੇ, ਅਤੇ ਇਹੀ ਪਰਿਵਾਰ ‘ਭਾਈ ਕਿਆਂ’ ਦੇ ਨਾਂ ਨਾਲ ਪ੍ਰਸਿੱਧ ਹੋਇਆ।",
+  },
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਸਪੁੱਤਰਾਂ ਨੇ ਖੰਡੇ ਦੀ ਪਾਹੁਲ ਪ੍ਰਾਪਤ ਕੀਤੀ",
+    imageLabel: "[Photo Placeholder: Sri Hazur Sahib, Nanded]",
+    description:
+      "ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਪੁੱਤਰ ਭਾਈ ਪਰਮ ਸਿੰਘ ਜੀ ਅਤੇ ਭਾਈ ਧਰਮ ਸਿੰਘ ਜੀ ਨੇ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦੀ ਸੇਵਾ ਵਿੱਚ ਹਾਜ਼ਰ ਰਹਿ ਕੇ ਖੰਡੇ ਦੀ ਪਾਹੁਲ ਪ੍ਰਾਪਤ ਕੀਤੀ। ਭਾਈ ਪਰਮ ਸਿੰਘ ਜੀ ਦਾ ਸ੍ਰੀ ਹਜ਼ੂਰ ਸਾਹਿਬ ਨੰਦੇੜ ਵਿਖੇ ਦਿਹਾਂਤ ਹੋ ਗਿਆ ਅਤੇ ਭਾਈ ਧਰਮ ਸਿੰਘ ਜੀ ਗੁਰੂ ਸਾਹਿਬ ਤੋਂ ਆਗਿਆ ਲੈ ਕੇ ਵਾਪਸ ਪਿੰਡ ਆ ਗਏ।",
+  },
+  {
+    era: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦਾ ਸਮਾਂ",
+    title: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦੀਆਂ ਬਖ਼ਸ਼ਿਸ਼ਾਂ",
+    imageLabel: "[Photo Placeholder: Pothi Sahib of Sri Guru Gobind Singh Ji]",
+    description:
+      "ਭਾਈ ਪਰਮ ਸਿੰਘ ਜੀ ਨੂੰ ਵਿਦਾ ਕਰਨ ਵੇਲੇ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਨੇ ਗੁਰਬਾਣੀ ਦੀ ਪੋਥੀ, ਇੱਕ ਕਿਰਪਾਨ, ਇੱਕ ਛੋਟੀ ਕਿਰਪਾਨ ਅਤੇ ਇੱਕ ਛੋਟਾ ਖੰਡਾ ਬਖ਼ਸ਼ਿਸ਼ ਕੀਤਾ। ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਨੇ ਦੁਮਾਲੇ ਦੇ ਸ਼ਸਤਰ ਅਤੇ ਹੋਰ ਅਨੇਕਾਂ ਬਖ਼ਸ਼ਿਸ਼ਾਂ ਵੀ ਕੀਤੀਆਂ। ਇਹ ਅੱਜ ਵੀ ਨਗਰ ਭਾਈ ਰੂਪੇ ਵਿੱਚ ਸੰਭਾਲ ਕੇ ਰੱਖੀਆਂ ਹੋਈਆਂ ਹਨ, ਅਤੇ ਕੁਝ ਨਿਸ਼ਾਨੀਆਂ — ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦੀ ਹਸਤ ਲਿਖਤ ਅਤੇ ਦੁਮਾਲੇ ਦੇ ਸ਼ਸਤਰ — ਬਾਗੜੀਆਂ ਭਾਈ ਕੇ ਵਿਖੇ ਸੰਭਾਲੀਆਂ ਹੋਈਆਂ ਹਨ।",
+  },
+  {
+    era: "ਸਾਵਣ ਵਦੀ ੧, ਸੰਮਤ ੧੭੬੬ ਬਿਕ੍ਰਮੀ (ਲੱਗਭਗ ੧੭੦੯ ਈ:)",
+    title: "ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦਾ ਅਕਾਲ ਚਲਾਣਾ",
+    imageLabel: "[Photo Placeholder: Bhai Ki Samadh]",
+    description:
+      "ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਸਾਵਣ ਵਦੀ ੧, ਸੰਮਤ ੧੭੬੬ ਬਿਕ੍ਰਮੀ ਨੂੰ ਸਵਰਗ ਸਿਧਾਰ ਗਏ। ਜਿੱਥੇ ਉਨ੍ਹਾਂ ਦਾ ਅੰਤਿਮ ਸਸਕਾਰ ਕੀਤਾ ਗਿਆ, ਉੱਥੇ ‘ਭਾਈ ਕੀ ਸਮਾਧ’ ਨਾਂ ਦਾ ਪਿੰਡ ਆਬਾਦ ਹੋ ਗਿਆ।",
+  },
+  {
+    era: "ਸਥਾਨਕ ਪਰੰਪਰਾ",
+    title: "‘ਗੱਡੀਆਂ ਦਾ ਧਨੀ’",
+    imageLabel: "[Photo Placeholder: Bullock carts / the Beas crossing]",
+    description:
+      "ਸਥਾਨਕ ਪਰੰਪਰਾ ਅਨੁਸਾਰ ਪ੍ਰਚਲਤ ਹੈ ਕਿ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਸਾਲ ਵਿੱਚ ਦੋ ਵਾਰ ਗੁਰੂ ਦਰਬਾਰ ਵਿਖੇ ਮਾਲਵੇ ਵਿੱਚੋਂ ਦਸਵੰਧ ਦੀ ਕਾਰ-ਭੇਟਾ ਲੈ ਕੇ ਜਾਇਆ ਕਰਦੇ ਸਨ। ਰਸਤਾ ਅਤੀ ਔਖਿਆਈ ਦਾ ਸੀ: ਵਿਚਕਾਰ ਕਈ ਚੋਏ ਵਗਦੇ ਸਨ, ਸਤਲੁਜ ਦਰਿਆ ਵੀ ਆਉਂਦਾ ਸੀ, ਅਤੇ ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਦੇ ਰਾਹ ਵਿੱਚ ਬਿਆਸ ਵੀ ਲੰਘਣਾ ਪੈਂਦਾ ਸੀ। ਇੱਕ ਵਾਰ ਕਾਰ-ਭੇਟ ਦੇ ਕਈ ਗੱਡੇ ਲੱਦ ਕੇ ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਜਾ ਰਹੇ ਸਨ ਅਤੇ ਰਸਤੇ ਵਿੱਚ ਬਿਆਸ ਪਾਰ ਕਰਨਾ ਕਠਿਨ ਸੀ। ਸਾਰਿਆਂ ਨੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਅੱਗੇ ਬੇਨਤੀ ਕੀਤੀ। ਭਾਈ ਸਾਹਿਬ ਜੀ ਨੇ ਅਰਦਾਸ ਕਰ ਕੇ ਆਪਣਾ ਗੱਡਾ ਅੱਗੇ ਲਾ ਕੇ ਸਭ ਨੂੰ ਪਿੱਛੇ ਆਉਣ ਲਈ ਕਿਹਾ, ਅਤੇ ਸਾਰੇ ਸਹੀ-ਸਲਾਮਤ ਕਾਰ-ਭੇਟਾ ਲੈ ਕੇ ਗੁਰੂ ਦਰਬਾਰ ਪੁੱਜੇ। ਜਦੋਂ ਕਿਸੇ ਨੇ ਇਹ ਵਾਰਤਾ ਗੁਰੂ ਜੀ ਨੂੰ ਸੁਣਾਈ ਤਾਂ ਉਨ੍ਹਾਂ ਨੇ ਅਸੀਸ ਦੇ ਰੂਪ ਵਿੱਚ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਨੂੰ ‘ਗੱਡੀਆਂ ਦੇ ਧਨੀ’ ਕਿਹਾ। ਅੱਜ ਤੱਕ ਭਾਈ ਰੂਪਾ ਦੇ ਆਸ-ਪਾਸ ਦੇ ਇਲਾਕੇ ਵਿੱਚ ਪਰੰਪਰਾ ਹੈ ਕਿ ਗੱਡਾ, ਟਰੈਕਟਰ ਜਾਂ ਟਰਾਲੀ ਤੋਰਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਹਾ ਜਾਂਦਾ ਹੈ — “ਮੰਨ ਉੱਤੇ ਬੇਲੀਆ ਭਾਈ ਰੂਪ ਚੰਦ ਗੱਡੀਆਂ ਦੇ ਧਨੀ ਨੂੰ” — ਫਿਰ ਹੀ ਵਾਹਨ ਤੋਰਿਆ ਜਾਂਦਾ ਹੈ।",
+  },
+  {
+    era: "੧੮ਵੀਂ ਸਦੀ ਦੇ ਸ਼ੁਰੂ",
+    title: "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ ਦਾ ਹੁਕਮਨਾਮਾ",
+    imageLabel: "[Photo Placeholder: Authentic Hukamnama Sahib]",
+    description:
+      "ਜਿਵੇਂ-ਜਿਵੇਂ ਪੰਜਾਬ ਵਿੱਚ ਸਿੱਖ ਰਾਜ ਸਥਾਪਿਤ ਹੋਇਆ, ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ ਨੇ ਸੰਗਤ ਅਤੇ ਇਸ ਵੰਸ਼ ਦੇ ਯੋਗਦਾਨ ਅਤੇ ਮਾਣ ਨੂੰ ਮਾਨਤਾ ਦਿੰਦੇ ਸਰਕਾਰੀ ਹੁਕਮਨਾਮੇ ਜਾਰੀ ਕੀਤੇ।",
+  },
+  {
+    era: "੧੯ਵੀਂ ਸਦੀ ਦੇ ਸ਼ੁਰੂ",
+    title: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ਸ਼ਾਹੀ ਫੁਰਮਾਨ",
+    imageLabel:
+      "[Photo Placeholder: Original Farman of Maharaja Ranjit Singh Ji]",
+    description:
+      "ਸਿੱਖ ਰਾਜ ਦੇ ਸਿਖਰ ਦੌਰਾਨ ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਨੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜਾਂ ਦੇ ਇਤਿਹਾਸਕ ਸਤਿਕਾਰ ਅਤੇ ਸੇਵਾਦਾਰੀ ਨੂੰ ਮਾਨਤਾ ਦਿੰਦਾ ਸ਼ਾਹੀ ਫੁਰਮਾਨ ਜਾਰੀ ਕੀਤਾ।",
+  },
+  {
+    era: "ਅੱਜ",
+    title: "ਅੱਜ ਦੀਆਂ ਨਿਸ਼ਾਨੀਆਂ ਅਤੇ ਵੰਸ਼ ਦੇ ਪਿੰਡ",
+    imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
+    description:
+      "ਅੱਜਕਲ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਅਤੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜ ਪਿੰਡ ਭਾਈ ਰੂਪਾ, ਭਾਈ ਕੀ ਸਮਾਧ, ਨੇਹੀਆਂਵਲਾ ਛੱਟੀ, ਭਾਈ ਕੀ ਬਾਗੜੀਆਂ ਅਤੇ ਭਾਈ ਕਾ ਦਿਆਲਪੁਰਾ ਆਦਿ ਪਿੰਡਾਂ ਵਿੱਚ ਆਬਾਦ ਹਨ। ਨਿਸ਼ਾਨੀਆਂ ਪਿੰਡ ਭਾਈ ਰੂਪੇ, ਜ਼ਿਲ੍ਹਾ ਬਠਿੰਡਾ ਵਿਖੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵਾਰਸਾਂ ਪਾਸ ਮੌਜੂਦ ਹਨ, ਜੋ ਪੀੜ੍ਹੀ-ਦਰ-ਪੀੜ੍ਹੀ ਇਨ੍ਹਾਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ। ਹੁਣ ਭਾਈ ਜਸਕਰਨ ਸਿੰਘ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ ਅਤੇ ਦੇਸ਼ਾਂ-ਵਿਦੇਸ਼ਾਂ ਵਿੱਚ ਜਾ ਕੇ ਸੰਗਤ ਨੂੰ ਦਰਸ਼ਨ ਕਰਵਾ ਰਹੇ ਹਨ; ਬਾਗੜੀਆਂ ਭਾਈ ਕੇ ਵਿਖੇ ਭਾਈ ਜੁਝਾਰ ਸਿੰਘ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ।",
   },
 ];
 
@@ -321,18 +517,26 @@ function TimelineCard({
 }
 
 export default function AnimatedTimeline({
-  milestones = defaultMilestones,
+  milestones,
 }: {
   milestones?: TimelineMilestone[];
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { language } = useLanguage();
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start center", "end center"],
   });
 
+  // An explicit `milestones` prop wins; otherwise follow the language toggle.
+  const list =
+    milestones ?? (language === "pa" ? milestonesPa : defaultMilestones);
+
   return (
-    <div ref={containerRef} className="relative mx-auto max-w-5xl px-4 py-4 sm:px-6">
+    <div
+      ref={containerRef}
+      className="relative mx-auto max-w-5xl px-4 py-4 sm:px-6"
+    >
       <div className="absolute left-6 top-0 h-full w-px bg-navy-100 sm:left-1/2 sm:-translate-x-1/2" />
       <motion.div
         className="absolute left-6 top-0 w-px origin-top bg-gradient-to-b from-gold-400 to-gold-600 sm:left-1/2 sm:-translate-x-1/2"
@@ -340,8 +544,12 @@ export default function AnimatedTimeline({
       />
 
       <div className="space-y-12">
-        {milestones.map((milestone, index) => (
-          <TimelineCard key={milestone.title} milestone={milestone} index={index} />
+        {list.map((milestone, index) => (
+          <TimelineCard
+            key={milestone.title}
+            milestone={milestone}
+            index={index}
+          />
         ))}
       </div>
     </div>
