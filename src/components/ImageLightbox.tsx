@@ -47,27 +47,44 @@ function collectGallery(el: Element): Element[] {
 
 /** Zoom + cursor-pan for a single image. Keyed by src so state resets on navigate. */
 function ZoomPane({ src, alt }: { src: string; alt: string }) {
+  const frameRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
   const [zoomed, setZoomed] = useState(false);
-  const [offset, setOffset] = useState({ x: 0, y: 0 });
+  const [origin, setOrigin] = useState({ x: 50, y: 50 });
 
-  // Translate so the point under the cursor stays under the cursor. rel is
-  // clamped to the image box by construction, so the image can never be
-  // panned past its own edges.
-  const panToCursor = (clientX: number, clientY: number) => {
+  /**
+   * Cursor position as a percentage of the image's *layout* box, used as the
+   * transform-origin so the point under the cursor stays put.
+   *
+   * Measured from the frame — which is never transformed — plus the image's
+   * offsetWidth/offsetHeight. Deliberately NOT getBoundingClientRect() on the
+   * image: once scaled, that reports the magnified box, which fed numbers
+   * ZOOM_SCALE times too large back into the next pan and made it lurch.
+   * offsetWidth/Height are layout values and ignore the transform.
+   */
+  const originFromCursor = (clientX: number, clientY: number) => {
+    const frame = frameRef.current;
     const img = imgRef.current;
-    if (!img) return;
-    const r = img.getBoundingClientRect();
-    const relX = Math.min(1, Math.max(0, (clientX - r.left) / r.width));
-    const relY = Math.min(1, Math.max(0, (clientY - r.top) / r.height));
-    setOffset({
-      x: (0.5 - relX) * r.width * (ZOOM_SCALE - 1),
-      y: (0.5 - relY) * r.height * (ZOOM_SCALE - 1),
-    });
+    if (!frame || !img) return;
+    const f = frame.getBoundingClientRect();
+    const w = img.offsetWidth;
+    const h = img.offsetHeight;
+    if (!w || !h) return;
+    // The image is centred in the frame, so derive its untransformed corner.
+    const left = f.left + (f.width - w) / 2;
+    const top = f.top + (f.height - h) / 2;
+    const pct = (v: number) => Math.min(100, Math.max(0, v * 100));
+    setOrigin({ x: pct((clientX - left) / w), y: pct((clientY - top) / h) });
   };
 
   return (
-    <>
+    <div
+      ref={frameRef}
+      className="flex h-full w-full items-center justify-center"
+      onMouseMove={(e) => {
+        if (zoomed) originFromCursor(e.clientX, e.clientY);
+      }}
+    >
       <span className="pointer-events-none absolute bottom-6 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-navy-950/80 px-3 py-1.5 text-xs font-medium text-cream-100/80">
         {zoomed ? "Move to pan · click to fit" : "Click image to magnify"}
       </span>
@@ -82,27 +99,26 @@ function ZoomPane({ src, alt }: { src: string; alt: string }) {
           e.stopPropagation();
           if (zoomed) {
             setZoomed(false);
-            setOffset({ x: 0, y: 0 });
+            setOrigin({ x: 50, y: 50 });
           } else {
-            panToCursor(e.clientX, e.clientY);
+            originFromCursor(e.clientX, e.clientY);
             setZoomed(true);
           }
         }}
-        onMouseMove={(e) => {
-          if (zoomed) panToCursor(e.clientX, e.clientY);
-        }}
         style={{
-          transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoomed ? ZOOM_SCALE : 1})`,
-          transition: zoomed
-            ? "transform 0.08s linear"
-            : "transform 0.28s cubic-bezier(0.22, 1, 0.36, 1)",
+          transformOrigin: `${origin.x}% ${origin.y}%`,
+          transform: `scale(${zoomed ? ZOOM_SCALE : 1})`,
+          // Short and eased: long enough to feel smooth, short enough that
+          // panning still tracks the cursor closely.
+          transition:
+            "transform 0.14s ease-out, transform-origin 0.14s ease-out",
           willChange: "transform",
         }}
         className={`max-h-full max-w-full select-none rounded-lg object-contain shadow-2xl ${
           zoomed ? "cursor-zoom-out" : "cursor-zoom-in"
         }`}
       />
-    </>
+    </div>
   );
 }
 
