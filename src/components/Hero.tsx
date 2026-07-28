@@ -14,7 +14,12 @@ export default function Hero() {
             <p className="font-serif text-2xl text-gold-300 sm:text-3xl" lang="pa">
               ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਸੇਵਾ ਸੰਭਾਲ
             </p>
-            <p className="mt-4 text-lg font-semibold uppercase tracking-[0.2em] text-gold-400 sm:text-xl">
+            {/*
+              Tighter tracking than the other eyebrows on purpose: those sit at
+              text-sm where 0.2em reads as a small-caps label, but this one is
+              text-lg/xl and the same spacing pulled the words too far apart.
+            */}
+            <p className="mt-4 text-lg font-semibold uppercase tracking-[0.08em] text-gold-400 sm:text-xl">
               {t("heroEyebrow")}
             </p>
             <h1 className="mt-4 font-serif text-3xl font-semibold leading-tight text-cream-100 sm:text-4xl">
