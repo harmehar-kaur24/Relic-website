@@ -62,7 +62,7 @@ export const translations = {
     contactEyebrow: "Custodian Contact",
     contactHeading: "Get in Touch",
     contactBody:
-      "Have a question, an invitation to host the darshan, or a message of support? WhatsApp is the quickest way to reach us.",
+      "Have a question, an invitation to host the darshan, or a message of support?",
     contactWhatsApp: "Message on WhatsApp",
     contactEmail: "Send an Email",
     contactCtaCustodian: "About the Custodian",
@@ -137,8 +137,7 @@ export const translations = {
 
     contactEyebrow: "ਸੇਵਾਦਾਰ ਨਾਲ ਸੰਪਰਕ",
     contactHeading: "ਸੰਪਰਕ ਕਰੋ",
-    contactBody:
-      "ਕੋਈ ਸਵਾਲ, ਦਰਸ਼ਨ ਦੀ ਮੇਜ਼ਬਾਨੀ ਲਈ ਸੱਦਾ, ਜਾਂ ਸਹਿਯੋਗ ਦਾ ਸੁਨੇਹਾ? ਸਾਡੇ ਤੱਕ ਪਹੁੰਚਣ ਦਾ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਾ ਵਟਸਐਪ ਹੈ।",
+    contactBody: "ਕੋਈ ਸਵਾਲ, ਦਰਸ਼ਨ ਦੀ ਮੇਜ਼ਬਾਨੀ ਲਈ ਸੱਦਾ, ਜਾਂ ਸਹਿਯੋਗ ਦਾ ਸੁਨੇਹਾ?",
     contactWhatsApp: "ਵਟਸਐਪ ‘ਤੇ ਸੁਨੇਹਾ ਭੇਜੋ",
     contactEmail: "ਈਮੇਲ ਭੇਜੋ",
     contactCtaCustodian: "ਸੇਵਾਦਾਰ ਬਾਰੇ",
