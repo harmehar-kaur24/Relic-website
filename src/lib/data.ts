@@ -143,7 +143,8 @@ export const relics: Relic[] = [
     title: "Sheesha",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
-    description: "",
+    description:
+      "When Sri Guru Hargobind Sahib Ji stayed at the home of Baba Bhai Roop Chand Ji, it was in this sheesha (mirror) that Guru Sahib would adorn their dastaar.",
     image: "/relics/hargobind/sheesha.jpg",
   },
   {
@@ -151,7 +152,8 @@ export const relics: Relic[] = [
     title: "Dhal",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Shastars",
-    description: "",
+    description:
+      "This dhal (shield) was used by Sri Guru Hargobind Sahib Ji in the Battle of Mehraj.",
     image: "/relics/hargobind/dhal.jpg",
   },
   {
@@ -265,6 +267,17 @@ export const relics: Relic[] = [
     description:
       "A glimpse of a historic chakar (war quoit) used in the Battle of Sri Chamkaur Sahib.",
     image: "/relics/gobind/jangi-chakkar.jpg",
+  },
+  {
+    // Attribution confirmed by the family as the tenth Guru's, settling the
+    // disagreement between the two posters supplied for this vessel.
+    id: "karmandal",
+    title: "Karmandal Sahib",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Personal Articles",
+    description:
+      "This ancient copper karmandal is an important symbol of Sikh history, recalling the time of the Tenth Sovereign, Sri Guru Gobind Singh Ji.",
+    image: "/relics/gobind/karmandal.jpg",
   },
   {
     id: "chhota-khanda",

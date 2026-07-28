@@ -193,6 +193,7 @@ export const relicTranslations: Record<string, { title: string; associatedWith: 
     associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
   },
   "dhal-gobind": { title: "ਜੰਗੀ ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
+  karmandal: { title: "ਕਰਮੰਡਲ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
   "shri-sahib-gobind": { title: "ਸ੍ਰੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
   "jangi-chakkar": { title: "ਜੰਗੀ ਚੱਕਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
   "chhota-khanda": { title: "ਛੋਟਾ ਖੰਡਾ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
