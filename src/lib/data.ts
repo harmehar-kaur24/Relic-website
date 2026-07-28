@@ -287,4 +287,112 @@ export const relics: Relic[] = [
     description: "",
     image: "/relics/gobind/chhota-khanda.jpg",
   },
+  // --- Added from the family's numbered list of loose photographs ---
+  // Titles and attributions are literal renderings of that list. Where the list
+  // gave only a name and no history, description is left empty rather than
+  // invented. File-to-number mapping was inferred from folder order and needs
+  // confirming; see the note against each dhal about possible duplicates.
+  {
+    id: "vaddi-sri-sahib",
+    title: "Vaddi Sri Sahib",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Shastars",
+    description:
+      "The Vaddi Sri Sahib — the large sword — of Sri Guru Hargobind Sahib Ji.",
+    image: "/relics/hargobind/vaddi-sri-sahib.jpg",
+  },
+  {
+    // Possible duplicate of `dhal` or `dhal-3`; awaiting confirmation.
+    id: "dhal-hargobind-2",
+    title: "Dhal",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/hargobind/dhal-2.jpg",
+  },
+  {
+    // Possible duplicate of `dhal` or `dhal-2`; awaiting confirmation.
+    id: "dhal-hargobind-3",
+    title: "Dhal",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/hargobind/dhal-3.jpg",
+  },
+  {
+    id: "katar-hargobind",
+    title: "Katar",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Shastars",
+    description: "The katar of Sri Guru Hargobind Sahib Ji.",
+    image: "/relics/hargobind/katar.jpg",
+  },
+  {
+    // Possible duplicate of `dhal-gobind`; awaiting confirmation.
+    id: "dhal-gobind-2",
+    title: "Dhal",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/gobind/dhal-2.jpg",
+  },
+  {
+    id: "barchhe-gobind",
+    title: "Barchhe (Spears)",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description: "The barchhe (spears) of Sri Guru Gobind Singh Ji.",
+    image: "/relics/gobind/barchhe.jpg",
+  },
+  {
+    id: "pothi-sahib-puratan-hath",
+    title: "Puratan Hath Pothi Sahib",
+    associatedWith: "The Collection at Village Bhai Rupa",
+    category: "Scriptures",
+    description:
+      "The puratan hath Pothi Sahib — ancient handwritten Pothi Sahib — kept wrapped in rumala within the family's collection.",
+    image: "/relics/collection/pothi-sahib-puratan-hath.jpg",
+  },
+  {
+    id: "pothi-sahib-8ft",
+    title: "Eight-Foot Pothi Sahib",
+    associatedWith: "The Collection at Village Bhai Rupa",
+    category: "Scriptures",
+    description: "A Pothi Sahib measuring eight feet in length.",
+    image: "/relics/collection/pothi-sahib-8ft.jpg",
+  },
+  {
+    id: "saroop-mani-singh",
+    title: "Saroop of Adi Sri Guru Granth Sahib Ji",
+    associatedWith: "Written by Bhai Mani Singh Ji",
+    category: "Scriptures",
+    description:
+      "A saroop of Adi Sri Guru Granth Sahib Maharaj in the handwriting of Bhai Mani Singh Ji.",
+    image: "/relics/collection/saroop-mani-singh.jpg",
+  },
+  {
+    id: "sikka-ranjit-singh",
+    title: "Coin bearing “Khalsa hai Akal Sahai”",
+    associatedWith: "Maharaja Ranjit Singh Ji",
+    category: "Royal Edicts",
+    description:
+      "A coin of Maharaja Ranjit Singh Ji bearing the inscription “Khalsa hai, Akal Sahai”.",
+    image: "/relics/collection/sikka-ranjit-singh.jpg",
+  },
+  {
+    id: "sikka-puratan",
+    title: "Puratan Sikka (Ancient Coin)",
+    associatedWith: "The Collection at Village Bhai Rupa",
+    category: "Royal Edicts",
+    description: "",
+    image: "/relics/collection/sikka-puratan.jpg",
+  },
+  {
+    id: "shahi-nishani",
+    title: "Ink-Making Vessel",
+    associatedWith: "The Collection at Village Bhai Rupa",
+    category: "Personal Articles",
+    description: "A puratan relic used for making shahi (ink).",
+    image: "/relics/collection/shahi-nishani.jpg",
+  },
 ];

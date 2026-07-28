@@ -150,53 +150,229 @@ export const translations = {
 export type TranslationKey = keyof typeof translations.en;
 
 /** Keyed by relic id, not title — several Gurus share relic names. */
-export const relicTranslations: Record<string, { title: string; associatedWith: string }> = {
-  "kattar-sahib": { title: "ਕੱਟਾਰ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "shri-sahib": { title: "ਸ੍ਰੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "puratan-teer": { title: "ਪੁਰਾਤਨ ਤੀਰ", associatedWith: "ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਦੇ ਤੀਰ" },
-  "pothi-sahib": { title: "ਪੋਥੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
-  "hukamnama-sahib": { title: "ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ", associatedWith: "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ" },
+type RelicTranslation = {
+  title: string;
+  associatedWith: string;
+  /** Punjabi description. Where a poster supplied Gurmukhi, that original
+   *  wording is used verbatim rather than translated back from the English. */
+  description?: string;
+};
+
+export const relicTranslations: Record<string, RelicTranslation> = {
+  "kattar-sahib": {
+    title: "ਕੱਟਾਰ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਛੇਵੇਂ ਪਾਤਸ਼ਾਹ ਦੇ ਘਰ ਵਿੱਚ ਰੱਖੀ ਗਈ ਕਟਾਰ, ਜੋ ਪਰਿਵਾਰ ਨੂੰ ਸੌਂਪੀ ਗਈ ਅਤੇ ਭੰਡਾਰ ਦੇ ਸਭ ਤੋਂ ਪੁਰਾਣੇ ਸ਼ਸਤਰਾਂ ਵਿੱਚੋਂ ਇੱਕ ਵਜੋਂ ਸੰਭਾਲੀ ਗਈ ਹੈ।",
+  },
+  "shri-sahib": {
+    title: "ਸ੍ਰੀ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਇਹ ਸ੍ਰੀ ਸਾਹਿਬ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਮਹਾਰਾਜ ਦਾ ਨਿੱਜੀ ਸ਼ਸਤਰ ਸੀ, ਜਿਸ ਨੂੰ ਉਹ ਹਰ ਰੋਜ਼ ਸਜਾਉਂਦੇ ਸਨ। ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਤੋਂ ਬਾਅਦ ਗੁਰੂ ਸਾਹਿਬ ਨੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਨੂੰ ਇਹ ਪਵਿੱਤਰ ਨਿਸ਼ਾਨੀ ਬਖਸ਼ਿਸ਼ ਕੀਤੀ।",
+  },
+  "puratan-teer": {
+    title: "ਪੁਰਾਤਨ ਤੀਰ",
+    associatedWith: "ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਦੇ ਤੀਰ",
+    description:
+      "ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਵਿੱਚੋਂ ਪ੍ਰਾਪਤ ਇਤਿਹਾਸਕ ਤੀਰ, ਜੋ ਗੁਰੂ ਕਾਲ ਦੇ ਜੰਗੀ ਇਤਿਹਾਸ ਨਾਲ ਇੱਕ ਦੁਰਲੱਭ ਸਾਂਝ ਹਨ।",
+  },
+  "pothi-sahib": {
+    title: "ਪੋਥੀ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਇਹ ਪੋਥੀ ਸਾਹਿਬ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਮਹਾਰਾਜ ਦੀ ਹੈ, ਜੋ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਸਪੁੱਤਰਾਂ ਭਾਈ ਧਰਮ ਸਿੰਘ ਜੀ ਅਤੇ ਭਾਈ ਪਰਮ ਸਿੰਘ ਜੀ ਨੂੰ ਤਖ਼ਤ ਸ੍ਰੀ ਹਜ਼ੂਰ ਸਾਹਿਬ ਵਿਖੇ ਬਖਸ਼ਿਸ਼ ਕੀਤੀ ਗਈ।",
+  },
+  "hukamnama-sahib": {
+    title: "ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ",
+    associatedWith: "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ",
+    description:
+      "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦੁਰ ਵੱਲੋਂ ਜਾਰੀ ਕੀਤਾ ਮੂਲ ਹੁਕਮਨਾਮਾ, ਜੋ ਸਿੱਖ ਇਤਿਹਾਸ ਦੇ ਇੱਕ ਅਹਿਮ ਦੌਰ ਵਿੱਚ ਪਰਿਵਾਰ ਦੀ ਮਾਨਤਾ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ।",
+  },
   // Wording drawn directly from the family's own signage card for this item.
-  farman: { title: "ਫੁਰਮਾਨ", associatedWith: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ਫੁਰਮਾਨ" },
-  "puratan-painting": { title: "ਪੁਰਾਤਨ ਪੇਂਟਿੰਗ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "ganga-sagar": { title: "ਗੰਗਾ ਸਾਗਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  bata: { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  "bata-2": { title: "ਬਾਟਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  sheesha: { title: "ਸ਼ੀਸ਼ਾ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  dhal: { title: "ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
-  baltohi: { title: "ਬਲਟੋਹੀ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ" },
+  farman: {
+    title: "ਫੁਰਮਾਨ",
+    associatedWith: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ਫੁਰਮਾਨ",
+    description:
+      "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਵੱਲੋਂ ਜਾਰੀ ਕੀਤਾ ਸ਼ਾਹੀ ਫੁਰਮਾਨ, ਜੋ ਸਿੱਖ ਰਾਜ ਵਿੱਚ ਪਰਿਵਾਰ ਦੀ ਸੇਵਾਦਾਰੀ ਅਤੇ ਮਾਣ ਦੀ ਪੁਸ਼ਟੀ ਕਰਦਾ ਹੈ।",
+  },
+  "puratan-painting": {
+    title: "ਪੁਰਾਤਨ ਪੇਂਟਿੰਗ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਛੇਵੇਂ ਪਾਤਸ਼ਾਹ ਦੀ ਪੁਰਾਤਨ ਤਸਵੀਰ, ਜੋ ਪਰਿਵਾਰ ਦੇ ਸ਼ਸਤਰਾਂ ਅਤੇ ਦਸਤਾਵੇਜ਼ਾਂ ਦੇ ਭੰਡਾਰ ਦੇ ਨਾਲ ਇੱਕ ਦੁਰਲੱਭ ਕਲਾਤਮਕ ਯਾਦਗਾਰ ਵਜੋਂ ਸੰਭਾਲੀ ਹੋਈ ਹੈ।",
+  },
+  "ganga-sagar": {
+    title: "ਗੰਗਾ ਸਾਗਰ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਇਹ ਪਵਿੱਤਰ ਗੰਗਾ ਸਾਗਰ ਛੇਵੇਂ ਪਾਤਸ਼ਾਹ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਛੋਹ ਪ੍ਰਾਪਤ ਹੈ। ਸੰਨ ੧੬੧੦–੧੬੪੪ ਈ: ਵਿੱਚ ਸ੍ਰੀ ਅੰਮ੍ਰਿਤਸਰ ਸਾਹਿਬ ਵਿਖੇ ਗੁਰੂ ਸਾਹਿਬ ਇਸ ਨਾਲ ਸੰਗਤ ਨੂੰ ਜਲ ਛਕਾਉਂਦੇ ਸਨ। ਇਹ ਸੰਗਤ ਨੂੰ ਨਿਮਰਤਾ ਅਤੇ ਸੇਵਾ ਦੀ ਭਾਵਨਾ ਦਾ ਸੰਦੇਸ਼ ਦੇਣ ਵਾਲੀ ਇਤਿਹਾਸਕ ਨਿਸ਼ਾਨੀ ਹੈ।",
+  },
+  bata: {
+    title: "ਬਾਟਾ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਇਹ ਪਵਿੱਤਰ ਬਾਟਾ ਛੇਵੇਂ ਪਾਤਸ਼ਾਹ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੁਆਰਾ ਵਰਤਿਆ ਗਿਆ ਅਤੇ ਉਹਨਾਂ ਦੇ ਤਿਆਗ, ਬੀਰ-ਰਸ ਅਤੇ ਸੇਵਾ ਦਾ ਪ੍ਰਤੀਕ ਹੈ।",
+  },
+  "bata-2": {
+    title: "ਬਾਟਾ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description: "ਬਾਟਾ ਪਾਤਸ਼ਾਹੀ ਛੇਵੀਂ, ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵਾਰਸ ਦੇ ਪਾਸ।",
+  },
+  sheesha: {
+    title: "ਸ਼ੀਸ਼ਾ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਜਦੋਂ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਬਾਬਾ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਘਰ ਰਹੇ ਸਨ, ਉਸ ਸਮੇਂ ਗੁਰੂ ਸਾਹਿਬ ਇਸ ਸ਼ੀਸ਼ੇ ਵਿੱਚ ਦਸਤਾਰ ਸਜਾਉਂਦੇ ਸਨ।",
+  },
+  dhal: {
+    title: "ਢਾਲ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਇਹ ਢਾਲ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਨੇ ਮਹਿਰਾਜ ਦੀ ਜੰਗ ਵਿੱਚ ਵਰਤੀ ਸੀ।",
+  },
+  baltohi: {
+    title: "ਬਲਟੋਹੀ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description:
+      "ਛੇਵੇਂ ਪਾਤਸ਼ਾਹ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਇਤਿਹਾਸਕ ਬਲਟੋਹੀ। ਇਸ ਬਲਟੋਹੀ ਨੂੰ ਧਾਰਮਿਕ ਮਹੱਤਤਾ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।",
+  },
 
   // Mata Sahiban
-  "peerha-damodari": { title: "ਪੀੜ੍ਹਾ ਸਾਹਿਬ", associatedWith: "ਮਾਤਾ ਦਮੋਦਰੀ ਜੀ" },
-  "rath-ganga": { title: "ਰੱਥ ਸਾਹਿਬ", associatedWith: "ਮਾਤਾ ਗੰਗਾ ਜੀ" },
-  "katar-sahib-deva": { title: "ਕਟਾਰ", associatedWith: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾ ਜੀ" },
+  "peerha-damodari": {
+    title: "ਪੀੜ੍ਹਾ ਸਾਹਿਬ",
+    associatedWith: "ਮਾਤਾ ਦਮੋਦਰੀ ਜੀ",
+    description:
+      "ਛੇਵੇਂ ਪਾਤਸ਼ਾਹ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੇ ਮਹਿਲ ਮਾਤਾ ਦਮੋਦਰੀ ਜੀ ਦਾ ਪੀੜ੍ਹਾ ਸਾਹਿਬ। ਇਹ ਪਿੰਡ ਭਾਈ ਰੂਪਾ, ਜ਼ਿਲ੍ਹਾ ਬਠਿੰਡਾ ਵਿਖੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਪਰਿਵਾਰ ਪਾਸ ਸੰਭਾਲਿਆ ਹੋਇਆ ਹੈ।",
+  },
+  "rath-ganga": {
+    title: "ਰੱਥ ਸਾਹਿਬ",
+    associatedWith: "ਮਾਤਾ ਗੰਗਾ ਜੀ",
+    description:
+      "ਮਾਤਾ ਗੰਗਾ ਜੀ ਦੇ ਰੱਥ ਵਿੱਚੋਂ, ਜੋ ਭੰਡਾਰ ਵਿੱਚ ਸਤਿਕਾਰ ਅਤੇ ਸ਼ਰਧਾ ਨਾਲ ਸੰਭਾਲਿਆ ਹੋਇਆ ਹੈ।",
+  },
+  "katar-sahib-deva": {
+    title: "ਕਟਾਰ",
+    associatedWith: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾ ਜੀ",
+    description: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾ ਜੀ ਦੀ ਕਟਾਰ — ਸਤਿਕਾਰ ਅਤੇ ਸ਼ਕਤੀ ਦਾ ਪ੍ਰਤੀਕ।",
+  },
 
   // Sri Guru Angad Dev Ji
   "akhari-35": {
     title: "ਪਾਵਨ ੩੫ ਅੱਖਰੀ",
     associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+    description:
+      "ਗੁਰਮੁਖੀ ਲਿਪੀ ਦੇ ਜਨਮਦਾਤਾ ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ ਦੀ ਆਪਣੇ ਹੱਥਾਂ ਦੀ ਲਿਖੀ ਹੋਈ ਪਾਵਨ ੩੫ ਅੱਖਰੀ।",
   },
 
   // Sri Guru Arjan Dev Ji — wording from the item's own museum plaque.
   "simran-arjan": {
     title: "ਹੱਥ ਦਾ ਸਿਮਰਨ (ਮਾਲਾ)",
     associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ",
+    description:
+      "ਧੰਨ ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ ਮਹਾਰਾਜ ਜੀ ਦੇ ਹੱਥ ਦਾ ਪਾਵਨ ਸਿਮਰਨ (ਮਾਲਾ)। ਸੰਗਤ ਜੀ ਦਰਸ਼ਨ ਕਰੋ।",
   },
 
   // Sri Guru Gobind Singh Ji
   "pothi-sahib-gold": {
     title: "ਪੋਥੀ ਸਾਹਿਬ (ਸੋਨੇ ਨਾਲ ਲਿਖੀ)",
     associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਇਹ ਪਵਿੱਤਰ ਪੋਥੀ ਸਾਹਿਬ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦੀ ਹੈ, ਜੋ ਸੋਨੇ ਦੀ ਸਿਆਹੀ ਨਾਲ ਲਿਖੀ ਹੋਈ ਹੈ। ਬਾਬਾ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੀ ਸੇਵਾ ਤੋਂ ਖ਼ੁਸ਼ ਹੋ ਕੇ ਗੁਰੂ ਸਾਹਿਬ ਜੀ ਨੇ ਇਹ ਪੋਥੀ ਬਖਸ਼ਿਸ਼ ਕੀਤੀ। ਇਹ ੩੫੦ ਸਾਲ ਤੋਂ ਪੁਰਾਣੀ ਹੈ।",
   },
   "hukamnama-sahib-gobind": {
     title: "ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ",
     associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਇਹ ਇਤਿਹਾਸਕ ਹੁਕਮਨਾਮਾ ਸਾਹਿਬ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦਾ ਹੈ। ਇਸ ਵਿੱਚ ਸੰਗਤ ਲਈ ਵਿਸ਼ੇਸ਼ ਆਦੇਸ਼ ਹਨ।",
   },
-  "dhal-gobind": { title: "ਜੰਗੀ ਢਾਲ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
-  karmandal: { title: "ਕਰਮੰਡਲ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
-  "shri-sahib-gobind": { title: "ਸ੍ਰੀ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
-  "jangi-chakkar": { title: "ਜੰਗੀ ਚੱਕਰ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
-  "chhota-khanda": { title: "ਛੋਟਾ ਖੰਡਾ ਸਾਹਿਬ", associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ" },
+  "dhal-gobind": {
+    title: "ਜੰਗੀ ਢਾਲ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਇਹ ਇਤਿਹਾਸਕ ਜੰਗੀ ਢਾਲ ਸੀਲ ਮੱਛੀ ਦੀ ਬਹੁਤ ਮਜ਼ਬੂਤ ਖੱਲ ਤੋਂ ਬਣੀ ਮੰਨੀ ਜਾਂਦੀ ਹੈ। ਇਹ ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦੁਆਰਾ ਵਰਤੀ ਗਈ ਸੀ।",
+  },
+  karmandal: {
+    title: "ਕਰਮੰਡਲ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਇਹ ਪੁਰਾਤਨ ਤਾਂਬੇ ਦਾ ਕਰਮੰਡਲ, ਸਿੱਖ ਇਤਿਹਾਸ ਦਾ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਪ੍ਰਤੀਕ ਹੈ, ਜੋ ਦਸਵੇਂ ਪਾਤਸ਼ਾਹ ਦੇ ਸਮੇਂ ਦੀ ਯਾਦ ਦਿਵਾਉਂਦਾ ਹੈ।",
+  },
+  "shri-sahib-gobind": {
+    title: "ਸ੍ਰੀ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਸੰਤ-ਸਿਪਾਹੀ ਪਰੰਪਰਾ ਦੀ ਇੱਕ ਮਹਾਨ ਨਿਸ਼ਾਨੀ, ਇਹ ਕਿਰਪਾਨ ਦਸਵੇਂ ਪਾਤਸ਼ਾਹ ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ ਅਤੇ ਬਹਾਦਰੀ, ਇਨਸਾਫ਼ ਅਤੇ ਸਿੱਖ ਸਿਦਕ ਦਾ ਪ੍ਰਤੀਕ ਹੈ।",
+  },
+  "jangi-chakkar": {
+    title: "ਜੰਗੀ ਚੱਕਰ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਸ੍ਰੀ ਚਮਕੌਰ ਸਾਹਿਬ ਦੀ ਜੰਗ ਵਿੱਚ ਵਰਤੀ ਗਈ ਇਤਿਹਾਸਕ ਚੱਕਰ ਦੀ ਇੱਕ ਝਲਕ।",
+  },
+  "chhota-khanda": {
+    title: "ਛੋਟਾ ਖੰਡਾ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+  },
+  // From the family's numbered list of loose photographs
+  "vaddi-sri-sahib": {
+    title: "ਵੱਡੀ ਸ੍ਰੀ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਵੱਡੀ ਸ੍ਰੀ ਸਾਹਿਬ।",
+  },
+  "dhal-hargobind-2": {
+    title: "ਢਾਲ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+  },
+  "dhal-hargobind-3": {
+    title: "ਢਾਲ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+  },
+  "katar-hargobind": {
+    title: "ਕਟਾਰ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
+    description: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਕਟਾਰ।",
+  },
+  "dhal-gobind-2": {
+    title: "ਢਾਲ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+  },
+  "barchhe-gobind": {
+    title: "ਬਰਛੇ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦੇ ਬਰਛੇ।",
+  },
+  "pothi-sahib-puratan-hath": {
+    title: "ਪੁਰਾਤਨ ਹੱਥ ਪੋਥੀ ਸਾਹਿਬ",
+    associatedWith: "ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦਾ ਭੰਡਾਰ",
+    description:
+      "ਪੁਰਾਤਨ ਹੱਥ ਲਿਖਤ ਪੋਥੀ ਸਾਹਿਬ, ਜੋ ਪਰਿਵਾਰ ਦੇ ਭੰਡਾਰ ਵਿੱਚ ਰੁਮਾਲਿਆਂ ਵਿੱਚ ਸੰਭਾਲ ਕੇ ਰੱਖੀਆਂ ਹੋਈਆਂ ਹਨ।",
+  },
+  "pothi-sahib-8ft": {
+    title: "ਅੱਠ ਫੁੱਟ ਲੰਮੀ ਪੋਥੀ ਸਾਹਿਬ",
+    associatedWith: "ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦਾ ਭੰਡਾਰ",
+    description: "ਅੱਠ ਫੁੱਟ ਲੰਮੀ ਪੋਥੀ ਸਾਹਿਬ।",
+  },
+  "saroop-mani-singh": {
+    title: "ਆਦਿ ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦਾ ਸਰੂਪ",
+    associatedWith: "ਭਾਈ ਮਨੀ ਸਿੰਘ ਜੀ ਦੀ ਲਿਖਤ",
+    description:
+      "ਆਦਿ ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਮਹਾਰਾਜ ਦਾ ਸਰੂਪ, ਭਾਈ ਮਨੀ ਸਿੰਘ ਜੀ ਦੀ ਹੱਥ ਲਿਖਤ।",
+  },
+  "sikka-ranjit-singh": {
+    title: "‘ਖਾਲਸਾ ਹੈ ਅਕਾਲ ਸਹਾਇ’ ਦਾ ਸਿੱਕਾ",
+    associatedWith: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ",
+    description: "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਦਾ ‘ਖਾਲਸਾ ਹੈ, ਅਕਾਲ ਸਹਾਇ’ ਦਾ ਸਿੱਕਾ।",
+  },
+  "sikka-puratan": {
+    title: "ਪੁਰਾਤਨ ਸਿੱਕਾ",
+    associatedWith: "ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦਾ ਭੰਡਾਰ",
+  },
+  "shahi-nishani": {
+    title: "ਸ਼ਾਹੀ ਬਣਾਉਣ ਵਾਲੀ ਨਿਸ਼ਾਨੀ",
+    associatedWith: "ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦਾ ਭੰਡਾਰ",
+    description: "ਸ਼ਾਹੀ ਬਣਾਉਣ ਵਾਲੀ ਪੁਰਾਤਨ ਨਿਸ਼ਾਨੀ।",
+  },
 };
 
 const categoryKeys: Record<string, TranslationKey> = {
@@ -208,14 +384,25 @@ const categoryKeys: Record<string, TranslationKey> = {
 };
 
 export function localizeRelic(
-  relic: { id: string; title: string; associatedWith: string; category: string },
-  language: Language
+  relic: {
+    id: string;
+    title: string;
+    associatedWith: string;
+    category: string;
+    description: string;
+  },
+  language: Language,
 ) {
   const override = language === "pa" ? relicTranslations[relic.id] : undefined;
   const categoryKey = categoryKeys[relic.category];
   return {
     title: override?.title ?? relic.title,
     associatedWith: override?.associatedWith ?? relic.associatedWith,
-    category: categoryKey ? translations[language][categoryKey] : relic.category,
+    category: categoryKey
+      ? translations[language][categoryKey]
+      : relic.category,
+    // Falls back to English if no Punjabi description exists yet, so a missing
+    // translation never blanks out an item's history.
+    description: override?.description ?? relic.description,
   };
 }

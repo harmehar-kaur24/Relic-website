@@ -89,9 +89,9 @@ export default function RelicsArchiveGrid({ relics }: { relics: Relic[] }) {
                   <p className="mt-1 text-base font-medium text-cream-100/80">
                     {localized.associatedWith}
                   </p>
-                  {relic.description && (
+                  {localized.description && (
                     <p className="mt-2 text-sm leading-relaxed text-cream-100/75">
-                      {relic.description}
+                      {localized.description}
                     </p>
                   )}
                 </div>
