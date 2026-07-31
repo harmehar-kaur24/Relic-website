@@ -191,15 +191,6 @@ export const relics: Relic[] = [
       "From the rath (chariot) of Mata Ganga Ji, kept in the collection with respect and devotion.",
     image: "/relics/more/rath-ganga.jpg",
   },
-  {
-    id: "katar-sahib-deva",
-    title: "Katar",
-    associatedWith: "Mata Sahib Deva Ji",
-    category: "Shastars",
-    description:
-      "The katar of Mata Sahib Deva Ji — a symbol of reverence and shakti.",
-    image: "/relics/more/katar-sahib-deva.jpg",
-  },
 
   // --- Sri Guru Angad Dev Ji ---
   {
@@ -227,6 +218,19 @@ export const relics: Relic[] = [
   // Descriptions below are literal renderings of the family's own poster text.
   // Where a poster carried no legible explanatory note, description is left empty
   // rather than filled in from other sources.
+  {
+    // Attribution corrected: this katar (the polished blade on mustard cloth)
+    // is Sri Guru Gobind Singh Ji's, not Mata Sahib Deva Ji's. Corroborated by
+    // the Katar Sahib poster, which carries a museum label reading
+    // "(ਕਟਾਰ ਸਾਹਿਬ) ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ".
+    id: "katar-gobind",
+    title: "Katar Sahib",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description:
+      "One of the sacred and ancient weapons attributed to Sri Guru Gobind Singh Ji, showing the traditional forge techniques.",
+    image: "/relics/gobind/katar.jpg",
+  },
   {
     id: "pothi-sahib-gold",
     title: "Pothi Sahib (Written in Gold)",

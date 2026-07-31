@@ -258,10 +258,9 @@ export const relicTranslations: Record<string, RelicTranslation> = {
     description:
       "ਮਾਤਾ ਗੰਗਾ ਜੀ ਦੇ ਰੱਥ ਵਿੱਚੋਂ, ਜੋ ਭੰਡਾਰ ਵਿੱਚ ਸਤਿਕਾਰ ਅਤੇ ਸ਼ਰਧਾ ਨਾਲ ਸੰਭਾਲਿਆ ਹੋਇਆ ਹੈ।",
   },
-  "katar-sahib-deva": {
-    title: "ਕਟਾਰ",
-    associatedWith: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾ ਜੀ",
-    description: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾ ਜੀ ਦੀ ਕਟਾਰ — ਸਤਿਕਾਰ ਅਤੇ ਸ਼ਕਤੀ ਦਾ ਪ੍ਰਤੀਕ।",
+  "katar-gobind": {
+    title: "ਕਟਾਰ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
   },
 
   // Sri Guru Angad Dev Ji
