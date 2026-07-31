@@ -241,6 +241,14 @@ export const defaultMilestones: TimelineMilestone[] = [
       "During the height of the Sikh Empire, Maharaja Ranjit Singh Ji issued an official royal decree — a Farman — acknowledging the historical reverence and custodianship of Bhai Roop Chand Ji's descendants.",
   },
   {
+    era: "Twelfth generation",
+    title: "Bhai Balvir Singh Ji",
+    imageLabel: "[Photo Placeholder: Bhai Balvir Singh Ji]",
+    image: "/lineage/bhai-balvir-singh.jpg",
+    description:
+      "Bhai Balvir Singh Ji, of the twelfth generation of Bhai Roop Chand Ji. His son Bhai Pal Singh Ji continued the safekeeping of the relics after him, and it is through this line that the trust passes to the present custodian.",
+  },
+  {
     era: "Present Day",
     title: "The Relics Today, and the Villages of the Lineage",
     imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
@@ -435,9 +443,18 @@ export const milestonesPa: TimelineMilestone[] = [
       "ਸਿੱਖ ਰਾਜ ਦੇ ਸਿਖਰ ਦੌਰਾਨ ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਜੀ ਨੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜਾਂ ਦੇ ਇਤਿਹਾਸਕ ਸਤਿਕਾਰ ਅਤੇ ਸੇਵਾਦਾਰੀ ਨੂੰ ਮਾਨਤਾ ਦਿੰਦਾ ਸ਼ਾਹੀ ਫੁਰਮਾਨ ਜਾਰੀ ਕੀਤਾ।",
   },
   {
+    era: "ਬਾਰਵੀਂ ਪੀੜ੍ਹੀ",
+    title: "ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ",
+    imageLabel: "[Photo Placeholder: ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ]",
+    image: "/lineage/bhai-balvir-singh.jpg",
+    description:
+      "ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ, ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੀ ਬਾਰਵੀਂ ਪੀੜ੍ਹੀ। ਇਨ੍ਹਾਂ ਤੋਂ ਬਾਅਦ ਇਨ੍ਹਾਂ ਦੇ ਸਪੁੱਤਰ ਭਾਈ ਪਾਲ ਸਿੰਘ ਜੀ ਨੇ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਜਾਰੀ ਰੱਖੀ, ਅਤੇ ਇਸੇ ਵੰਸ਼ ਰਾਹੀਂ ਇਹ ਅਮਾਨਤ ਮੌਜੂਦਾ ਸੇਵਾਦਾਰ ਤੱਕ ਪਹੁੰਚਦੀ ਹੈ।",
+  },
+  {
     era: "ਅੱਜ",
     title: "ਅੱਜ ਦੀਆਂ ਨਿਸ਼ਾਨੀਆਂ ਅਤੇ ਵੰਸ਼ ਦੇ ਪਿੰਡ",
     imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
+    image: "/custodian.jpg",
     description:
       "ਅੱਜਕਲ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਅਤੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜ ਪਿੰਡ ਭਾਈ ਰੂਪਾ, ਭਾਈ ਕੀ ਸਮਾਧ, ਨੇਹੀਆਂਵਲਾ ਛੱਟੀ, ਭਾਈ ਕੀ ਬਾਗੜੀਆਂ ਅਤੇ ਭਾਈ ਕਾ ਦਿਆਲਪੁਰਾ ਆਦਿ ਪਿੰਡਾਂ ਵਿੱਚ ਆਬਾਦ ਹਨ। ਨਿਸ਼ਾਨੀਆਂ ਪਿੰਡ ਭਾਈ ਰੂਪੇ, ਜ਼ਿਲ੍ਹਾ ਬਠਿੰਡਾ ਵਿਖੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵਾਰਸਾਂ ਪਾਸ ਮੌਜੂਦ ਹਨ, ਜੋ ਪੀੜ੍ਹੀ-ਦਰ-ਪੀੜ੍ਹੀ ਇਨ੍ਹਾਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ। ਹੁਣ ਭਾਈ ਜਸਕਰਨ ਸਿੰਘ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ ਅਤੇ ਦੇਸ਼ਾਂ-ਵਿਦੇਸ਼ਾਂ ਵਿੱਚ ਜਾ ਕੇ ਸੰਗਤ ਨੂੰ ਦਰਸ਼ਨ ਕਰਵਾ ਰਹੇ ਹਨ; ਬਾਗੜੀਆਂ ਭਾਈ ਕੇ ਵਿਖੇ ਭਾਈ ਜੁਝਾਰ ਸਿੰਘ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ।",
   },
