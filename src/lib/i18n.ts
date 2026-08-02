@@ -300,6 +300,12 @@ export const relicTranslations: Record<string, RelicTranslation> = {
   },
   karmandal: {
     title: "ਕਰਮੰਡਲ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+    description:
+      "ਇਹ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਦਾ ਕਰਮੰਡਲ ਸਾਹਿਬ, ਜਿਸ ਨਾਲ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਹੱਥ ਸੁੱਚੇ ਕਰਾਉਂਦੇ ਸੀ।",
+  },
+  "karmandal-hargobind": {
+    title: "ਕਰਮੰਡਲ ਸਾਹਿਬ",
     associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
     description:
       "ਇਹ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦਾ ਕਰਮੰਡਲ ਸਾਹਿਬ, ਜਿਸ ਨਾਲ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਹੱਥ ਸੁੱਚੇ ਕਰਾਉਂਦੇ ਸੀ।",

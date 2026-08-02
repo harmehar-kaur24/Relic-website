@@ -170,10 +170,8 @@ export const relics: Relic[] = [
     image: "/relics/hargobind/baltohi.jpg",
   },
   {
-    // Attribution corrected by the family to the sixth Guru. This settles the
-    // disagreement between the two posters supplied for this vessel — one
-    // named Sri Guru Hargobind Sahib Ji, the other Sri Guru Gobind Singh Ji.
-    id: "karmandal",
+    // A second karmandal, distinct from Sri Guru Gobind Singh Ji's.
+    id: "karmandal-hargobind",
     title: "Karmandal Sahib",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
@@ -230,6 +228,15 @@ export const relics: Relic[] = [
   // Descriptions below are literal renderings of the family's own poster text.
   // Where a poster carried no legible explanatory note, description is left empty
   // rather than filled in from other sources.
+  {
+    id: "karmandal",
+    title: "Karmandal Sahib",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Personal Articles",
+    description:
+      "This is the Karmandal Sahib of Sri Guru Gobind Singh Ji, with which Bhai Roop Chand Ji would have his hands purified.",
+    image: "/relics/gobind/karmandal.jpg",
+  },
   {
     // Attribution corrected: this katar (the polished blade on mustard cloth)
     // is Sri Guru Gobind Singh Ji's, not Mata Sahib Deva Ji's. Corroborated by
