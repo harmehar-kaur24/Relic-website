@@ -169,6 +169,18 @@ export const relics: Relic[] = [
       "The historic baltohi (water-pot) of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. This baltohi is accorded religious significance.",
     image: "/relics/hargobind/baltohi.jpg",
   },
+  {
+    // Attribution corrected by the family to the sixth Guru. This settles the
+    // disagreement between the two posters supplied for this vessel — one
+    // named Sri Guru Hargobind Sahib Ji, the other Sri Guru Gobind Singh Ji.
+    id: "karmandal",
+    title: "Karmandal Sahib",
+    associatedWith: "Sri Guru Hargobind Sahib Ji",
+    category: "Personal Articles",
+    description:
+      "This is the Karmandal Sahib of Sri Guru Hargobind Sahib Ji, with which Bhai Roop Chand Ji would have his hands purified.",
+    image: "/relics/hargobind/karmandal.jpg",
+  },
 
   // --- Mata Sahiban (the Gurus' consorts) ---
   {
@@ -275,17 +287,6 @@ export const relics: Relic[] = [
     description:
       "A glimpse of a historic chakar (war quoit) used in the Battle of Sri Chamkaur Sahib.",
     image: "/relics/gobind/jangi-chakkar.jpg",
-  },
-  {
-    // Attribution confirmed by the family as the tenth Guru's, settling the
-    // disagreement between the two posters supplied for this vessel.
-    id: "karmandal",
-    title: "Karmandal Sahib",
-    associatedWith: "Sri Guru Gobind Singh Ji",
-    category: "Personal Articles",
-    description:
-      "This ancient copper karmandal is an important symbol of Sikh history, recalling the time of the Tenth Sovereign, Sri Guru Gobind Singh Ji.",
-    image: "/relics/gobind/karmandal.jpg",
   },
   {
     id: "chhota-khanda",
