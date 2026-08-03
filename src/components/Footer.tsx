@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="mt-auto border-t border-navy-800 bg-navy-950 text-cream-100">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center">
-          <span className="font-serif text-lg text-gold-300">
+          <span className="font-serif text-xl text-gold-300 sm:text-2xl">
             Baba Bhai Roop Chand Ji Collection Museum
           </span>
           <p className="max-w-xl text-sm text-cream-100/70">
