@@ -176,7 +176,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Personal Articles",
     description:
-      "This is the Karmandal Sahib of Sri Guru Hargobind Sahib Ji, with which Bhai Roop Chand Ji would have his hands purified.",
+      "This is the Karmandal Sahib of Sri Guru Hargobind Sahib Ji, with which Bhai Roop Chand Ji would purify Guru Sahib's hands.",
     image: "/relics/hargobind/karmandal.jpg",
   },
 
@@ -234,7 +234,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Gobind Singh Ji",
     category: "Personal Articles",
     description:
-      "This is the Karmandal Sahib of Sri Guru Gobind Singh Ji, with which Bhai Roop Chand Ji would have his hands purified.",
+      "This is the Karmandal Sahib of Sri Guru Gobind Singh Ji, with which Bhai Roop Chand Ji would purify Guru Sahib's hands.",
     image: "/relics/gobind/karmandal.jpg",
   },
   {
