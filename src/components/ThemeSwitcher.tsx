@@ -50,6 +50,42 @@ const THEMES = [
     note: "True black — cinematic, hairline gold",
     swatch: ["#000000", "#9c8757", "#0a0a0a"],
   },
+  {
+    id: "sarovar",
+    label: "Sarovar",
+    note: "Deep teal & gold",
+    swatch: ["#072a2e", "#c0a038", "#e8f1ef"],
+  },
+  {
+    id: "lal",
+    label: "Lal",
+    note: "Deep crimson & old gold",
+    swatch: ["#350810", "#c39a4d", "#f7e5e3"],
+  },
+  {
+    id: "taamba",
+    label: "Taamba",
+    note: "Copper & bronze on chocolate",
+    swatch: ["#241710", "#b87333", "#f2e6da"],
+  },
+  {
+    id: "neel",
+    label: "Neel",
+    note: "Nihang indigo & brass",
+    swatch: ["#101336", "#b89b4a", "#eeece4"],
+  },
+  {
+    id: "mehndi",
+    label: "Mehndi",
+    note: "Deep olive & antique gold",
+    swatch: ["#1a230e", "#bda440", "#eef0e0"],
+  },
+  {
+    id: "chandan",
+    label: "Chandan",
+    note: "Sandalwood light, terracotta ink",
+    swatch: ["#ebd8c5", "#a3643a", "#f8efe6"],
+  },
 ] as const;
 
 const STORAGE_KEY = "theme-experiment";

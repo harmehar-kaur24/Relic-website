@@ -31,7 +31,7 @@ export default function Header({ breadcrumb }: { breadcrumb?: string } = {}) {
       <div className="border-b border-navy-800 bg-navy-950/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <Link href="/" className="flex min-w-0 items-center gap-2">
-            <span className="font-serif text-sm font-semibold leading-tight text-gold-300 sm:text-base lg:text-lg">
+            <span className="font-serif text-xl font-semibold leading-tight text-gold-300 sm:text-2xl">
               Baba Bhai Roop Chand Ji Collection Museum
             </span>
           </Link>
