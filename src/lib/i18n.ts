@@ -70,6 +70,86 @@ export const translations = {
     footerTagline:
       "Honouring the legacy of Bhai Roop Chand Ji and the sacred trust of Sri Guru Hargobind Sahib Ji, carried forward for the sangat.",
 
+    // --- Sub-page copy ---
+    relicsPageIntro1:
+      "The relics carried on this tour are among the most treasured physical connections to Sri Guru Hargobind Sahib Ji still in existence. Bestowed upon Bhai Roop Chand Ji in recognition of his devotion and seva, they have been preserved, protected, and quietly passed down within a single family line for more than three hundred years — surviving migration, partition, and the passage of countless generations.",
+    relicsPageIntro2:
+      "Each item below is presented with the historical context recorded and passed down by the custodian family. Descriptions are drawn from oral history and family record, and are shared in the spirit of preserving and honouring this legacy for the wider sangat.",
+    relicsProvenanceHeading: "Provenance & Preservation",
+    relicsProvenanceBody:
+      "The custodian family follows traditional practices of care passed down alongside the relics themselves — from the manner of storage and transport to the maryada observed whenever the items are displayed. Visitors on tour are invited to view these artifacts as living pieces of Sikh history, not museum objects, and to approach them with the same reverence shown by the family across fourteen generations.",
+    lineagePageIntro:
+      "The story of this family begins not with Bhai Roop Chand Ji himself, but with his mother, Bibi Surti Ji, whose faith at her own wedding brought a blessing from Sri Guru Hargobind Sahib Ji. That blessing became the foundation for a legacy that continues today — from a son named by the Guru, to a village founded in his honour, to a multi-generational responsibility for the safekeeping of sacred relics.",
+    lineageTimelineEyebrow: "A Living Timeline",
+    lineageTimelineHeading: "From Bibi Surti Ji to the Present Day",
+    custodianEyebrow: "The Touring Custodian",
+    custodianBio1:
+      "carries forward a responsibility passed down across more than three hundred years — the safekeeping of the shastars, scriptures, and edicts entrusted to Bhai Roop Chand Ji by Sri Guru Hargobind Sahib Ji. Raised in the seva of village Bhai Rupa alongside the family of Bhai Balvir Singh Ji, he now travels with these relics so sangats far from Punjab can experience their darshan firsthand.",
+    custodianBio2:
+      "shares glimpses of the family's Puratan Virsa (ancient heritage), tour updates, and Gurbani reflections with the wider sangat online.",
+    custodianBio2Prefix: "Beyond the tour,",
+    custodianInstagramCta: "Follow on Instagram",
+    custodianYoutubeCta: "Watch on YouTube",
+    custodianConnectEyebrow: "Connect & Support",
+    custodianConnectHeading: "Scan to Follow or Support the Tour",
+    custodianConnectBody:
+      "Scan any of the codes below on the road, or use the links above from home.",
+    custodianPhonePeNote: "Support the tour's seva and travel",
+    schedulePageHeading: "All Tour Dates & Visitor Guide",
+    schedulePageIntroEmpty:
+      "There are no confirmed tour dates at the moment. New stops are announced as sangats and institutions come forward to host — please check back for updates, or reach out to request a visit.",
+    schedulePageIntroFull:
+      "Below is the full, current schedule of the tour. Stops are added regularly as new sangats and institutions come forward to host — check back for updates or reach out to request a visit.",
+    scheduleFullHeading: "Full Schedule",
+    maryadaIntro:
+      "Out of respect for the sacred nature of these relics, all visitors are kindly asked to observe the following:",
+    maryadaFull1: "Cover your head before entering the exhibition area.",
+    maryadaFull2: "Remove shoes before entering, as per gurdwara maryada.",
+    maryadaFull3:
+      "Photography and video are permitted only in designated areas; flash photography is not permitted near the relics.",
+    maryadaFull4:
+      "Please maintain a respectful silence while viewing the relics, and follow the guidance of volunteers on site.",
+    maryadaFull5:
+      "Food, drink, and tobacco products are not permitted within the exhibition space.",
+    hostPageHeading: "Request to Host the Exhibition",
+    hostPageBody:
+      "Gurdwaras, educational institutions, and heritage organisations are warmly invited to bring these sacred relics to their community. Please share a few details below and the touring custodian's team will follow up to discuss dates, space requirements, and logistics.",
+    hostThanks:
+      "Thank you for your request. A member of the touring team will be in touch to discuss next steps.",
+    fieldOrganisation: "Organisation Name",
+    fieldContactName: "Contact Name",
+    fieldEmail: "Email",
+    fieldCityState: "City & State",
+    fieldPreferredDates: "Preferred Dates & Additional Details",
+    hostSubmit: "Submit Hosting Request",
+    sevaEyebrow: "Volunteer & Seva",
+    sevaHeading: "Support the Tour Through Seva",
+    sevaBody:
+      "The tour relies on the generosity of local volunteers at every stop. Whether for an afternoon or across the full run of a visit, your seva helps make it possible for the sangat to experience this legacy safely and respectfully.",
+    sevaSignUp: "Sign Up to Volunteer",
+    sevaThanks:
+      "Thank you for offering your seva. The local coordinator will reach out with details.",
+    fieldFullName: "Full Name",
+    fieldAreaOfInterest: "Area of Interest",
+
+    sevaArea1Title: "Hospitality & Langar",
+    sevaArea1Body:
+      "Help welcome visitors and coordinate langar or refreshments during exhibition hours.",
+    sevaArea2Title: "Setup & Logistics",
+    sevaArea2Body:
+      "Assist with the careful setup, staffing, and breakdown of the exhibition space at each stop.",
+    sevaArea3Title: "Guided Storytelling",
+    sevaArea3Body:
+      "Share the history of the relics and the lineage with visitors as a volunteer docent.",
+    sevaArea4Title: "Local Outreach",
+    sevaArea4Body:
+      "Help spread the word in your local sangat and community ahead of a tour stop near you.",
+    sevaSubmit: "Sign Up",
+
+    custodianLineageNote:
+      "Of the family of Bhai Balvir Singh Ji, the 14th-generation descendants of Bhai Roop Chand Ji from village Bhai Rupa",
+    footerInService: "In Service of the Sangat",
+
     categoryAll: "All",
     categoryShastars: "Shastars",
     categoryScriptures: "Scriptures",
@@ -144,6 +224,86 @@ export const translations = {
 
     footerTagline:
       "ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੀ ਵਿਰਾਸਤ ਅਤੇ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਦੀ ਪਵਿੱਤਰ ਅਮਾਨਤ ਦਾ ਸਨਮਾਨ, ਸੰਗਤ ਲਈ ਅੱਗੇ ਲਿਜਾਈ ਜਾ ਰਹੀ।",
+
+    // --- Sub-page copy ---
+    relicsPageIntro1:
+      "ਇਸ ਟੂਰ ਵਿੱਚ ਲਿਆਂਦੀਆਂ ਨਿਸ਼ਾਨੀਆਂ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਨਾਲ ਜੁੜੀਆਂ ਸਭ ਤੋਂ ਅਨਮੋਲ ਨਿਸ਼ਾਨੀਆਂ ਵਿੱਚੋਂ ਹਨ ਜੋ ਅੱਜ ਵੀ ਮੌਜੂਦ ਹਨ। ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੀ ਸ਼ਰਧਾ ਅਤੇ ਸੇਵਾ ਨੂੰ ਵੇਖਦੇ ਹੋਏ ਇਹ ਉਹਨਾਂ ਨੂੰ ਬਖ਼ਸ਼ੀਆਂ ਗਈਆਂ, ਅਤੇ ਤਿੰਨ ਸੌ ਸਾਲਾਂ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ ਇੱਕੋ ਪਰਿਵਾਰ ਦੀ ਵੰਸ਼ ਅੰਦਰ ਸੰਭਾਲੀਆਂ ਅਤੇ ਸੁਰੱਖਿਅਤ ਰੱਖੀਆਂ ਗਈਆਂ ਹਨ — ਹਿਜਰਤ, ਵੰਡ ਅਤੇ ਅਨੇਕਾਂ ਪੀੜ੍ਹੀਆਂ ਦੇ ਬੀਤਣ ਦੇ ਬਾਵਜੂਦ।",
+    relicsPageIntro2:
+      "ਹੇਠਾਂ ਹਰ ਵਸਤੂ ਉਸ ਇਤਿਹਾਸਕ ਪ੍ਰਸੰਗ ਨਾਲ ਪੇਸ਼ ਕੀਤੀ ਗਈ ਹੈ ਜੋ ਸੇਵਾਦਾਰ ਪਰਿਵਾਰ ਵੱਲੋਂ ਦਰਜ ਕੀਤਾ ਅਤੇ ਅੱਗੇ ਤੋਰਿਆ ਗਿਆ ਹੈ। ਵੇਰਵੇ ਮੌਖਿਕ ਇਤਿਹਾਸ ਅਤੇ ਪਰਿਵਾਰਕ ਰਿਕਾਰਡ ਤੋਂ ਲਏ ਗਏ ਹਨ, ਅਤੇ ਇਸ ਵਿਰਾਸਤ ਨੂੰ ਸੰਭਾਲਣ ਅਤੇ ਸਤਿਕਾਰਨ ਦੀ ਭਾਵਨਾ ਨਾਲ ਸੰਗਤ ਨਾਲ ਸਾਂਝੇ ਕੀਤੇ ਗਏ ਹਨ।",
+    relicsProvenanceHeading: "ਮੂਲ ਅਤੇ ਸਾਂਭ-ਸੰਭਾਲ",
+    relicsProvenanceBody:
+      "ਸੇਵਾਦਾਰ ਪਰਿਵਾਰ ਸਾਂਭ-ਸੰਭਾਲ ਦੀਆਂ ਉਹੀ ਪਰੰਪਰਾਗਤ ਰੀਤਾਂ ਨਿਭਾਉਂਦਾ ਹੈ ਜੋ ਨਿਸ਼ਾਨੀਆਂ ਦੇ ਨਾਲ ਹੀ ਅੱਗੇ ਤੁਰੀਆਂ — ਰੱਖਣ ਅਤੇ ਲਿਜਾਣ ਦੇ ਢੰਗ ਤੋਂ ਲੈ ਕੇ ਦਰਸ਼ਨ ਸਮੇਂ ਨਿਭਾਈ ਜਾਂਦੀ ਮਰਯਾਦਾ ਤੱਕ। ਦਰਸ਼ਕਾਂ ਨੂੰ ਸੱਦਾ ਹੈ ਕਿ ਇਹਨਾਂ ਨੂੰ ਅਜਾਇਬ-ਘਰ ਦੀਆਂ ਵਸਤਾਂ ਨਹੀਂ, ਸਗੋਂ ਸਿੱਖ ਇਤਿਹਾਸ ਦੇ ਜੀਵਤ ਅੰਗ ਸਮਝ ਕੇ ਵੇਖਣ, ਅਤੇ ਉਸੇ ਸਤਿਕਾਰ ਨਾਲ ਨੇੜੇ ਆਉਣ ਜੋ ਪਰਿਵਾਰ ਨੇ ਚੌਦਾਂ ਪੀੜ੍ਹੀਆਂ ਤੋਂ ਨਿਭਾਇਆ ਹੈ।",
+    lineagePageIntro:
+      "ਇਸ ਪਰਿਵਾਰ ਦੀ ਕਹਾਣੀ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਤੋਂ ਨਹੀਂ, ਸਗੋਂ ਉਹਨਾਂ ਦੀ ਮਾਤਾ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਤੋਂ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਜਿਹਨਾਂ ਦੀ ਆਪਣੇ ਵਿਆਹ ਵੇਲੇ ਦੀ ਸ਼ਰਧਾ ਨੇ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਤੋਂ ਬਖ਼ਸ਼ਿਸ਼ ਦਿਵਾਈ। ਉਹੀ ਬਖ਼ਸ਼ਿਸ਼ ਉਸ ਵਿਰਾਸਤ ਦੀ ਨੀਂਹ ਬਣੀ ਜੋ ਅੱਜ ਵੀ ਜਾਰੀ ਹੈ — ਗੁਰੂ ਜੀ ਵੱਲੋਂ ਨਾਮ ਰੱਖੇ ਗਏ ਪੁੱਤਰ ਤੋਂ, ਉਹਨਾਂ ਦੇ ਨਾਂ 'ਤੇ ਵਸਾਏ ਪਿੰਡ ਤੱਕ, ਅਤੇ ਪਵਿੱਤਰ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਪੀੜ੍ਹੀ-ਦਰ-ਪੀੜ੍ਹੀ ਸਾਂਭ-ਸੰਭਾਲ ਤੱਕ।",
+    lineageTimelineEyebrow: "ਇੱਕ ਜੀਵਤ ਸਮਾਂ-ਰੇਖਾ",
+    lineageTimelineHeading: "ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਤੋਂ ਅੱਜ ਤੱਕ",
+    custodianEyebrow: "ਟੂਰ ਦੇ ਸੇਵਾਦਾਰ",
+    custodianBio1:
+      "ਤਿੰਨ ਸੌ ਸਾਲਾਂ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ ਚੱਲੀ ਆ ਰਹੀ ਜ਼ਿੰਮੇਵਾਰੀ ਅੱਗੇ ਤੋਰ ਰਹੇ ਹਨ — ਉਹ ਸ਼ਸਤਰ, ਗ੍ਰੰਥ ਅਤੇ ਹੁਕਮਨਾਮੇ ਸੰਭਾਲਣ ਦੀ, ਜੋ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਨੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਨੂੰ ਸੌਂਪੇ ਸਨ। ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ ਦੇ ਪਰਿਵਾਰ ਨਾਲ ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦੀ ਸੇਵਾ ਵਿੱਚ ਪਲੇ, ਹੁਣ ਉਹ ਇਹਨਾਂ ਨਿਸ਼ਾਨੀਆਂ ਨਾਲ ਸਫ਼ਰ ਕਰਦੇ ਹਨ ਤਾਂ ਜੋ ਪੰਜਾਬ ਤੋਂ ਦੂਰ ਬੈਠੀਆਂ ਸੰਗਤਾਂ ਵੀ ਇਹਨਾਂ ਦੇ ਦਰਸ਼ਨ ਕਰ ਸਕਣ।",
+    custodianBio2:
+      "ਪਰਿਵਾਰ ਦੇ ਪੁਰਾਤਨ ਵਿਰਸੇ ਦੀਆਂ ਝਲਕਾਂ, ਟੂਰ ਦੀਆਂ ਖ਼ਬਰਾਂ ਅਤੇ ਗੁਰਬਾਣੀ ਦੇ ਵਿਚਾਰ ਆਨਲਾਈਨ ਸੰਗਤ ਨਾਲ ਸਾਂਝੇ ਕਰਦੇ ਹਨ।",
+    custodianBio2Prefix: "ਟੂਰ ਤੋਂ ਇਲਾਵਾ,",
+    custodianInstagramCta: "ਇੰਸਟਾਗ੍ਰਾਮ 'ਤੇ ਫੋਲੋ ਕਰੋ",
+    custodianYoutubeCta: "ਯੂਟਿਊਬ 'ਤੇ ਵੇਖੋ",
+    custodianConnectEyebrow: "ਸੰਪਰਕ ਅਤੇ ਸਹਿਯੋਗ",
+    custodianConnectHeading: "ਫੋਲੋ ਕਰਨ ਜਾਂ ਟੂਰ ਦੀ ਮਦਦ ਲਈ ਸਕੈਨ ਕਰੋ",
+    custodianConnectBody:
+      "ਸਫ਼ਰ ਦੌਰਾਨ ਹੇਠਾਂ ਦਿੱਤੇ ਕੋਡ ਸਕੈਨ ਕਰੋ, ਜਾਂ ਘਰੋਂ ਉੱਪਰ ਦਿੱਤੇ ਲਿੰਕ ਵਰਤੋ।",
+    custodianPhonePeNote: "ਟੂਰ ਦੀ ਸੇਵਾ ਅਤੇ ਸਫ਼ਰ ਲਈ ਸਹਿਯੋਗ",
+    schedulePageHeading: "ਸਾਰੀਆਂ ਟੂਰ ਮਿਤੀਆਂ ਅਤੇ ਦਰਸ਼ਕ ਗਾਈਡ",
+    schedulePageIntroEmpty:
+      "ਇਸ ਵੇਲੇ ਕੋਈ ਪੱਕੀ ਟੂਰ ਮਿਤੀ ਨਹੀਂ ਹੈ। ਜਿਵੇਂ-ਜਿਵੇਂ ਸੰਗਤਾਂ ਅਤੇ ਸੰਸਥਾਵਾਂ ਮੇਜ਼ਬਾਨੀ ਲਈ ਅੱਗੇ ਆਉਂਦੀਆਂ ਹਨ, ਨਵੇਂ ਸਟਾਪਾਂ ਦਾ ਐਲਾਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ — ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਵੇਖੋ, ਜਾਂ ਦਰਸ਼ਨ ਦੀ ਬੇਨਤੀ ਲਈ ਸੰਪਰਕ ਕਰੋ।",
+    schedulePageIntroFull:
+      "ਹੇਠਾਂ ਟੂਰ ਦਾ ਪੂਰਾ ਮੌਜੂਦਾ ਸ਼ਡਿਊਲ ਹੈ। ਜਿਵੇਂ-ਜਿਵੇਂ ਨਵੀਆਂ ਸੰਗਤਾਂ ਅਤੇ ਸੰਸਥਾਵਾਂ ਮੇਜ਼ਬਾਨੀ ਲਈ ਅੱਗੇ ਆਉਂਦੀਆਂ ਹਨ, ਸਟਾਪ ਜੋੜੇ ਜਾਂਦੇ ਹਨ — ਮੁੜ ਵੇਖੋ ਜਾਂ ਦਰਸ਼ਨ ਦੀ ਬੇਨਤੀ ਲਈ ਸੰਪਰਕ ਕਰੋ।",
+    scheduleFullHeading: "ਪੂਰਾ ਸ਼ਡਿਊਲ",
+    maryadaIntro:
+      "ਇਹਨਾਂ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਪਵਿੱਤਰਤਾ ਦੇ ਸਤਿਕਾਰ ਵਜੋਂ, ਸਾਰੇ ਦਰਸ਼ਕਾਂ ਨੂੰ ਹੇਠ ਲਿਖੇ ਦੀ ਪਾਲਣਾ ਕਰਨ ਦੀ ਬੇਨਤੀ ਹੈ:",
+    maryadaFull1: "ਪ੍ਰਦਰਸ਼ਨੀ ਵਾਲੀ ਥਾਂ ਵਿੱਚ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਸਿਰ ਢਕੋ।",
+    maryadaFull2: "ਗੁਰਦੁਆਰਾ ਮਰਯਾਦਾ ਅਨੁਸਾਰ, ਅੰਦਰ ਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਜੁੱਤੇ ਉਤਾਰੋ।",
+    maryadaFull3:
+      "ਫੋਟੋਗ੍ਰਾਫੀ ਅਤੇ ਵੀਡੀਓ ਸਿਰਫ਼ ਨਿਸ਼ਚਿਤ ਥਾਵਾਂ 'ਤੇ ਹੀ ਕਰ ਸਕਦੇ ਹੋ; ਨਿਸ਼ਾਨੀਆਂ ਦੇ ਨੇੜੇ ਫਲੈਸ਼ ਦੀ ਆਗਿਆ ਨਹੀਂ ਹੈ।",
+    maryadaFull4:
+      "ਨਿਸ਼ਾਨੀਆਂ ਦੇ ਦਰਸ਼ਨ ਕਰਦੇ ਸਮੇਂ ਸਤਿਕਾਰ ਸਹਿਤ ਸ਼ਾਂਤੀ ਬਣਾਈ ਰੱਖੋ, ਅਤੇ ਮੌਕੇ 'ਤੇ ਸਵੈ-ਸੇਵੀਆਂ ਦੀ ਅਗਵਾਈ ਮੰਨੋ।",
+    maryadaFull5:
+      "ਪ੍ਰਦਰਸ਼ਨੀ ਵਾਲੀ ਥਾਂ ਅੰਦਰ ਖਾਣ-ਪੀਣ ਅਤੇ ਤੰਬਾਕੂ ਵਾਲੀਆਂ ਵਸਤਾਂ ਦੀ ਆਗਿਆ ਨਹੀਂ ਹੈ।",
+    hostPageHeading: "ਪ੍ਰਦਰਸ਼ਨੀ ਦੀ ਮੇਜ਼ਬਾਨੀ ਲਈ ਬੇਨਤੀ",
+    hostPageBody:
+      "ਗੁਰਦੁਆਰਿਆਂ, ਵਿਦਿਅਕ ਸੰਸਥਾਵਾਂ ਅਤੇ ਵਿਰਾਸਤੀ ਸੰਸਥਾਵਾਂ ਨੂੰ ਇਹ ਪਵਿੱਤਰ ਨਿਸ਼ਾਨੀਆਂ ਆਪਣੀ ਸੰਗਤ ਵਿੱਚ ਲਿਆਉਣ ਦਾ ਖੁੱਲ੍ਹਾ ਸੱਦਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਕੁਝ ਵੇਰਵੇ ਸਾਂਝੇ ਕਰੋ ਅਤੇ ਟੂਰ ਸੇਵਾਦਾਰ ਦੀ ਟੀਮ ਮਿਤੀਆਂ, ਥਾਂ ਦੀ ਲੋੜ ਅਤੇ ਪ੍ਰਬੰਧ ਬਾਰੇ ਗੱਲ ਕਰਨ ਲਈ ਸੰਪਰਕ ਕਰੇਗੀ।",
+    hostThanks:
+      "ਤੁਹਾਡੀ ਬੇਨਤੀ ਲਈ ਧੰਨਵਾਦ। ਟੂਰ ਟੀਮ ਦਾ ਇੱਕ ਮੈਂਬਰ ਅਗਲੇ ਕਦਮਾਂ ਬਾਰੇ ਗੱਲ ਕਰਨ ਲਈ ਸੰਪਰਕ ਕਰੇਗਾ।",
+    fieldOrganisation: "ਸੰਸਥਾ ਦਾ ਨਾਮ",
+    fieldContactName: "ਸੰਪਰਕ ਵਿਅਕਤੀ ਦਾ ਨਾਮ",
+    fieldEmail: "ਈਮੇਲ",
+    fieldCityState: "ਸ਼ਹਿਰ ਅਤੇ ਰਾਜ",
+    fieldPreferredDates: "ਪਸੰਦੀਦਾ ਮਿਤੀਆਂ ਅਤੇ ਹੋਰ ਵੇਰਵੇ",
+    hostSubmit: "ਮੇਜ਼ਬਾਨੀ ਦੀ ਬੇਨਤੀ ਭੇਜੋ",
+    sevaEyebrow: "ਸਵੈ-ਸੇਵਾ ਅਤੇ ਸੇਵਾ",
+    sevaHeading: "ਸੇਵਾ ਰਾਹੀਂ ਟੂਰ ਦੀ ਮਦਦ ਕਰੋ",
+    sevaBody:
+      "ਇਹ ਟੂਰ ਹਰ ਸਟਾਪ 'ਤੇ ਸਥਾਨਕ ਸਵੈ-ਸੇਵੀਆਂ ਦੀ ਦਰਿਆਦਿਲੀ ਸਦਕਾ ਚੱਲਦਾ ਹੈ। ਭਾਵੇਂ ਇੱਕ ਦੁਪਹਿਰ ਲਈ ਹੋਵੇ ਜਾਂ ਪੂਰੇ ਦੌਰੇ ਲਈ, ਤੁਹਾਡੀ ਸੇਵਾ ਸੰਗਤ ਲਈ ਇਸ ਵਿਰਾਸਤ ਦੇ ਦਰਸ਼ਨ ਸੁਰੱਖਿਅਤ ਅਤੇ ਸਤਿਕਾਰ ਸਹਿਤ ਸੰਭਵ ਬਣਾਉਂਦੀ ਹੈ।",
+    sevaSignUp: "ਸਵੈ-ਸੇਵਾ ਲਈ ਨਾਮ ਦਰਜ ਕਰੋ",
+    sevaThanks:
+      "ਤੁਹਾਡੀ ਸੇਵਾ ਦੀ ਪੇਸ਼ਕਸ਼ ਲਈ ਧੰਨਵਾਦ। ਸਥਾਨਕ ਕੋਆਰਡੀਨੇਟਰ ਵੇਰਵਿਆਂ ਨਾਲ ਸੰਪਰਕ ਕਰੇਗਾ।",
+    fieldFullName: "ਪੂਰਾ ਨਾਮ",
+    fieldAreaOfInterest: "ਦਿਲਚਸਪੀ ਦਾ ਖੇਤਰ",
+
+    sevaArea1Title: "ਪ੍ਰਾਹੁਣਚਾਰੀ ਅਤੇ ਲੰਗਰ",
+    sevaArea1Body:
+      "ਦਰਸ਼ਕਾਂ ਦਾ ਸਵਾਗਤ ਕਰਨ ਅਤੇ ਪ੍ਰਦਰਸ਼ਨੀ ਦੇ ਸਮੇਂ ਦੌਰਾਨ ਲੰਗਰ ਜਾਂ ਜਲਪਾਨ ਦਾ ਪ੍ਰਬੰਧ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰੋ।",
+    sevaArea2Title: "ਪ੍ਰਬੰਧ ਅਤੇ ਤਿਆਰੀ",
+    sevaArea2Body:
+      "ਹਰ ਸਟਾਪ 'ਤੇ ਪ੍ਰਦਰਸ਼ਨੀ ਵਾਲੀ ਥਾਂ ਦੀ ਧਿਆਨ ਨਾਲ ਤਿਆਰੀ, ਸੰਭਾਲ ਅਤੇ ਸਮੇਟਣ ਵਿੱਚ ਮਦਦ ਕਰੋ।",
+    sevaArea3Title: "ਇਤਿਹਾਸ ਸੁਣਾਉਣ ਦੀ ਸੇਵਾ",
+    sevaArea3Body:
+      "ਸਵੈ-ਸੇਵੀ ਗਾਈਡ ਵਜੋਂ ਦਰਸ਼ਕਾਂ ਨਾਲ ਨਿਸ਼ਾਨੀਆਂ ਅਤੇ ਵੰਸ਼ ਦਾ ਇਤਿਹਾਸ ਸਾਂਝਾ ਕਰੋ।",
+    sevaArea4Title: "ਸਥਾਨਕ ਪ੍ਰਚਾਰ",
+    sevaArea4Body:
+      "ਆਪਣੇ ਨੇੜੇ ਟੂਰ ਸਟਾਪ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਸਥਾਨਕ ਸੰਗਤ ਅਤੇ ਭਾਈਚਾਰੇ ਵਿੱਚ ਸੁਨੇਹਾ ਪਹੁੰਚਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ।",
+    sevaSubmit: "ਨਾਮ ਦਰਜ ਕਰੋ",
+
+    custodianLineageNote:
+      "ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ ਦੇ ਪਰਿਵਾਰ ਵਿੱਚੋਂ, ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੀ 14ਵੀਂ ਪੀੜ੍ਹੀ ਦੇ ਵੰਸ਼ਜ",
+    footerInService: "ਸੰਗਤ ਦੀ ਸੇਵਾ ਵਿੱਚ",
 
     categoryAll: "ਸਾਰੇ",
     categoryShastars: "ਸ਼ਸਤਰ",

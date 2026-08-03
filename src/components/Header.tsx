@@ -54,7 +54,7 @@ export default function Header({ breadcrumb }: { breadcrumb?: string } = {}) {
               href="/"
               className="inline-flex items-center gap-1 font-medium text-gold-600 transition hover:text-gold-500"
             >
-              <span aria-hidden>&larr;</span> Home
+              <span aria-hidden>&larr;</span> {t("navHome")}
             </Link>
             <span className="text-navy-300">/</span>
             <span className="text-navy-500">{breadcrumb}</span>

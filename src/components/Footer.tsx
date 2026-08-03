@@ -56,7 +56,8 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-xs text-cream-100/40">
-            &copy; 2026 Baba Bhai Roop Chand Ji Collection Museum &middot; In Service of the Sangat
+            &copy; 2026 Baba Bhai Roop Chand Ji Collection Museum &middot;{" "}
+            {t("footerInService")}
           </p>
         </div>
       </div>
