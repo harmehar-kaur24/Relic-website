@@ -79,3 +79,116 @@ section[id] {
 [lang="pa"] {
   font-family: var(--font-gurmukhi), var(--font-inter), sans-serif;
 }
+
+/* ============================================================================
+ * EXPERIMENTAL THEMES — temporary, for trying palettes out.
+ *
+ * Each block overrides the same custom properties declared in :root above, so
+ * switching the data-theme attribute on <html> recolours the entire site with
+ * no component changes.
+ *
+ * One constraint worth knowing: the navy-* ramp does double duty as both the
+ * dark section backgrounds AND the dark body text on cream. So every theme
+ * keeps that ramp genuinely dark and varies its hue instead of its lightness —
+ * lightening it would leave dark-on-light text unreadable. Likewise cream-*
+ * must stay light, since cream-100 is used as text on navy.
+ *
+ * To remove all of this: delete this block, delete ThemeSwitcher.tsx, and drop
+ * its import from layout.tsx. Nothing else references it.
+ * ========================================================================== */
+
+/* Kesri — saffron and oxblood, after the Nishan Sahib */
+[data-theme="kesri"] {
+  --color-navy-950: #1c0a07;
+  --color-navy-900: #2f110c;
+  --color-navy-800: #451c13;
+  --color-navy-700: #5e281a;
+  --color-navy-600: #7a3623;
+  --color-gold-300: #ffdcae;
+  --color-gold-400: #f7bb6b;
+  --color-gold-500: #e08421;
+  --color-gold-600: #a8611a;
+  --color-cream-50: #fdf7f0;
+  --color-cream-100: #f9ead9;
+  --foreground: #1c0a07;
+}
+
+/* Puratan — aged manuscript: sepia, parchment and brown ink */
+[data-theme="puratan"] {
+  --color-navy-950: #1b1409;
+  --color-navy-900: #2b2110;
+  --color-navy-800: #3d2f18;
+  --color-navy-700: #524022;
+  --color-navy-600: #6b542e;
+  --color-gold-300: #ecdcb4;
+  --color-gold-400: #d4b476;
+  --color-gold-500: #ad8a3a;
+  --color-gold-600: #85692c;
+  --color-cream-50: #faf6ec;
+  --color-cream-100: #f2e9d5;
+  --foreground: #1b1409;
+}
+
+/* Neel — Nihang indigo with brass */
+[data-theme="neel"] {
+  --color-navy-950: #0a0a1f;
+  --color-navy-900: #141433;
+  --color-navy-800: #1f1f4d;
+  --color-navy-700: #2c2c6b;
+  --color-navy-600: #3b3b8c;
+  --color-gold-300: #ecdfb8;
+  --color-gold-400: #d4be7e;
+  --color-gold-500: #b99a45;
+  --color-gold-600: #8f7632;
+  --color-cream-50: #f9f8f4;
+  --color-cream-100: #efece1;
+  --foreground: #0a0a1f;
+}
+
+/* Shaheedi — deep burgundy with antique gold */
+[data-theme="shaheedi"] {
+  --color-navy-950: #16060c;
+  --color-navy-900: #290b16;
+  --color-navy-800: #3d1220;
+  --color-navy-700: #551a2c;
+  --color-navy-600: #70253c;
+  --color-gold-300: #edd7b4;
+  --color-gold-400: #dcbb84;
+  --color-gold-500: #bf954c;
+  --color-gold-600: #967338;
+  --color-cream-50: #fcf7f4;
+  --color-cream-100: #f4e8e3;
+  --foreground: #16060c;
+}
+
+/* Sarbloh — cold steel and charcoal, after the shastars, with muted brass */
+[data-theme="sarbloh"] {
+  --color-navy-950: #0d0f11;
+  --color-navy-900: #171b1f;
+  --color-navy-800: #23292f;
+  --color-navy-700: #333b43;
+  --color-navy-600: #465059;
+  --color-gold-300: #e6dcc6;
+  --color-gold-400: #cbbb95;
+  --color-gold-500: #a08c62;
+  --color-gold-600: #7c6b4a;
+  --color-cream-50: #f8f8f7;
+  --color-cream-100: #ecedec;
+  --foreground: #0d0f11;
+}
+
+/* Basanti — mustard and deep pine */
+[data-theme="basanti"] {
+  --color-navy-950: #0c1410;
+  --color-navy-900: #14231b;
+  --color-navy-800: #1e3427;
+  --color-navy-700: #2b4835;
+  --color-navy-600: #3b5f46;
+  --color-gold-300: #f3e3a8;
+  --color-gold-400: #e3c766;
+  --color-gold-500: #cba62c;
+  --color-gold-600: #9d8022;
+  --color-cream-50: #fbf9ef;
+  --color-cream-100: #f3eed9;
+  --foreground: #0c1410;
+}

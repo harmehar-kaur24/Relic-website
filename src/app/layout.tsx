@@ -8,6 +8,9 @@ import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import BackToTop from "@/components/BackToTop";
 import ImageLightbox from "@/components/ImageLightbox";
+// EXPERIMENTAL: temporary palette picker. Remove this import and the
+// <ThemeSwitcher /> below to drop it.
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -53,6 +56,7 @@ export default function RootLayout({
           {children}
           <BackToTop />
           <ImageLightbox />
+          <ThemeSwitcher />
         </LanguageProvider>
       </body>
     </html>
