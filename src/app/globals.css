@@ -81,114 +81,225 @@ section[id] {
 }
 
 /* ============================================================================
- * EXPERIMENTAL THEMES — temporary, for trying palettes out.
+ * EXPERIMENTAL THEMES — temporary, for trying real design directions out.
  *
- * Each block overrides the same custom properties declared in :root above, so
- * switching the data-theme attribute on <html> recolours the entire site with
- * no component changes.
+ * These do more than shift hue. The trick that makes that possible: the same
+ * colour name is used for two different jobs (bg-navy-950 is a dark band,
+ * text-navy-950 is dark body copy), so overriding the *variable* forces both
+ * to move together and every theme ends up looking like the last one. These
+ * blocks target the utility CLASSES instead, which are separate — so a theme
+ * can invert light and dark, not just recolour.
  *
- * One constraint worth knowing: the navy-* ramp does double duty as both the
- * dark section backgrounds AND the dark body text on cream. So every theme
- * keeps that ramp genuinely dark and varies its hue instead of its lightness —
- * lightening it would leave dark-on-light text unreadable. Likewise cream-*
- * must stay light, since cream-100 is used as text on navy.
+ * [class*="…"] is used so opacity variants (bg-navy-950/40) are caught too.
+ * Specificity is (0,2,0) vs a utility's (0,1,0), so no !important needed.
  *
- * To remove all of this: delete this block, delete ThemeSwitcher.tsx, and drop
- * its import from layout.tsx. Nothing else references it.
+ * Each theme also varies typography, corner radius and contrast, which is
+ * what actually makes them read as different designs.
+ *
+ * To remove: delete this block, delete ThemeSwitcher.tsx, drop its import from
+ * layout.tsx.
  * ========================================================================== */
 
-/* Kesri — saffron and oxblood, after the Nishan Sahib */
-[data-theme="kesri"] {
-  --color-navy-950: #1c0a07;
-  --color-navy-900: #2f110c;
-  --color-navy-800: #451c13;
-  --color-navy-700: #5e281a;
-  --color-navy-600: #7a3623;
-  --color-gold-300: #ffdcae;
-  --color-gold-400: #f7bb6b;
-  --color-gold-500: #e08421;
-  --color-gold-600: #a8611a;
-  --color-cream-50: #fdf7f0;
-  --color-cream-100: #f9ead9;
-  --foreground: #1c0a07;
+/* ---------------------------------------------------------------------------
+ * SANGMARMAR — full light. Marble gallery: everything pale, ink text,
+ * restrained gold leaf. The dark bands become light, so it reads as one
+ * continuous airy space rather than alternating stripes.
+ * ------------------------------------------------------------------------- */
+[data-theme="sangmarmar"] {
+  --background: #ffffff;
+  --color-cream-50: #ffffff;
+  --color-cream-100: #f4f1ea;
+  --color-gold-500: #a98b3e;
+  --color-gold-600: #8a6f2c;
+  --color-navy-100: #e7e3da;
+  --color-navy-200: #d8d3c7;
+  --foreground: #1b1814;
+}
+[data-theme="sangmarmar"] [class*="bg-navy-9"],
+[data-theme="sangmarmar"] [class*="bg-navy-8"] {
+  background-color: #f7f5f0;
+}
+[data-theme="sangmarmar"] [class*="text-cream-100"] {
+  color: #2a251e;
+}
+[data-theme="sangmarmar"] [class*="text-gold-300"],
+[data-theme="sangmarmar"] [class*="text-gold-400"] {
+  color: #8a6f2c;
+}
+[data-theme="sangmarmar"] [class*="border-gold-4"],
+[data-theme="sangmarmar"] [class*="ring-gold-4"] {
+  border-color: #d8cfb4;
+}
+[data-theme="sangmarmar"] .shadow-lg,
+[data-theme="sangmarmar"] .shadow-2xl,
+[data-theme="sangmarmar"] .shadow-xl {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
 }
 
-/* Puratan — aged manuscript: sepia, parchment and brown ink */
-[data-theme="puratan"] {
-  --color-navy-950: #1b1409;
-  --color-navy-900: #2b2110;
-  --color-navy-800: #3d2f18;
-  --color-navy-700: #524022;
-  --color-navy-600: #6b542e;
-  --color-gold-300: #ecdcb4;
-  --color-gold-400: #d4b476;
-  --color-gold-500: #ad8a3a;
-  --color-gold-600: #85692c;
-  --color-cream-50: #faf6ec;
-  --color-cream-100: #f2e9d5;
-  --foreground: #1b1409;
-}
-
-/* Neel — Nihang indigo with brass */
-[data-theme="neel"] {
-  --color-navy-950: #0a0a1f;
-  --color-navy-900: #141433;
-  --color-navy-800: #1f1f4d;
-  --color-navy-700: #2c2c6b;
-  --color-navy-600: #3b3b8c;
-  --color-gold-300: #ecdfb8;
-  --color-gold-400: #d4be7e;
-  --color-gold-500: #b99a45;
-  --color-gold-600: #8f7632;
-  --color-cream-50: #f9f8f4;
-  --color-cream-100: #efece1;
-  --foreground: #0a0a1f;
-}
-
-/* Shaheedi — deep burgundy with antique gold */
-[data-theme="shaheedi"] {
-  --color-navy-950: #16060c;
-  --color-navy-900: #290b16;
-  --color-navy-800: #3d1220;
-  --color-navy-700: #551a2c;
-  --color-navy-600: #70253c;
-  --color-gold-300: #edd7b4;
-  --color-gold-400: #dcbb84;
-  --color-gold-500: #bf954c;
-  --color-gold-600: #967338;
-  --color-cream-50: #fcf7f4;
-  --color-cream-100: #f4e8e3;
-  --foreground: #16060c;
-}
-
-/* Sarbloh — cold steel and charcoal, after the shastars, with muted brass */
+/* ---------------------------------------------------------------------------
+ * SARBLOH — brutalist. Near-black and white, hard 90-degree corners,
+ * sans-serif headings instead of Playfair, hairline rules, no shadows.
+ * ------------------------------------------------------------------------- */
 [data-theme="sarbloh"] {
-  --color-navy-950: #0d0f11;
-  --color-navy-900: #171b1f;
-  --color-navy-800: #23292f;
-  --color-navy-700: #333b43;
-  --color-navy-600: #465059;
-  --color-gold-300: #e6dcc6;
-  --color-gold-400: #cbbb95;
-  --color-gold-500: #a08c62;
-  --color-gold-600: #7c6b4a;
-  --color-cream-50: #f8f8f7;
-  --color-cream-100: #ecedec;
-  --foreground: #0d0f11;
+  --background: #ffffff;
+  --color-navy-950: #000000;
+  --color-navy-900: #0c0c0c;
+  --color-navy-800: #1a1a1a;
+  --color-navy-700: #2b2b2b;
+  --color-navy-600: #3d3d3d;
+  --color-gold-300: #ffffff;
+  --color-gold-400: #d4d4d4;
+  --color-gold-500: #8a8a8a;
+  --color-gold-600: #454545;
+  --color-cream-50: #ffffff;
+  --color-cream-100: #ededed;
+  --color-navy-100: #e0e0e0;
+  --color-navy-200: #c9c9c9;
+  --foreground: #000000;
+}
+[data-theme="sarbloh"] *,
+[data-theme="sarbloh"] *::before,
+[data-theme="sarbloh"] *::after {
+  border-radius: 0 !important;
+}
+[data-theme="sarbloh"] .shadow-sm,
+[data-theme="sarbloh"] .shadow-md,
+[data-theme="sarbloh"] .shadow-lg,
+[data-theme="sarbloh"] .shadow-xl,
+[data-theme="sarbloh"] .shadow-2xl {
+  box-shadow: none;
+}
+[data-theme="sarbloh"] .font-serif {
+  font-family: var(--font-inter), var(--font-gurmukhi), sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: 700;
 }
 
-/* Basanti — mustard and deep pine */
-[data-theme="basanti"] {
-  --color-navy-950: #0c1410;
-  --color-navy-900: #14231b;
-  --color-navy-800: #1e3427;
-  --color-navy-700: #2b4835;
-  --color-navy-600: #3b5f46;
-  --color-gold-300: #f3e3a8;
-  --color-gold-400: #e3c766;
-  --color-gold-500: #cba62c;
-  --color-gold-600: #9d8022;
-  --color-cream-50: #fbf9ef;
-  --color-cream-100: #f3eed9;
-  --foreground: #0c1410;
+/* ---------------------------------------------------------------------------
+ * KESRI — saturated. Saffron stops being a small accent and becomes the
+ * surface itself; the dark bands turn deep amber-brown. Loud and warm.
+ * ------------------------------------------------------------------------- */
+[data-theme="kesri"] {
+  --background: #fffaf2;
+  --color-gold-300: #fff2d5;
+  --color-gold-400: #ffd88a;
+  --color-gold-500: #f97316;
+  --color-gold-600: #c2410c;
+  --color-cream-50: #fffaf2;
+  --color-cream-100: #ffeed6;
+  --color-navy-100: #fadcb8;
+  --color-navy-200: #f0c48f;
+  --foreground: #2b1206;
+}
+[data-theme="kesri"] [class*="bg-navy-95"] {
+  background-color: #7c2d12;
+}
+[data-theme="kesri"] [class*="bg-navy-9"] {
+  background-color: #9a3412;
+}
+[data-theme="kesri"] [class*="bg-navy-8"] {
+  background-color: #b4460f;
+}
+[data-theme="kesri"] [class*="text-navy-9"],
+[data-theme="kesri"] [class*="text-navy-8"] {
+  color: #2b1206;
+}
+[data-theme="kesri"] [class*="text-navy-7"],
+[data-theme="kesri"] [class*="text-navy-6"],
+[data-theme="kesri"] [class*="text-navy-5"] {
+  color: #7c3a12;
+}
+
+/* ---------------------------------------------------------------------------
+ * PURATAN — parchment. Warm paper light theme, brown ink, soft generous
+ * corners, a faint grain so it does not read as flat white.
+ * ------------------------------------------------------------------------- */
+[data-theme="puratan"] {
+  --background: #f6efdd;
+  --color-cream-50: #f6efdd;
+  --color-cream-100: #ecdfc2;
+  --color-gold-500: #8a6a25;
+  --color-gold-600: #6b511b;
+  --color-navy-100: #ddcda8;
+  --color-navy-200: #c9b58c;
+  --foreground: #3a2c14;
+}
+[data-theme="puratan"] [class*="bg-navy-9"],
+[data-theme="puratan"] [class*="bg-navy-8"] {
+  background-color: #ebdcbc;
+}
+[data-theme="puratan"] [class*="text-cream-100"] {
+  color: #3a2c14;
+}
+[data-theme="puratan"] [class*="text-gold-300"],
+[data-theme="puratan"] [class*="text-gold-400"] {
+  color: #6b511b;
+}
+[data-theme="puratan"] [class*="text-navy-9"],
+[data-theme="puratan"] [class*="text-navy-8"] {
+  color: #3a2c14;
+}
+[data-theme="puratan"] [class*="border-gold-4"],
+[data-theme="puratan"] [class*="ring-gold-4"] {
+  border-color: #cbb68e;
+}
+[data-theme="puratan"] .rounded-xl,
+[data-theme="puratan"] .rounded-lg {
+  border-radius: 1.5rem;
+}
+[data-theme="puratan"] body,
+[data-theme="puratan"] {
+  background-image: radial-gradient(
+    rgb(120 90 40 / 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 4px 4px;
+}
+[data-theme="puratan"] .shadow-lg,
+[data-theme="puratan"] .shadow-2xl {
+  box-shadow: 0 2px 10px rgb(90 70 30 / 0.12);
+}
+
+/* ---------------------------------------------------------------------------
+ * RAAT — true black, cinematic. Almost no chroma, hairline gold rules,
+ * generous letter-spacing, minimal contrast between surfaces.
+ * ------------------------------------------------------------------------- */
+[data-theme="raat"] {
+  --background: #0a0a0a;
+  --color-navy-950: #000000;
+  --color-navy-900: #050505;
+  --color-navy-800: #0d0d0d;
+  --color-navy-700: #171717;
+  --color-navy-600: #242424;
+  --color-gold-300: #e8dcc0;
+  --color-gold-400: #c8b68d;
+  --color-gold-500: #9c8757;
+  --color-gold-600: #6f5f3c;
+  --color-cream-50: #0a0a0a;
+  --color-cream-100: #e6e2d8;
+  --color-navy-100: #1e1e1e;
+  --color-navy-200: #2a2a2a;
+  --foreground: #e6e2d8;
+}
+/* cream-50 is the page background here, so light-band text must invert */
+[data-theme="raat"] [class*="text-navy-9"],
+[data-theme="raat"] [class*="text-navy-8"] {
+  color: #e6e2d8;
+}
+[data-theme="raat"] [class*="text-navy-7"],
+[data-theme="raat"] [class*="text-navy-6"],
+[data-theme="raat"] [class*="text-navy-5"] {
+  color: #a8a29a;
+}
+[data-theme="raat"] [class*="bg-white"] {
+  background-color: #0d0d0d;
+}
+[data-theme="raat"] [class*="border-navy-1"],
+[data-theme="raat"] [class*="border-navy-2"],
+[data-theme="raat"] [class*="divide-navy-1"] {
+  border-color: #232323;
+}
+[data-theme="raat"] .font-serif {
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }

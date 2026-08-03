@@ -14,13 +14,42 @@ import { useCallback, useState, useSyncExternalStore } from "react";
  */
 
 const THEMES = [
-  { id: "nishan", label: "Nishan", note: "Navy & gold — current", swatch: ["#0a1b33", "#c9a227", "#f5efe0"] },
-  { id: "kesri", label: "Kesri", note: "Saffron & oxblood", swatch: ["#2f110c", "#e08421", "#f9ead9"] },
-  { id: "puratan", label: "Puratan", note: "Aged manuscript sepia", swatch: ["#2b2110", "#ad8a3a", "#f2e9d5"] },
-  { id: "neel", label: "Neel", note: "Nihang indigo & brass", swatch: ["#141433", "#b99a45", "#efece1"] },
-  { id: "shaheedi", label: "Shaheedi", note: "Burgundy & antique gold", swatch: ["#290b16", "#bf954c", "#f4e8e3"] },
-  { id: "sarbloh", label: "Sarbloh", note: "Steel & muted brass", swatch: ["#171b1f", "#a08c62", "#ecedec"] },
-  { id: "basanti", label: "Basanti", note: "Mustard & deep pine", swatch: ["#14231b", "#cba62c", "#f3eed9"] },
+  {
+    id: "nishan",
+    label: "Nishan",
+    note: "Current — navy bands, gold, serif",
+    swatch: ["#0a1b33", "#c9a227", "#f5efe0"],
+  },
+  {
+    id: "sangmarmar",
+    label: "Sangmarmar",
+    note: "All light — marble gallery, no dark bands",
+    swatch: ["#f7f5f0", "#a98b3e", "#ffffff"],
+  },
+  {
+    id: "sarbloh",
+    label: "Sarbloh",
+    note: "Brutalist — black/white, square corners, sans",
+    swatch: ["#000000", "#8a8a8a", "#ffffff"],
+  },
+  {
+    id: "kesri",
+    label: "Kesri",
+    note: "Saturated — saffron as the surface itself",
+    swatch: ["#9a3412", "#f97316", "#ffeed6"],
+  },
+  {
+    id: "puratan",
+    label: "Puratan",
+    note: "Parchment — paper grain, brown ink, soft corners",
+    swatch: ["#ebdcbc", "#8a6a25", "#f6efdd"],
+  },
+  {
+    id: "raat",
+    label: "Raat",
+    note: "True black — cinematic, hairline gold",
+    swatch: ["#000000", "#9c8757", "#0a0a0a"],
+  },
 ] as const;
 
 const STORAGE_KEY = "theme-experiment";
