@@ -2,7 +2,7 @@ export const custodian = {
   name: "Bhai Jaskaran Singh",
   village: "Bhai Rupa",
   lineageNote:
-    "Of the family of Bhai Balvir Singh Ji, the 14th-generation descendants of Bhai Roop Chand Ji from village Bhai Roopa",
+    "Of the family of Bhai Balvir Singh Ji, the 14th-generation descendants of Bhai Roop Chand Ji from village Bhai Rupa",
   instagram: "https://www.instagram.com/bhai_jaskaran_singh_g_official",
   youtube: "https://www.youtube.com/@BhaiJaskaransingh",
   /** Digits only, international format — used to build the wa.me link. */
@@ -60,11 +60,11 @@ export const relics: Relic[] = [
   },
   {
     id: "shri-sahib",
-    title: "Shri Sahib",
+    title: "Sri Sahib",
     associatedWith: "Sri Guru Hargobind Sahib Ji",
     category: "Shastars",
     description:
-      "This Sri Sahib was Sri Guru Hargobind Sahib Ji Maharaj's personal shastar, which they adorned daily. Following the Battle of Mehraaj, Guru Sahib blessed Bhai Roop Chand Ji with their sacred relic.",
+      "This Sri Sahib was Sri Guru Hargobind Sahib Ji Maharaj's personal shastar, which they adorned daily. Following the Battle of Mehraj, Guru Sahib blessed Bhai Roop Chand Ji with their sacred relic.",
     image: "/relics/shri-sahib.jpg",
   },
   {
@@ -91,7 +91,7 @@ export const relics: Relic[] = [
     associatedWith: "Banda Singh Bahadur",
     category: "Royal Edicts",
     description:
-      "An original edict issued under Banda Singh Bahadur, documenting the family's recognized standing during a pivotal period of Sikh history.",
+      "An original edict issued under Banda Singh Bahadur, documenting the family's recognised standing during a pivotal period of Sikh history.",
     image: "/relics/hukamnama-sahib.jpg",
   },
   {
@@ -256,7 +256,7 @@ export const relics: Relic[] = [
     associatedWith: "Sri Guru Gobind Singh Ji",
     category: "Scriptures",
     description:
-      "This sacred Pothi Sahib belongs to Sri Guru Gobind Singh Ji, written in noble gold ink. Being highly pleased with the dedicated seva of Baba Bhai Rup Chand Ji, Guru Sahib Ji graciously blessed him with this sacred Pothi. It is more than 350 years old, believed to date to approximately 1675–1680 CE, and features intricate floral motifs and gold-leaf illumination.",
+      "This sacred Pothi Sahib belongs to Sri Guru Gobind Singh Ji, written in noble gold ink. Being highly pleased with the dedicated seva of Baba Bhai Roop Chand Ji, Guru Sahib Ji graciously blessed him with this sacred Pothi. It is more than 350 years old, believed to date to approximately 1675–1680 CE, and features intricate floral motifs and gold-leaf illumination.",
     image: "/relics/gobind/pothi-sahib-gold.jpg",
   },
   {
@@ -279,7 +279,7 @@ export const relics: Relic[] = [
   },
   {
     id: "shri-sahib-gobind",
-    title: "Shri Sahib (Small Kirpan)",
+    title: "Sri Sahib (Small Kirpan)",
     associatedWith: "Sri Guru Gobind Singh Ji",
     category: "Shastars",
     description:

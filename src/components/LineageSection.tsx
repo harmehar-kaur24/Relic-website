@@ -14,7 +14,7 @@ export default function LineageSection() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal direction="left">
             <PlaceholderBox
-              label="[Image Placeholder: Village Bhai Roopa / Historical Lineage Map]"
+              label="[Image Placeholder: Village Bhai Rupa / Historical Lineage Map]"
               aspect="aspect-[4/3]"
               dark
             />

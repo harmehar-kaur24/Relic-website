@@ -34,7 +34,7 @@ export default function RelicsPage() {
             Each item below is presented with the historical context
             recorded and passed down by the custodian family. Descriptions
             are drawn from oral history and family record, and are shared in
-            the spirit of preserving and honoring this legacy for the wider
+            the spirit of preserving and honouring this legacy for the wider
             sangat.
           </p>
         </Reveal>
@@ -52,7 +52,7 @@ export default function RelicsPage() {
             are displayed. Visitors on tour are invited to view these
             artifacts as living pieces of Sikh history, not museum objects,
             and to approach them with the same reverence shown by the family
-            across ten generations.
+            across fourteen generations.
           </p>
         </Reveal>
       </main>

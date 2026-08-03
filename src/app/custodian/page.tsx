@@ -41,7 +41,7 @@ export default function CustodianPage() {
                 across more than three hundred years — the safekeeping of the
                 shastars, scriptures, and edicts entrusted to Bhai Roop Chand Ji
                 by Sri Guru Hargobind Sahib Ji. Raised in the seva of village
-                Bhai Roopa alongside the family of Bhai Balvir Singh Ji, he now
+                Bhai Rupa alongside the family of Bhai Balvir Singh Ji, he now
                 travels with these relics so sangats far from Punjab can
                 experience their darshan firsthand.
               </p>

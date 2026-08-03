@@ -23,7 +23,7 @@ export default function LineagePage() {
           </h1>
           <p className="mt-5 text-base leading-relaxed text-navy-700">
             The story of this family begins not with Bhai Roop Chand Ji
-            himself, but with his mother, Bibi Surat Ji, whose faith at her
+            himself, but with his mother, Bibi Surti Ji, whose faith at her
             own wedding brought a blessing from Sri Guru Hargobind Sahib Ji.
             That blessing became the foundation for a legacy that continues
             today — from a son named by the Guru, to a village founded in
@@ -34,7 +34,7 @@ export default function LineagePage() {
 
         <section className="bg-cream-100 py-4">
           <Reveal className="mx-auto max-w-4xl px-4 sm:px-6">
-            <PlaceholderBox label="[Image Placeholder: Lineage Family Tree / Village Bhai Roopa]" aspect="aspect-[16/7]" />
+            <PlaceholderBox label="[Image Placeholder: Lineage Family Tree / Village Bhai Rupa]" aspect="aspect-[16/7]" />
           </Reveal>
         </section>
 
@@ -44,7 +44,7 @@ export default function LineagePage() {
               A Living Timeline
             </p>
             <h2 className="mt-3 font-serif text-3xl font-semibold text-navy-950">
-              From Bibi Surat Ji to the Present Day
+              From Bibi Surti Ji to the Present Day
             </h2>
           </Reveal>
           <AnimatedTimeline />

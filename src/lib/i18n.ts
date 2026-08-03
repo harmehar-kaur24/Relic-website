@@ -37,7 +37,7 @@ export const translations = {
     lineageEyebrow: "Lineage & History",
     lineageHeading: "Three Centuries of Devotion and Custodianship",
     lineageBody:
-      "The story begins with Bibi Surat Ji, whose faith at her own wedding drew a blessing from Sri Guru Hargobind Sahib Ji — a blessing fulfilled in the birth of her son, Bhai Roop Chand Ji, named by the Guru himself. His devotion led to the founding of village Bhai Roopa and the entrustment of sacred relics to his family. For more than 300 years, each generation has taken up the responsibility of protecting and sharing this legacy — a custodianship that continues today.",
+      "The story begins with Bibi Surti Ji, whose faith at her own wedding drew a blessing from Sri Guru Hargobind Sahib Ji — a blessing fulfilled in the birth of her son, Bhai Roop Chand Ji, named by the Guru himself. His devotion led to the founding of village Bhai Rupa and the entrustment of sacred relics to his family. For more than 300 years, each generation has taken up the responsibility of protecting and sharing this legacy — a custodianship that continues today.",
     lineageCta: "View the Full 300-Year Timeline",
 
     scheduleEyebrow: "Tour Dates, Map & Maryada",
@@ -55,7 +55,7 @@ export const translations = {
     hostSevaEyebrow: "Host a Visit & Seva",
     hostSevaHeading: "Bring the Tour to Your Sangat",
     hostSevaBody:
-      "Gurdwaras, educational institutions, and heritage organizations are warmly invited to request a tour stop, or to sign up for local volunteer seva supporting logistics, hospitality, and outreach during the exhibition.",
+      "Gurdwaras, educational institutions, and heritage organisations are warmly invited to request a tour stop, or to sign up for local volunteer seva supporting logistics, hospitality, and outreach during the exhibition.",
     hostSevaCtaHost: "Request to Host the Exhibition",
     hostSevaCtaSeva: "Volunteer / Support Seva",
 
@@ -68,7 +68,7 @@ export const translations = {
     contactCtaCustodian: "About the Custodian",
 
     footerTagline:
-      "Honoring the legacy of Bhai Roop Chand Ji and the sacred trust of Sri Guru Hargobind Sahib Ji, carried forward for the sangat.",
+      "Honouring the legacy of Bhai Roop Chand Ji and the sacred trust of Sri Guru Hargobind Sahib Ji, carried forward for the sangat.",
 
     categoryAll: "All",
     categoryShastars: "Shastars",
@@ -113,7 +113,7 @@ export const translations = {
     lineageEyebrow: "ਵੰਸ਼ਾਵਲੀ ਅਤੇ ਇਤਿਹਾਸ",
     lineageHeading: "ਤਿੰਨ ਸਦੀਆਂ ਦੀ ਸ਼ਰਧਾ ਅਤੇ ਸੇਵਾਦਾਰੀ",
     lineageBody:
-      "ਕਹਾਣੀ ਬੀਬੀ ਸੁਰਤ ਜੀ ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਜਿਹਨਾਂ ਦੀ ਆਪਣੇ ਵਿਆਹ ਵੇਲੇ ਸ਼ਰਧਾ ਨੇ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਤੋਂ ਬਖਸ਼ਿਸ਼ ਪ੍ਰਾਪਤ ਕੀਤੀ — ਇੱਕ ਬਖਸ਼ਿਸ਼ ਜੋ ਉਹਨਾਂ ਦੇ ਪੁੱਤਰ, ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਜਨਮ ਵਿੱਚ ਪੂਰੀ ਹੋਈ, ਜਿਹਨਾਂ ਦਾ ਨਾਮ ਖੁਦ ਗੁਰੂ ਜੀ ਨੇ ਰੱਖਿਆ। ਉਹਨਾਂ ਦੀ ਸ਼ਰਧਾ ਨੇ ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦੀ ਸਥਾਪਨਾ ਅਤੇ ਉਹਨਾਂ ਦੇ ਪਰਿਵਾਰ ਨੂੰ ਪਵਿੱਤਰ ਨਿਸ਼ਾਨੀਆਂ ਸੌਂਪਣ ਦਾ ਕਾਰਨ ਬਣੀ। 300 ਸਾਲਾਂ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ, ਹਰ ਪੀੜ੍ਹੀ ਨੇ ਇਸ ਵਿਰਾਸਤ ਦੀ ਸੰਭਾਲ ਅਤੇ ਸਾਂਝ ਦੀ ਜ਼ਿੰਮੇਵਾਰੀ ਚੁੱਕੀ ਹੈ — ਇੱਕ ਸੇਵਾਦਾਰੀ ਜੋ ਅੱਜ ਵੀ ਜਾਰੀ ਹੈ।",
+      "ਕਹਾਣੀ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਜਿਹਨਾਂ ਦੀ ਆਪਣੇ ਵਿਆਹ ਵੇਲੇ ਸ਼ਰਧਾ ਨੇ ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ ਤੋਂ ਬਖਸ਼ਿਸ਼ ਪ੍ਰਾਪਤ ਕੀਤੀ — ਇੱਕ ਬਖਸ਼ਿਸ਼ ਜੋ ਉਹਨਾਂ ਦੇ ਪੁੱਤਰ, ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਜਨਮ ਵਿੱਚ ਪੂਰੀ ਹੋਈ, ਜਿਹਨਾਂ ਦਾ ਨਾਮ ਖੁਦ ਗੁਰੂ ਜੀ ਨੇ ਰੱਖਿਆ। ਉਹਨਾਂ ਦੀ ਸ਼ਰਧਾ ਨੇ ਪਿੰਡ ਭਾਈ ਰੂਪਾ ਦੀ ਸਥਾਪਨਾ ਅਤੇ ਉਹਨਾਂ ਦੇ ਪਰਿਵਾਰ ਨੂੰ ਪਵਿੱਤਰ ਨਿਸ਼ਾਨੀਆਂ ਸੌਂਪਣ ਦਾ ਕਾਰਨ ਬਣੀ। 300 ਸਾਲਾਂ ਤੋਂ ਵੱਧ ਸਮੇਂ ਤੋਂ, ਹਰ ਪੀੜ੍ਹੀ ਨੇ ਇਸ ਵਿਰਾਸਤ ਦੀ ਸੰਭਾਲ ਅਤੇ ਸਾਂਝ ਦੀ ਜ਼ਿੰਮੇਵਾਰੀ ਚੁੱਕੀ ਹੈ — ਇੱਕ ਸੇਵਾਦਾਰੀ ਜੋ ਅੱਜ ਵੀ ਜਾਰੀ ਹੈ।",
     lineageCta: "ਪੂਰੀ 300-ਸਾਲਾ ਸਮਾਂ-ਰੇਖਾ ਵੇਖੋ",
 
     scheduleEyebrow: "ਟੂਰ ਮਿਤੀਆਂ, ਨਕਸ਼ਾ ਅਤੇ ਮਰਯਾਦਾ",
