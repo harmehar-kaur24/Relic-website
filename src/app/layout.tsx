@@ -29,10 +29,43 @@ const gurmukhi = Noto_Sans_Gurmukhi({
   display: "swap",
 });
 
+const SITE_URL = "https://www.bababhairoopchandjimuseum.com";
+const TITLE = "Baba Bhai Roop Chand Ji Collection Museum";
+const DESCRIPTION =
+  "A touring exhibition of the sacred shastars and relics bestowed by Sri Guru Hargobind Sahib Ji, in the continuing custodianship of the descendants of Bhai Roop Chand Ji.";
+
 export const metadata: Metadata = {
-  title: "Baba Bhai Roop Chand Ji Collection Museum",
-  description:
-    "A touring exhibition of the sacred shastars and relics bestowed by Sri Guru Hargobind Sahib Ji, in the continuing custodianship of the descendants of Bhai Roop Chand Ji.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  /*
+   * Preview card shown when the link is shared — WhatsApp, Instagram, iMessage,
+   * Facebook. Without these the link renders as a bare grey box, which matters
+   * because word of mouth here travels by WhatsApp. The image must be an
+   * absolute URL, which metadataBase supplies.
+   */
+  openGraph: {
+    type: "website",
+    siteName: TITLE,
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    locale: "en_GB",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Baba Bhai Roop Chand Ji Collection Museum — the living legacy of Sri Guru Hargobind Sahib Ji",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/og.jpg"],
+  },
 };
 
 export default function RootLayout({
