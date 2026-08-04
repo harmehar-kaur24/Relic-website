@@ -43,11 +43,21 @@
 
 html {
   scroll-behavior: smooth;
+  /*
+   * Stops the page ever scrolling sideways, which on narrow phones let you drag
+   * right and expose a strip of bare background beside the content. `clip`
+   * rather than `hidden` on purpose: `hidden` turns this into a scroll container
+   * and breaks the sticky header, `clip` does not.
+   */
+  overflow-x: clip;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  /* Long unbroken words (URLs, Gurmukhi compounds) wrap instead of forcing
+     the page wider than the screen. */
+  overflow-wrap: break-word;
   font-family:
     var(--font-inter),
     var(--font-gurmukhi),

@@ -471,11 +471,15 @@ function TimelineCard({
 
   return (
     <div className="relative">
-      <motion.span
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
+      {/*
+        Plain span, not motion.span. These were framer-motion with
+        initial={{ scale: 0 }} + whileInView, and on mobile the trigger never
+        fired for a 16px absolutely-positioned dot (viewport amount 0.6 is not
+        reachable for it), so every dot stayed at scale(0) and the timeline rail
+        appeared to have no markers at all. A dot that only exists if an
+        animation fires is not worth the risk.
+      */}
+      <span
         className="absolute left-6 top-6 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-cream-50 bg-gold-500 shadow-[0_0_0_5px_rgba(201,162,39,0.2)] sm:left-1/2"
       />
 
