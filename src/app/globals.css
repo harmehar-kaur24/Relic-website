@@ -219,3 +219,29 @@ section[id] {
 [data-theme="puratan"] [class*="bg-navy-950/80"] {
   background-color: #ecdcbb;
 }
+
+/*
+ * Timeline card entrance. Deliberately opacity + translateY only — the
+ * previous framer-motion version used translateX(±48px) and, when its
+ * whileInView trigger failed to fire, left every card offset to the right,
+ * widening the page and creating horizontal scroll on phones. Vertical motion
+ * cannot do that. Pure CSS, so it does not depend on an observer firing.
+ */
+@keyframes timeline-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.timeline-card {
+  animation: timeline-card-in 0.5s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-card {
+    animation: none;
+  }
+}

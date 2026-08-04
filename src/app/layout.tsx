@@ -3,6 +3,7 @@ import { Inter, Playfair_Display, Noto_Sans_Gurmukhi } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import BackToTop from "@/components/BackToTop";
+import { Analytics } from "@vercel/analytics/next";
 import ImageLightbox from "@/components/ImageLightbox";
 // EXPERIMENTAL: temporary palette picker. Remove this import and the
 
@@ -93,6 +94,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <BackToTop />
+          <Analytics />
           <ImageLightbox />
         </LanguageProvider>
       </body>

@@ -488,12 +488,22 @@ function TimelineCard({
           isRight ? "sm:flex-row-reverse" : ""
         }`}
       >
-        <motion.div
-          initial={{ opacity: 0, x: isRight ? 48 : -48 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full rounded-xl border border-navy-100 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.01] hover:shadow-xl sm:w-[calc(50%-2.5rem)] sm:p-6"
+        {/*
+          Plain div with a CSS entrance, not motion.div.
+
+          This was framer-motion with initial={{ x: ±48 }} + whileInView. The
+          trigger never fired, so all 28 cards sat permanently at
+          translateX(48px) — which on a 375px screen pushed them to x=407 and
+          gave the page 32px of horizontal scroll, letting you drag sideways
+          onto bare background. Clipping the overflow only hid the symptom.
+
+          The replacement animates opacity and translateY only. Vertical motion
+          cannot widen the page, so this class of bug cannot come back, and the
+          CSS runs whether or not any observer fires.
+        */}
+        <div
+          style={{ animationDelay: `${Math.min(index, 8) * 60}ms` }}
+          className="timeline-card w-full rounded-xl border border-navy-100 bg-white p-5 shadow-sm transition duration-300 hover:scale-[1.01] hover:shadow-xl sm:w-[calc(50%-2.5rem)] sm:p-6"
         >
           <span className="inline-block rounded-full bg-gold-500 px-4 py-1 text-xs font-bold uppercase tracking-wide text-navy-950">
             {milestone.era}
@@ -531,7 +541,7 @@ function TimelineCard({
               <span className="font-semibold">Source:</span> {milestone.source}
             </p>
           )}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
