@@ -568,9 +568,9 @@ export default function AnimatedTimeline({
       ref={containerRef}
       className="relative mx-auto max-w-5xl px-4 py-4 sm:px-6"
     >
-      <div className="absolute left-6 top-0 h-full w-px bg-navy-100 sm:left-1/2 sm:-translate-x-1/2" />
+      <div className="absolute left-10 top-0 h-full w-px bg-navy-100 sm:left-1/2 sm:-translate-x-1/2" />
       <motion.div
-        className="absolute left-6 top-0 w-px origin-top bg-gradient-to-b from-gold-400 to-gold-600 sm:left-1/2 sm:-translate-x-1/2"
+        className="absolute left-10 top-0 w-px origin-top bg-gradient-to-b from-gold-400 to-gold-600 sm:left-1/2 sm:-translate-x-1/2"
         style={{ scaleY: scrollYProgress, height: "100%" }}
       />
 
