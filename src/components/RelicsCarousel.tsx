@@ -133,7 +133,7 @@ export default function RelicsCarousel({ relics }: { relics: Relic[] }) {
             onClick={() => scrollToIndex(index)}
             aria-label={`Go to ${relic.title}`}
             className={`h-2 rounded-full transition-all ${
-              index === activeIndex ? "w-6 bg-gold-500" : "w-2 bg-navy-200"
+              index === activeIndex ? "w-6 bg-gold-500" : "w-2 bg-gold-600/45"
             }`}
           />
         ))}

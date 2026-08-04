@@ -196,3 +196,16 @@ section[id] {
   background-image: radial-gradient(rgb(140 90 40 / 0.05) 1px, transparent 1px);
   background-size: 4px 4px;
 }
+
+/* The section-progress pill sits on a dark band in Kesri, so its inactive
+ * dashes are cream at 40%. In light mode that band turns parchment and the
+ * dashes vanish into it, so they flip to ink here. Same for the hover label. */
+[data-theme="puratan"] [class*="bg-cream-100/40"] {
+  background-color: rgb(64 35 15 / 0.4);
+}
+[data-theme="puratan"] [class*="bg-navy-950/90"],
+[data-theme="puratan"] [class*="bg-navy-950/92"],
+[data-theme="puratan"] [class*="bg-navy-950/95"],
+[data-theme="puratan"] [class*="bg-navy-950/80"] {
+  background-color: #ecdcbb;
+}
