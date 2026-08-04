@@ -5,7 +5,6 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 import BackToTop from "@/components/BackToTop";
 import ImageLightbox from "@/components/ImageLightbox";
 // EXPERIMENTAL: temporary palette picker. Remove this import and the
-// <ThemeSwitcher /> below to drop it.
 
 const inter = Inter({
   variable: "--font-inter",
