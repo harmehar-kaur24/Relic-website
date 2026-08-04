@@ -4,6 +4,7 @@ import Link from "next/link";
 import { tourStops } from "@/lib/data";
 import DeepLinkMenu from "./DeepLinkMenu";
 import LanguageToggle from "./LanguageToggle";
+import ThemeToggle from "./ThemeToggle";
 import { useLanguage } from "./LanguageProvider";
 
 export default function Header({ breadcrumb }: { breadcrumb?: string } = {}) {
@@ -37,6 +38,7 @@ export default function Header({ breadcrumb }: { breadcrumb?: string } = {}) {
           </Link>
           <div className="flex flex-shrink-0 items-center gap-2 sm:gap-4">
             <LanguageToggle />
+            <ThemeToggle />
             <Link
               href="/#schedule"
               className="hidden rounded-md border border-gold-400 px-3 py-1.5 text-xs font-semibold text-gold-300 transition hover:bg-gold-400 hover:text-navy-950 sm:inline-block sm:text-sm"

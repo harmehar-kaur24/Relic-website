@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import {
-  Inter,
-  Playfair_Display,
-  Noto_Sans_Gurmukhi,
-} from "next/font/google";
+import { Inter, Playfair_Display, Noto_Sans_Gurmukhi } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import BackToTop from "@/components/BackToTop";
 import ImageLightbox from "@/components/ImageLightbox";
 // EXPERIMENTAL: temporary palette picker. Remove this import and the
 // <ThemeSwitcher /> below to drop it.
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -49,14 +44,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme="kesri"
       className={`${inter.variable} ${playfair.variable} ${gurmukhi.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          // Runs before paint so a stored light preference doesn't flash dark
+          // first. Kept inline and tiny for that reason.
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{var m=localStorage.getItem('theme');if(m==='puratan')document.documentElement.setAttribute('data-theme','puratan')}catch(e){}",
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-cream-50 text-navy-950">
         <LanguageProvider>
           {children}
           <BackToTop />
           <ImageLightbox />
-          <ThemeSwitcher />
         </LanguageProvider>
       </body>
     </html>
