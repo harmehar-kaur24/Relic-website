@@ -244,10 +244,7 @@ export const defaultMilestones: TimelineMilestone[] = [
     era: "Twelfth generation",
     title: "Bhai Balvir Singh Ji",
     imageLabel: "[Photo Placeholder: Bhai Balvir Singh Ji]",
-    // Photo not in the repo yet. Leave this out rather than pointing at a
-    // missing file — the card falls back to imageLabel's placeholder box,
-    // which looks deliberate, instead of showing a broken image icon.
-    // Restore as: image: "/lineage/bhai-balvir-singh.jpg"
+    image: "/lineage/bhai-balvir-singh.jpeg",
     description:
       "Bhai Balvir Singh Ji, of the twelfth generation of Bhai Roop Chand Ji. His son Bhai Pal Singh Ji continued the safekeeping of the relics after him, and it is through this line that the trust passes to the present custodian.",
   },
@@ -449,10 +446,7 @@ export const milestonesPa: TimelineMilestone[] = [
     era: "ਬਾਰਵੀਂ ਪੀੜ੍ਹੀ",
     title: "ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ",
     imageLabel: "[Photo Placeholder: ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ]",
-    // Photo not in the repo yet. Leave this out rather than pointing at a
-    // missing file — the card falls back to imageLabel's placeholder box,
-    // which looks deliberate, instead of showing a broken image icon.
-    // Restore as: image: "/lineage/bhai-balvir-singh.jpg"
+    image: "/lineage/bhai-balvir-singh.jpeg",
     description:
       "ਭਾਈ ਬਲਵੀਰ ਸਿੰਘ ਜੀ, ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੀ ਬਾਰਵੀਂ ਪੀੜ੍ਹੀ। ਇਨ੍ਹਾਂ ਤੋਂ ਬਾਅਦ ਇਨ੍ਹਾਂ ਦੇ ਸਪੁੱਤਰ ਭਾਈ ਪਾਲ ਸਿੰਘ ਜੀ ਨੇ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਜਾਰੀ ਰੱਖੀ, ਅਤੇ ਇਸੇ ਵੰਸ਼ ਰਾਹੀਂ ਇਹ ਅਮਾਨਤ ਮੌਜੂਦਾ ਸੇਵਾਦਾਰ ਤੱਕ ਪਹੁੰਚਦੀ ਹੈ।",
   },
