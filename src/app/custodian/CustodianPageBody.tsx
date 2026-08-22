@@ -64,6 +64,17 @@ export default function CustodianPageBody() {
           </div>
         </section>
 
+        <section className="bg-cream-100 py-10">
+          <Reveal className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/lineage/sangat-group.jpeg"
+              alt="Sangat gathered with the custodian family"
+              className="mx-auto block h-auto w-full max-w-3xl rounded-xl border border-navy-100 shadow-sm"
+            />
+          </Reveal>
+        </section>
+
         <section className="bg-navy-900 py-14 text-cream-100">
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
             <Reveal className="mx-auto max-w-2xl text-center">
