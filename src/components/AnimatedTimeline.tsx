@@ -252,7 +252,7 @@ export const defaultMilestones: TimelineMilestone[] = [
     era: "Present Day",
     title: "The Relics Today, and the Villages of the Lineage",
     imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
-    image: "/custodian.jpg",
+    image: "/custodian.jpeg",
     description: `The historic relics bestowed by the Guru Sahibaan and their households, in their pleasure at Bhai Roop Chand Ji's seva, are present today at village Bhai Rupe, district Bathinda, with his heirs, who have carried out their safekeeping generation after generation. ${custodian.name} now carries out the preservation of the relics and travels to countries abroad so that the sangat may take their darshan, while at Bagarian Bhai Ke, Bhai Jujhar Singh is carrying out the safekeeping. The descendants of Bibi Surti Ji and Bhai Roop Chand Ji are settled today in the villages of Bhai Rupa, Bhai Ki Samadh, Nehianwala Chhatti, Bhai Ki Bagarian and Bhai Ka Dialpura.`,
   },
 ];
@@ -454,7 +454,7 @@ export const milestonesPa: TimelineMilestone[] = [
     era: "ਅੱਜ",
     title: "ਅੱਜ ਦੀਆਂ ਨਿਸ਼ਾਨੀਆਂ ਅਤੇ ਵੰਸ਼ ਦੇ ਪਿੰਡ",
     imageLabel: `[Photo Placeholder: ${custodian.name} with Sacred Shastars]`,
-    image: "/custodian.jpg",
+    image: "/custodian.jpeg",
     description:
       "ਅੱਜਕਲ ਬੀਬੀ ਸੁਰਤੀ ਜੀ ਅਤੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵੰਸ਼ਜ ਪਿੰਡ ਭਾਈ ਰੂਪਾ, ਭਾਈ ਕੀ ਸਮਾਧ, ਨੇਹੀਆਂਵਲਾ ਛੱਟੀ, ਭਾਈ ਕੀ ਬਾਗੜੀਆਂ ਅਤੇ ਭਾਈ ਕਾ ਦਿਆਲਪੁਰਾ ਆਦਿ ਪਿੰਡਾਂ ਵਿੱਚ ਆਬਾਦ ਹਨ। ਨਿਸ਼ਾਨੀਆਂ ਪਿੰਡ ਭਾਈ ਰੂਪੇ, ਜ਼ਿਲ੍ਹਾ ਬਠਿੰਡਾ ਵਿਖੇ ਭਾਈ ਰੂਪ ਚੰਦ ਜੀ ਦੇ ਵਾਰਸਾਂ ਪਾਸ ਮੌਜੂਦ ਹਨ, ਜੋ ਪੀੜ੍ਹੀ-ਦਰ-ਪੀੜ੍ਹੀ ਇਨ੍ਹਾਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ। ਹੁਣ ਭਾਈ ਜਸਕਰਨ ਸਿੰਘ ਨਿਸ਼ਾਨੀਆਂ ਦੀ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ ਅਤੇ ਦੇਸ਼ਾਂ-ਵਿਦੇਸ਼ਾਂ ਵਿੱਚ ਜਾ ਕੇ ਸੰਗਤ ਨੂੰ ਦਰਸ਼ਨ ਕਰਵਾ ਰਹੇ ਹਨ; ਬਾਗੜੀਆਂ ਭਾਈ ਕੇ ਵਿਖੇ ਭਾਈ ਜੁਝਾਰ ਸਿੰਘ ਸਾਂਭ-ਸੰਭਾਲ ਕਰ ਰਹੇ ਹਨ।",
   },

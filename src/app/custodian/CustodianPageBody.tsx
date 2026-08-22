@@ -18,7 +18,7 @@ export default function CustodianPageBody() {
               <div className="mx-auto w-full max-w-sm overflow-hidden rounded-xl border border-navy-700/20 shadow-sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/custodian.jpg"
+                  src="/custodian.jpeg"
                   alt={custodian.name}
                   className="block h-auto w-full"
                 />

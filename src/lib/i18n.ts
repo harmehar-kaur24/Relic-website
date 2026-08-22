@@ -406,6 +406,14 @@ export const relicTranslations: Record<string, RelicTranslation> = {
   },
 
   // Mata Sahiban
+  "katar-sahib-deva": {
+    title: "ਕਟਾਰ",
+    associatedWith: "ਮਾਤਾ ਸਾਹਿਬ ਦੇਵਾਂ ਜੀ",
+  },
+  "katar-gobind-2": {
+    title: "ਕਟਾਰ ਸਾਹਿਬ",
+    associatedWith: "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+  },
   "peerha-damodari": {
     title: "ਪੀੜ੍ਹਾ ਸਾਹਿਬ",
     associatedWith: "ਮਾਤਾ ਦਮੋਦਰੀ ਜੀ",

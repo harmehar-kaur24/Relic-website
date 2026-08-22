@@ -16,7 +16,7 @@ export default function ContactSection() {
             <div className="mx-auto max-w-sm overflow-hidden rounded-lg border border-navy-700/20 shadow-sm">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/custodian.jpg"
+                src="/custodian.jpeg"
                 alt={custodian.name}
                 className="block h-auto w-full"
               />

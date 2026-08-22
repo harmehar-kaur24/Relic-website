@@ -188,7 +188,17 @@ export const relics: Relic[] = [
     category: "Personal Articles",
     description:
       "The Peerha Sahib (low seat) of Mata Damodari Ji, consort of the sixth Sovereign, Sri Guru Hargobind Sahib Ji. It is preserved with the family of Bhai Roop Chand Ji at village Bhai Rupa, district Bathinda.",
-    image: "/relics/more/peerha-damodari.jpg",
+    image: "/relics/more/peerha-damodari.jpeg",
+  },
+  {
+    // Attribution from the family: the blackened katar with the two hourglass
+    // crossguards. Description left empty — no caption supplied yet.
+    id: "katar-sahib-deva",
+    title: "Katar",
+    associatedWith: "Mata Sahib Deva Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/more/katar-sahib-deva.jpeg",
   },
   {
     id: "rath-ganga",
@@ -249,6 +259,19 @@ export const relics: Relic[] = [
     description:
       "One of the sacred and ancient weapons attributed to Sri Guru Gobind Singh Ji, showing the traditional forge techniques.",
     image: "/relics/gobind/katar.jpg",
+  },
+  {
+    // A second katar of the tenth Guru, distinct from katar-gobind: plain
+    // straight side-bars rather than hourglass, and photographed with its red
+    // leather sheath. Attribution is from the museum nameplate in the photo,
+    // which reads "(ਕਟਾਰ ਸਾਹਿਬ) ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ / (Dagger) Sri Guru
+    // Gobind Singh Ji" — a physical label, not one of the AI-made posters.
+    id: "katar-gobind-2",
+    title: "Katar Sahib",
+    associatedWith: "Sri Guru Gobind Singh Ji",
+    category: "Shastars",
+    description: "",
+    image: "/relics/gobind/katar-2.jpeg",
   },
   {
     id: "pothi-sahib-gold",

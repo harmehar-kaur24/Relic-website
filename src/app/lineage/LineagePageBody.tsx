@@ -1,7 +1,6 @@
 "use client";
 
 import Header from "@/components/Header";
-import PlaceholderBox from "@/components/PlaceholderBox";
 import AnimatedTimeline from "@/components/AnimatedTimeline";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -28,9 +27,11 @@ export default function LineagePageBody() {
 
         <section className="bg-cream-100 py-4">
           <Reveal className="mx-auto max-w-4xl px-4 sm:px-6">
-            <PlaceholderBox
-              label="[Image Placeholder: Lineage Family Tree / Village Bhai Rupa]"
-              aspect="aspect-[16/7]"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/lineage/sangat-group.jpeg"
+              alt="Sangat gathered at village Bhai Rupa"
+              className="mx-auto block h-auto w-full max-w-3xl rounded-xl border border-navy-100 shadow-sm"
             />
           </Reveal>
         </section>
